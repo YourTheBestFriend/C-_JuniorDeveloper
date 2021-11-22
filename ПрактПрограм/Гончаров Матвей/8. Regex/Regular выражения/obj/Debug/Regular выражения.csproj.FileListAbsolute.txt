@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#\УП\Regular выражения\Regular выражения\bin\Debug\Regular выражения.exe.config
+C:\Users\Xhref\Desktop\C#\УП\Regular выражения\Regular выражения\bin\Debug\Regular выражения.exe
+C:\Users\Xhref\Desktop\C#\УП\Regular выражения\Regular выражения\bin\Debug\Regular выражения.pdb
+C:\Users\Xhref\Desktop\C#\УП\Regular выражения\Regular выражения\obj\Debug\Regular выражения.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\УП\Regular выражения\Regular выражения\obj\Debug\Regular выражения.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\УП\Regular выражения\Regular выражения\obj\Debug\Regular выражения.exe
+C:\Users\Xhref\Desktop\C#\УП\Regular выражения\Regular выражения\obj\Debug\Regular выражения.pdb

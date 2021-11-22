@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#\УП\stroki\stroki\bin\Debug\stroki.exe.config
+C:\Users\Xhref\Desktop\C#\УП\stroki\stroki\bin\Debug\stroki.exe
+C:\Users\Xhref\Desktop\C#\УП\stroki\stroki\bin\Debug\stroki.pdb
+C:\Users\Xhref\Desktop\C#\УП\stroki\stroki\obj\Debug\stroki.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\УП\stroki\stroki\obj\Debug\stroki.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\УП\stroki\stroki\obj\Debug\stroki.exe
+C:\Users\Xhref\Desktop\C#\УП\stroki\stroki\obj\Debug\stroki.pdb

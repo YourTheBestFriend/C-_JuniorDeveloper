@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#\УП\metods\metods\bin\Debug\metods.exe.config
+C:\Users\Xhref\Desktop\C#\УП\metods\metods\bin\Debug\metods.exe
+C:\Users\Xhref\Desktop\C#\УП\metods\metods\bin\Debug\metods.pdb
+C:\Users\Xhref\Desktop\C#\УП\metods\metods\obj\Debug\metods.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\УП\metods\metods\obj\Debug\metods.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\УП\metods\metods\obj\Debug\metods.exe
+C:\Users\Xhref\Desktop\C#\УП\metods\metods\obj\Debug\metods.pdb

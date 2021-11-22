@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#\УП\Лр6_regex\Лр6_regex\bin\Debug\Лр6_regex.exe.config
+C:\Users\Xhref\Desktop\C#\УП\Лр6_regex\Лр6_regex\bin\Debug\Лр6_regex.exe
+C:\Users\Xhref\Desktop\C#\УП\Лр6_regex\Лр6_regex\bin\Debug\Лр6_regex.pdb
+C:\Users\Xhref\Desktop\C#\УП\Лр6_regex\Лр6_regex\obj\Debug\Лр6_regex.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\УП\Лр6_regex\Лр6_regex\obj\Debug\Лр6_regex.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\УП\Лр6_regex\Лр6_regex\obj\Debug\Лр6_regex.exe
+C:\Users\Xhref\Desktop\C#\УП\Лр6_regex\Лр6_regex\obj\Debug\Лр6_regex.pdb

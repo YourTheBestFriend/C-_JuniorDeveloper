@@ -1,0 +1,14 @@
+C:\Users\Xhref\Desktop\C#\0920массивы\array_20_09_2021\array_20_09_2021\bin\Debug\array_20_09_2021.exe.config
+C:\Users\Xhref\Desktop\C#\0920массивы\array_20_09_2021\array_20_09_2021\bin\Debug\array_20_09_2021.exe
+C:\Users\Xhref\Desktop\C#\0920массивы\array_20_09_2021\array_20_09_2021\bin\Debug\array_20_09_2021.pdb
+C:\Users\Xhref\Desktop\C#\0920массивы\array_20_09_2021\array_20_09_2021\obj\Debug\array_20_09_2021.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\0920массивы\array_20_09_2021\array_20_09_2021\obj\Debug\array_20_09_2021.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\0920массивы\array_20_09_2021\array_20_09_2021\obj\Debug\array_20_09_2021.exe
+C:\Users\Xhref\Desktop\C#\0920массивы\array_20_09_2021\array_20_09_2021\obj\Debug\array_20_09_2021.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\4.5. Массивы 20_09_2021\array_20_09_2021\obj\Debug\array_20_09_2021.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\4.5. Массивы 20_09_2021\array_20_09_2021\obj\Debug\array_20_09_2021.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\4.5. Массивы 20_09_2021\array_20_09_2021\obj\Debug\array_20_09_2021.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\4.5. Массивы 20_09_2021\array_20_09_2021\obj\Debug\array_20_09_2021.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\4.5. Массивы 20_09_2021\array_20_09_2021\bin\Debug\array_20_09_2021.exe.config
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\4.5. Массивы 20_09_2021\array_20_09_2021\bin\Debug\array_20_09_2021.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\4.5. Массивы 20_09_2021\array_20_09_2021\bin\Debug\array_20_09_2021.pdb
