@@ -19,12 +19,6 @@ namespace классы
             this.month = month;
             this.day = day;
         }
-        public date_7_task(string x)//20210911
-        {
-            this.year = Convert.ToInt32(x[0]) + Convert.ToInt32(x[1]) + Convert.ToInt32(x[2]) + Convert.ToInt32(x[3]);
-            this.month = Convert.ToInt32(x[4]) + Convert.ToInt32(x[5]);
-            this.day = Convert.ToInt32(x[6]) + Convert.ToInt32(x[7]);
-        }
         public date_7_task(DateTime x)
         {
             this.year = x.Year;
