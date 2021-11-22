@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#\УП\struct_01.11.2021\struct_01.11.2021\bin\Debug\struct_01.11.2021.exe.config
+C:\Users\Xhref\Desktop\C#\УП\struct_01.11.2021\struct_01.11.2021\bin\Debug\struct_01.11.2021.exe
+C:\Users\Xhref\Desktop\C#\УП\struct_01.11.2021\struct_01.11.2021\bin\Debug\struct_01.11.2021.pdb
+C:\Users\Xhref\Desktop\C#\УП\struct_01.11.2021\struct_01.11.2021\obj\Debug\struct_01.11.2021.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\УП\struct_01.11.2021\struct_01.11.2021\obj\Debug\struct_01.11.2021.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\УП\struct_01.11.2021\struct_01.11.2021\obj\Debug\struct_01.11.2021.exe
+C:\Users\Xhref\Desktop\C#\УП\struct_01.11.2021\struct_01.11.2021\obj\Debug\struct_01.11.2021.pdb

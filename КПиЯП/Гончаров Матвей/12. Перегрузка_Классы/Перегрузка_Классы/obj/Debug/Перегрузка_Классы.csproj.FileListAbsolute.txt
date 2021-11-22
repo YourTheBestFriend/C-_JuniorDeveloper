@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#\УП\Перегрузка_Классы\Перегрузка_Классы\bin\Debug\Перегрузка_Классы.exe.config
+C:\Users\Xhref\Desktop\C#\УП\Перегрузка_Классы\Перегрузка_Классы\bin\Debug\Перегрузка_Классы.exe
+C:\Users\Xhref\Desktop\C#\УП\Перегрузка_Классы\Перегрузка_Классы\bin\Debug\Перегрузка_Классы.pdb
+C:\Users\Xhref\Desktop\C#\УП\Перегрузка_Классы\Перегрузка_Классы\obj\Debug\Перегрузка_Классы.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\УП\Перегрузка_Классы\Перегрузка_Классы\obj\Debug\Перегрузка_Классы.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\УП\Перегрузка_Классы\Перегрузка_Классы\obj\Debug\Перегрузка_Классы.exe
+C:\Users\Xhref\Desktop\C#\УП\Перегрузка_Классы\Перегрузка_Классы\obj\Debug\Перегрузка_Классы.pdb

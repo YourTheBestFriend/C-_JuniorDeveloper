@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#\УП\классы\классы\bin\Debug\классы.exe.config
+C:\Users\Xhref\Desktop\C#\УП\классы\классы\bin\Debug\классы.exe
+C:\Users\Xhref\Desktop\C#\УП\классы\классы\bin\Debug\классы.pdb
+C:\Users\Xhref\Desktop\C#\УП\классы\классы\obj\Debug\классы.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\УП\классы\классы\obj\Debug\классы.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\УП\классы\классы\obj\Debug\классы.exe
+C:\Users\Xhref\Desktop\C#\УП\классы\классы\obj\Debug\классы.pdb

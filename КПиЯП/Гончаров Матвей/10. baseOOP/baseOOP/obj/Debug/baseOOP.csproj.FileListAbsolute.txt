@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#\baseOOP\baseOOP\bin\Debug\baseOOP.exe.config
+C:\Users\Xhref\Desktop\C#\baseOOP\baseOOP\bin\Debug\baseOOP.exe
+C:\Users\Xhref\Desktop\C#\baseOOP\baseOOP\bin\Debug\baseOOP.pdb
+C:\Users\Xhref\Desktop\C#\baseOOP\baseOOP\obj\Debug\baseOOP.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#\baseOOP\baseOOP\obj\Debug\baseOOP.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#\baseOOP\baseOOP\obj\Debug\baseOOP.exe
+C:\Users\Xhref\Desktop\C#\baseOOP\baseOOP\obj\Debug\baseOOP.pdb
