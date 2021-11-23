@@ -18,11 +18,11 @@ namespace Перегрузка_Классы
         }
         public static bool operator !=(Book a, Book b)
         {
-            return false;
+            return a.name_outhor != b.name_outhor;
         }
         public static bool operator ==(Book a, Book b)
         {
-            return true;
+            return a.name_outhor==b.name_outhor;
         }
     }
 }

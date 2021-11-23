@@ -15,6 +15,7 @@ namespace Перегрузка_Классы
             Book book3 = new Book("Petr", 9);
 
             Book book4 = new Book("Matvey", 1);
+            Book book_ = new Book("Matvey", 1);
 
             Libruary lib = new Libruary(book1, book2, book3);
             lib.show();
@@ -26,8 +27,11 @@ namespace Перегрузка_Классы
             bool b = book1 == book4;
             Console.WriteLine($"(kategory != False == True) book1 == book4 = {b}");
 
+            bool b2 = book4 == book_;
+            lib.addBook(book_);
+            Console.WriteLine($"(kategory != False == True) book4 == book_ = {b2}");
+
             Book book5 = new Book("Mariya", 10);
-            lib + book5;
             lib.show();
 
 

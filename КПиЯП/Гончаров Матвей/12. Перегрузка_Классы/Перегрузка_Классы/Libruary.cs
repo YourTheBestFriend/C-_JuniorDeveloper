@@ -30,6 +30,7 @@ namespace Перегрузка_Классы
         }
         public void addBook(params Book[] x)
         {
+       //     list_book.AddRange(x);
             int i = 0;
             while (i < x.Length) // >=0
             {

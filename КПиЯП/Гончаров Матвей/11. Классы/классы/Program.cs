@@ -139,8 +139,11 @@ namespace классы
             //  Vector3D.Scal();
 
             // 77777777777777777777777777777777777777777777777777777
+            Console.WriteLine("_________________");
             date_7_task dt1 = new date_7_task(2021, 5, 12);
             date_7_task dt2 = new date_7_task(2021, 5, 12);
+            Console.WriteLine(dt1);
+            Console.WriteLine(dt2);
             bool f = dt1.eql_date(dt1, dt2);
             Console.WriteLine(f);
             dt1.add_day(1);

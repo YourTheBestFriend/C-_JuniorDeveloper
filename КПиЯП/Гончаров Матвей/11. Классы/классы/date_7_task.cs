@@ -52,5 +52,9 @@ namespace классы
         {
             return Abs(this.day-day);
         }
+        public override string ToString()
+        {
+            return $"{day:00}.{month:00}.{year:0000}";
+        }
     }
 }
