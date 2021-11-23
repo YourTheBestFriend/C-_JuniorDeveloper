@@ -140,10 +140,6 @@ namespace классы
 
             // 77777777777777777777777777777777777777777777777777777
             date_7_task dt1 = new date_7_task(2021, 5, 12);
-
-            date_7_task dsdfsdft1 = new date_7_task("20211012");
-            Console.WriteLine($"====================={dsdfsdft1.day}");
-
             date_7_task dt2 = new date_7_task(2021, 5, 12);
             bool f = dt1.eql_date(dt1, dt2);
             Console.WriteLine(f);

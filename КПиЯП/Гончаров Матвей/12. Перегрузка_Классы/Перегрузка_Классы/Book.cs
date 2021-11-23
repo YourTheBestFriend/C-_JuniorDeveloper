@@ -18,7 +18,7 @@ namespace Перегрузка_Классы
         }
         public static bool operator !=(Book a, Book b)
         {
-            return true;
+            return false;
         }
         public static bool operator ==(Book a, Book b)
         {

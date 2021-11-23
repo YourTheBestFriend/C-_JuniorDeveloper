@@ -17,13 +17,6 @@ namespace Перегрузка_Классы
                 list_book.Add(x[i]);
             }
         }
-
-        // НЕ ПРАВИЛЬНО
-        public static Libruary operator +(Libruary l1, Book book)
-        {
-            return new Libruary();
-        }
-
         public string au_book_for_num(int num)
         {
             foreach (var item in list_book)

@@ -24,7 +24,7 @@ namespace Перегрузка_Классы
             lib.show();
 
             bool b = book1 == book4;
-            Console.WriteLine($"(kategory) book1 == book4 = {b}");
+            Console.WriteLine($"(kategory != False == True) book1 == book4 = {b}");
 
             Book book5 = new Book("Mariya", 10);
             lib + book5;
