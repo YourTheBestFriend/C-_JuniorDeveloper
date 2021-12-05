@@ -22,6 +22,11 @@ namespace наследование_2
             return new PAIR(this.first + this.second, p2.first + p2.second);
         }
 
+        public virtual Long_number plus_(Long_number p2)
+        {
+            return new Long_number(this.first + this.second, p2.first + p2.second);
+        }
+
         public static PAIR operator +(PAIR p1, PAIR p2)
         {
             return new PAIR(p1.first + p1.second, p2.first + p2.second);
