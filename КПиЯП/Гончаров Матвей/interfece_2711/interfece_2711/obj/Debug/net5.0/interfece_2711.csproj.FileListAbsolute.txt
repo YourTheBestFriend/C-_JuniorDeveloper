@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\bin\Debug\net5.0\interfece_2711.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\bin\Debug\net5.0\interfece_2711.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\bin\Debug\net5.0\interfece_2711.runtimeconfig.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\bin\Debug\net5.0\interfece_2711.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\bin\Debug\net5.0\interfece_2711.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\bin\Debug\net5.0\ref\interfece_2711.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\bin\Debug\net5.0\interfece_2711.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\interfece_2711.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\interfece_2711.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\interfece_2711.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\interfece_2711.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\interfece_2711.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\interfece_2711.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\ref\interfece_2711.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\interfece_2711.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\interfece_2711\interfece_2711\obj\Debug\net5.0\interfece_2711.genruntimeconfig.cache

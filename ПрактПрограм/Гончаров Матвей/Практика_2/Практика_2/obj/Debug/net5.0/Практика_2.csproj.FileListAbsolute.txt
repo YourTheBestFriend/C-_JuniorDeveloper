@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\Практика_2.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\Практика_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\Практика_2.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\Практика_2.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\Практика_2.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\bin\Debug\net5.0\Практика_2.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\bin\Debug\net5.0\Практика_2.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\bin\Debug\net5.0\Практика_2.runtimeconfig.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\bin\Debug\net5.0\Практика_2.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\bin\Debug\net5.0\Практика_2.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\bin\Debug\net5.0\ref\Практика_2.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\bin\Debug\net5.0\Практика_2.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\Практика_2.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\ref\Практика_2.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\Практика_2.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Практика_2\Практика_2\obj\Debug\net5.0\Практика_2.genruntimeconfig.cache
