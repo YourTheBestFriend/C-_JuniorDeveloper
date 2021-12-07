@@ -29,6 +29,7 @@ namespace interfece_2711
             Console.WriteLine("\nKvadrat");
             Kvadrat obj1 = new Kvadrat(4.5);
             obj1.printSquare();
+            (obj1 as ISquare).printSquare();
             obj1.printVolume();
 
             Console.WriteLine("\nPramaugolnic");

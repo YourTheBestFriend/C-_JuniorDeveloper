@@ -17,15 +17,22 @@ namespace наследование_2
             this.second = second;
         }
 
-        public virtual PAIR plus_(PAIR p2)
+        ////public virtual PAIR plus_(PAIR p2)
+        ////{
+        ////    return new PAIR(this.first + this.second, p2.first + p2.second);
+        ////}
+        public virtual object plus_(object p2)
         {
-            return new PAIR(this.first + this.second, p2.first + p2.second);
+            return new PAIR(this.first + this.second, (p2 as PAIR).first + (p2 as PAIR).second);
         }
-
-        public virtual Long_number plus_(Long_number p2)
-        {
-            return new Long_number(this.first + this.second, p2.first + p2.second);
-        }
+        //public virtual PAIR plus_(PAIR p2)
+        //{
+        //    return new Long_number(this.first + this.second, p2.first + p2.second);
+        //}
+        //        public virtual Long_number plus_(Long_number p2)
+        //{
+        //    return new Long_number(this.first + this.second, p2.first + p2.second);
+        //}
 
         public static PAIR operator +(PAIR p1, PAIR p2)
         {

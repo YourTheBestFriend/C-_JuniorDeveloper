@@ -8,7 +8,7 @@ namespace наследование_1
 {
     class X
     {
-        public double x1, x2;
+        protected double x1, x2;
         public X() { }
         public X(double x1, double x2) 
         {

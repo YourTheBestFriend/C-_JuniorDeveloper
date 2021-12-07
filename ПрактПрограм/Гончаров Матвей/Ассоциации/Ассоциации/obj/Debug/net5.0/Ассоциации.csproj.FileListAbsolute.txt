@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\Ассоциации.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\Ассоциации.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\Ассоциации.runtimeconfig.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\Ассоциации.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\Ассоциации.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\ref\Ассоциации.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\Ассоциации.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\ref\Ассоциации.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.genruntimeconfig.cache

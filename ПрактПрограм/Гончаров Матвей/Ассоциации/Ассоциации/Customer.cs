@@ -8,17 +8,22 @@ namespace Ассоциации
 {
     public class Customer
     {
-        public int Code;
-        public int ContactPhone;
-        public string FullName;
-        public bool Privileged;
+        public int Code = 0;
+        public int ContactPhone = 0;
+        public string FullName = "none";
+        public bool Privileged = false;
 
-        public Customer(int Code, int ContactPhone, string FullName, bool Privileged)
+        // Типо у клиента заказ
+        //public Order ord = new Order();
+
+        public Customer() {}
+        public Customer(int Code, int ContactPhone, string FullName, bool Privileged) // Order ord
         {
             this.Code = Code;
             this.ContactPhone = ContactPhone;
             this.FullName = FullName;
             this.Privileged = Privileged;
+            //this.ord = ord;
         }
     }
 }

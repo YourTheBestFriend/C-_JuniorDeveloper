@@ -16,6 +16,6 @@ namespace наследование_1
         }
         public virtual void printSquare() { }
 
-        public virtual void printVolume() { }
+        public abstract void printVolume();
     }
 }
