@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,46 +7,62 @@ using System.Threading.Tasks;
 
 namespace interfece_2711
 {
-    class Class_Task3 : ICloneable // , IComparable
+    class Class_Task3 : ICloneable, IEnumerable<Pramaugolnik>
     {
         // например список кфадратов
-        List<Kvadrat> listKvadrats;
+        List<Pramaugolnik> listPramaugolnik = new List<Pramaugolnik>();
         public Class_Task3() { }
-        public Class_Task3(params Kvadrat[] x) 
+        public Class_Task3(params Pramaugolnik[] x) 
         {
             for (int i = 0; i < x.Length; i++)
             {
-                listKvadrats.Add(x[i]);
+                listPramaugolnik.Add(x[i]);
             }
         }
         // clone
         public object Clone()
         {
-            return new Class_Task3 { listKvadrats = this.listKvadrats}; // return this.MemberwiseClone(); - Возвратит копию объекта
+            return new Class_Task3 { listPramaugolnik = this.listPramaugolnik }; // return this.MemberwiseClone(); - Возвратит копию объекта
         }
 
-        public void Sort_list()
+        // print 
+        public void PrintList()
         {
-            this.listKvadrats.Sort();
+            for (int i = 0; i < listPramaugolnik.Count; i++)
+            {
+                Console.WriteLine($"i = {i} - {listPramaugolnik[i]}");
+            }
         }
-        //public int CompareTo(object obj)
-        //{
-        //    Class_Task3 ts = obj as Class_Task3;
-        //    if (ts != null)
-        //        return this.listKvadrats.CompareTo(ts.listKvadrats);
-        //    else
-        //        throw new Exception("Невозможно сравнить два объекта");
-        //}
 
+        // for IComparable
+        public void sortListPramaugolnik()
+        {
+            listPramaugolnik.Sort();
+        }
+
+        // for IComparer
+        public void sortListPramaugolnik2()
+        {
+            listPramaugolnik.Sort(new Pramaugolnik());
+        }
+
+        public IEnumerator<Pramaugolnik> GetEnumerator()
+        {
+            return listPramaugolnik.GetEnumerator();
+        }
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return listPramaugolnik.GetEnumerator();
+        }
         // перебор через foreach 
         public void printForeachList()
         {
-            foreach (Kvadrat i in this.listKvadrats)
+            foreach (var i in listPramaugolnik)
             {
                 Console.WriteLine($"Kvadrat line = {i.getLine()}");
             }
         }
+
         
-	
     }
 }

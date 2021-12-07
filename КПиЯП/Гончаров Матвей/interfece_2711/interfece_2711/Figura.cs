@@ -19,5 +19,6 @@ namespace interfece_2711
         public abstract void printVolume();
 
         public abstract double getLine();
+
     }
 }

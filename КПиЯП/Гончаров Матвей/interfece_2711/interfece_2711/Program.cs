@@ -38,8 +38,36 @@ namespace interfece_2711
             obj2.printVolume();
 
             // task 3 
+            Console.WriteLine("\n/////////////////////// Task 3");
+            Pramaugolnik pr1 = new Pramaugolnik(10, 12);
+            Pramaugolnik pr2 = new Pramaugolnik(4, 22);
+            Pramaugolnik pr3 = new Pramaugolnik(1, 42);
 
-            
+            Class_Task3 cl = new Class_Task3(pr1, pr2, pr3);
+            Console.WriteLine("\n[with IComparable]\nFirst check list");
+            // make cl
+            cl.printForeachList();
+            // clone
+            Class_Task3 cl_clone = cl.Clone() as Class_Task3;
+            Console.WriteLine("\n//////clone");
+            cl_clone.printForeachList();
+            // sort cl
+            cl.sortListPramaugolnik();
+            Console.WriteLine("sort____list");
+            cl.printForeachList();
+
+            Console.WriteLine("\n[with IComparer]\nFirst check list");
+            Class_Task3 cl_2 = new Class_Task3(pr1, pr2, pr3);
+            cl_2.printForeachList();
+            cl_2.sortListPramaugolnik2();
+            Console.WriteLine("sort____list");
+            cl_2.printForeachList();
+
+
+            // print 
+            Console.WriteLine("\n[with IEnumerable]");
+            cl.printForeachList();
+
         }
     }
 }
