@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\bin\Debug\net5.0\Исключения.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\bin\Debug\net5.0\Исключения.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\bin\Debug\net5.0\Исключения.runtimeconfig.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\bin\Debug\net5.0\Исключения.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\bin\Debug\net5.0\Исключения.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\bin\Debug\net5.0\ref\Исключения.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\bin\Debug\net5.0\Исключения.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\Исключения.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\Исключения.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\Исключения.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\Исключения.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\Исключения.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\Исключения.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\ref\Исключения.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\Исключения.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Исключения\Исключения\obj\Debug\net5.0\Исключения.genruntimeconfig.cache
