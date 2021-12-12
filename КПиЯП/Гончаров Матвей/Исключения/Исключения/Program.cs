@@ -11,19 +11,20 @@ namespace Исключения
             Console.WriteLine("Task 1");
             
             // Диагонали
-            double d1 = 5, d2 = 4, x, S;
+            double d1 = double.MaxValue, d2 = double.MaxValue, x, S;
+           // double d1 =// 5, d2 = 4, x, S;
 
             // S = d1 * d2 * sin(x)
             Console.Write("Input x (в радианах): ");
-            x = Convert.ToDouble(Console.ReadLine());
+            x =  Convert.ToDouble(Console.ReadLine());
             try
             {
-                x = x * 180.0 / PI; // Вычисляю градусы
-                if (x > 90)  // т.к 1.5 - 90 градусов а значит уже прямаугольник 
+                // x = x * 180.0 / PI; // Вычисляю градусы
+                if (x > 360)  // т.к 1.5 - 90 градусов а значит уже прямаугольник 
                 {
                     throw new Exception("Вы впревысили границу");
                 }
-                S = d1 * d2 * x;
+                S = d1 * d2 * Sin(x);
                 Console.WriteLine($"S = {S}, x = {x}");
             }
             catch (Exception ex2)
@@ -39,7 +40,7 @@ namespace Исключения
             // task 2
             Console.WriteLine("\nTask 2");
 
-            int[,] array = new int[3, 3] { {5,2,3}, {3,5,3}, {9,3,7} };
+            int[,] array= new int[3, 3] { {5,2,3}, {3,5,3}, {9,3,7} };
             int index_max_stroki = 0;
             int max_elem = 0;
             try
@@ -78,13 +79,6 @@ namespace Исключения
             {
                 Console.WriteLine($"Искллючение {ex2.Message}");
             }
-            
-            // task 3
-            Console.WriteLine("\nTask 3");
-
-
-
-
         }
     }
 }

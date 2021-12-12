@@ -17,7 +17,7 @@ namespace interfece_2711
         }
         public override void printSquare()
         {
-            Console.WriteLine($"Square = {this.line + this.line2}");
+            Console.WriteLine($"Square = {this.line * this.line2}");
         }
         public override void printVolume()
         {
@@ -35,9 +35,9 @@ namespace interfece_2711
 
         public int Compare(Pramaugolnik x, Pramaugolnik y)
         {
-            if (x.line > y.line)
+            if (x.line2 > y.line2)
                 return 1;
-            else if (x.line < y.line)
+            else if (x.line2 < y.line2)
                 return -1;
             else
                 return 0;

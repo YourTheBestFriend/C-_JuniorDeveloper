@@ -12,6 +12,10 @@ namespace interfece_2711
         // например список кфадратов
         List<Pramaugolnik> listPramaugolnik = new List<Pramaugolnik>();
         public Class_Task3() { }
+        public void Add(Pramaugolnik pr)
+        {
+            listPramaugolnik.Add(pr);
+        }
         public Class_Task3(params Pramaugolnik[] x) 
         {
             for (int i = 0; i < x.Length; i++)

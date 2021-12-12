@@ -10,13 +10,14 @@ namespace Ассоциации
     {
         public int Quantity = 1;
         public double Cost = 14.5;
-
+      
         //public OrderLine() { }
         public Item it { get; set; }
 
         public OrderLine(Item i)
         {
             it = new Item(i.Article, i.Name, i.UnitPrice);
+            
             this.Cost = i.UnitPrice * Quantity;
         }
         public OrderLine(int Quantity, Item i)

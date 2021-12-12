@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\bin\Debug\net5.0\oop_12_11.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\bin\Debug\net5.0\oop_12_11.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\bin\Debug\net5.0\oop_12_11.runtimeconfig.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\bin\Debug\net5.0\oop_12_11.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\bin\Debug\net5.0\oop_12_11.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\bin\Debug\net5.0\ref\oop_12_11.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\bin\Debug\net5.0\oop_12_11.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\oop_12_11.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\oop_12_11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\oop_12_11.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\oop_12_11.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\oop_12_11.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\oop_12_11.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\ref\oop_12_11.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\oop_12_11.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\oop_12_11\oop_12_11\obj\Debug\net5.0\oop_12_11.genruntimeconfig.cache
