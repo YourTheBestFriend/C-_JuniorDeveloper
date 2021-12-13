@@ -32,6 +32,6 @@ namespace _22_11_классы_вариант_6
         {
             // V = 1/3 * S * h
             return 1/3 * CaleculateSquare() * LineH;
-        }  
+        }
     }
 }

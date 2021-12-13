@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _22_11_классы_вариант_6
 {
-    abstract class Body
+    abstract class Body 
     {
         private double lineA;
         public double LineA
@@ -24,6 +25,5 @@ namespace _22_11_классы_вариант_6
         }
         public abstract double CaleculateSquare();
         public abstract double CaleculateVolume();
-
     }
 }

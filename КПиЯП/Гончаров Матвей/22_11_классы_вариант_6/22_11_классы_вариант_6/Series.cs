@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _22_11_классы_вариант_6
 {
-    class Series
+    class Series : IComparer<Parallepiped>, IComparer<Cone>, IComparer<Ball>
     {
         // Список Параллелограммов
         private List<Parallepiped> listParalip = new List<Parallepiped>();
@@ -51,6 +52,45 @@ namespace _22_11_классы_вариант_6
             {
                 Console.WriteLine($"listBall[{i}]: lineA = {listBall[i].LineA}");
             }
+        }
+
+        public int Compare(Parallepiped x, Parallepiped y)
+        {
+            if (x.LineA > y.LineA)
+            {
+                return 1;
+            }
+            else if (x.LineA < y.LineA)
+            {
+                return -1;
+            }
+            return 0;
+        }
+
+        public int Compare(Cone x, Cone y)
+        {
+            if (x.LineA > y.LineA)
+            {
+                return 1;
+            }
+            else if (x.LineA < y.LineA)
+            {
+                return -1;
+            }
+            return 0;
+        }
+
+        public int Compare(Ball x, Ball y)
+        {
+            if (x.LineA > y.LineA)
+            {
+                return 1;
+            }
+            else if (x.LineA < y.LineA)
+            {
+                return -1;
+            }
+            return 0;
         }
     }
 }
