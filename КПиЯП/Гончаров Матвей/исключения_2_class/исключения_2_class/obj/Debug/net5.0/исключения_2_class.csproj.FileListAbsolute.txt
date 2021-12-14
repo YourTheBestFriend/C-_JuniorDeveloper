@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\bin\Debug\net5.0\исключения_2_class.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\bin\Debug\net5.0\исключения_2_class.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\bin\Debug\net5.0\исключения_2_class.runtimeconfig.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\bin\Debug\net5.0\исключения_2_class.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\bin\Debug\net5.0\исключения_2_class.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\bin\Debug\net5.0\ref\исключения_2_class.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\bin\Debug\net5.0\исключения_2_class.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\исключения_2_class.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\исключения_2_class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\исключения_2_class.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\исключения_2_class.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\исключения_2_class.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\исключения_2_class.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\ref\исключения_2_class.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\исключения_2_class.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\исключения_2_class\исключения_2_class\obj\Debug\net5.0\исключения_2_class.genruntimeconfig.cache
