@@ -1,0 +1,7 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\delegatesobitia\delegatesobitia\bin\Debug\delegatesobitia.exe.config
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\delegatesobitia\delegatesobitia\bin\Debug\delegatesobitia.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\delegatesobitia\delegatesobitia\bin\Debug\delegatesobitia.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\delegatesobitia\delegatesobitia\obj\Debug\delegatesobitia.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\delegatesobitia\delegatesobitia\obj\Debug\delegatesobitia.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\delegatesobitia\delegatesobitia\obj\Debug\delegatesobitia.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\delegatesobitia\delegatesobitia\obj\Debug\delegatesobitia.pdb

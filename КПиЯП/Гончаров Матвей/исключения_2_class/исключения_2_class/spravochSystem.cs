@@ -30,7 +30,7 @@ namespace исключения_2_class
             }
         }
         // функция которая выводит доступные рейсы до введенного времени
-        int hour, minute;
+        int hour, minute, reserve_time;
         public void printReisTime(int time, string punktNaznash_)
         {
             // Я решил сделать так
@@ -44,12 +44,23 @@ namespace исключения_2_class
                 // Если подходит пункт назначения
                 if (listReis[i].PlaceNaznach == punktNaznash_)
                 {
-                    hour = Int32.Parse(listReis[i].Otbitia[0].ToString()) * 10 + Int32.Parse((listReis[i].Otbitia[1].ToString()));
+                    // Отбытия 
+                    hour = Int32.Parse(listReis[i].Otbitia[0].ToString()) * 10 + Int32.Parse(listReis[i].Otbitia[1].ToString());
                     minute = Int32.Parse(listReis[i].Otbitia[3].ToString()) * 10 + Int32.Parse(listReis[i].Otbitia[4].ToString());
-                    minute += hour / 60;
+                    reserve_time = minute + hour * 60;
+
+                    //Прибытия
+                    hour = Int32.Parse(listReis[i].Pribitia[0].ToString()) * 10 + Int32.Parse(listReis[i].Pribitia[1].ToString());
+                    minute = Int32.Parse(listReis[i].Pribitia[3].ToString()) * 10 + Int32.Parse(listReis[i].Pribitia[4].ToString());
+                    minute += hour * 60; // Тут уже минуты прибытия
+
+                    // (время прибытия - время отбытия)
+                    reserve_time = (minute - reserve_time);
+
+                    // Console.WriteLine($"listReis[{i}].PlaceNaznach ==== minuts {reserve_time}"); // это для проверки
 
                     // Проверяю
-                    if (minute < time) // time принимается в минутах
+                    if (reserve_time < time) // time принимается в минутах
                     {
                         Console.WriteLine(listReis[i]); // Там переопределенный ToStrign и выведет значения
                     }
