@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "My_The_Best_Libruary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/My_The_Best_Libruary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/My_The_Best_Libruary.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "My_The_Best_Libruary/1.0.0": {
+      "type": "project",
+      "path": "../My_The_Best_Libruary/My_The_Best_Libruary.csproj",
+      "msbuildProject": "../My_The_Best_Libruary/My_The_Best_Libruary.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "My_The_Best_Libruary >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Xhref\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\ПрактПрограм\\Гончаров Матвей\\Ассоциации\\My_The_Best_Libruary\\My_The_Best_Libruary.csproj": {
+              "projectPath": "C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\ПрактПрограм\\Гончаров Матвей\\Ассоциации\\My_The_Best_Libruary\\My_The_Best_Libruary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

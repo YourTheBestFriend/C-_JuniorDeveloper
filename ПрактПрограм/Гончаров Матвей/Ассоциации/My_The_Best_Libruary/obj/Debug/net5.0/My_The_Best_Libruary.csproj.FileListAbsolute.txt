@@ -1,0 +1,11 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\bin\Debug\net5.0\My_The_Best_Libruary.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\bin\Debug\net5.0\My_The_Best_Libruary.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\bin\Debug\net5.0\ref\My_The_Best_Libruary.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\bin\Debug\net5.0\My_The_Best_Libruary.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\obj\Debug\net5.0\My_The_Best_Libruary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\obj\Debug\net5.0\My_The_Best_Libruary.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\obj\Debug\net5.0\My_The_Best_Libruary.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\obj\Debug\net5.0\My_The_Best_Libruary.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\obj\Debug\net5.0\My_The_Best_Libruary.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\obj\Debug\net5.0\ref\My_The_Best_Libruary.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\My_The_Best_Libruary\obj\Debug\net5.0\My_The_Best_Libruary.pdb

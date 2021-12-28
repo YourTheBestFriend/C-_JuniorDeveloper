@@ -14,3 +14,6 @@ C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Го�
 C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\ref\Ассоциации.dll
 C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.pdb
 C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.genruntimeconfig.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\My_The_Best_Libruary.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\bin\Debug\net5.0\My_The_Best_Libruary.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\ПрактПрограм\Гончаров Матвей\Ассоциации\Ассоциации\obj\Debug\net5.0\Ассоциации.csproj.CopyComplete

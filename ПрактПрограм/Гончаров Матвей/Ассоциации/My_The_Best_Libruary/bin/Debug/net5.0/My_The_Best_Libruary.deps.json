@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Ассоциации/1.0.0": {
-        "dependencies": {
-          "My_The_Best_Libruary": "1.0.0"
-        },
-        "runtime": {
-          "Ассоциации.dll": {}
-        }
-      },
       "My_The_Best_Libruary/1.0.0": {
         "runtime": {
           "My_The_Best_Libruary.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "Ассоциации/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "My_The_Best_Libruary/1.0.0": {
       "type": "project",
       "serviceable": false,

@@ -46,7 +46,7 @@ namespace Ассоциации
         {
             //cout << "" << endl;
             int i = 0;
-            foreach (var item in this.ordl)
+            foreach (var item in ordl)
             {
                 Console.WriteLine($"index = {i++} === quantity = {item.getQuantity()}, cost = {item.getCost()}, for Item __ {item.printItem()}");
             }
