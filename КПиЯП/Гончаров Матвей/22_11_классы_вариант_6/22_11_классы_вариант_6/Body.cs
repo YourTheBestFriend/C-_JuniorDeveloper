@@ -9,7 +9,7 @@ namespace _22_11_классы_вариант_6
 {
     abstract class Body 
     {
-        private double lineA;
+        protected double lineA;
         public double LineA
         {
             get => lineA;

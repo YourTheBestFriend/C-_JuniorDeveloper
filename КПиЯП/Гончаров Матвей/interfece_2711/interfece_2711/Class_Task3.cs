@@ -66,7 +66,5 @@ namespace interfece_2711
                 Console.WriteLine($"Kvadrat line = {i.getLine()}");
             }
         }
-
-        
     }
 }

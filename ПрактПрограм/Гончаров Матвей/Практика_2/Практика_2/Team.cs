@@ -10,6 +10,7 @@ namespace Практика_2
     {
         protected string Name;
         protected int regNumber;
+
         public Team()
         {
             Name = "None";
@@ -21,26 +22,23 @@ namespace Практика_2
             this.regNumber = regNumber;
         }
 
-        string getName()
+        string GetName()
         {
             return Name;
         }
-        int getRegNumber()
+        int GetRegNumber()
         {
             return regNumber;
         }
-        void setRegNumber(int regNumber)
+        void SetRegNumber(int regNumber)
         {
-            try
+            if (regNumber <= 0)
             {
-                if (regNumber <= 0)
-                {
-                    this.regNumber = regNumber;
-                }
+                this.regNumber = regNumber;
             }
-            catch
+            else
             {
-                Console.WriteLine("Error regNumber <= 0");
+                throw new Exception("Error regNumber <= 0");
             }
         }
         public virtual object DeepCopy()
@@ -48,13 +46,31 @@ namespace Практика_2
             Team obj1 = new Team(this.Name, this.regNumber);
             return obj1;
         }
-        //override virtual bool Equals(object obj) 
-        //{
-        //    if (obj == null) 
-        //    {
-        //        return false;
-        //    }
-        //    return true;
-        //}
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+        public static bool operator ==(Team t1, Team t2)
+        {
+            if (t1.Name == t2.Name && t1.regNumber == t2.regNumber)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool operator !=(Team t1, Team t2)
+        {
+            if (t1.Name != t2.Name || t1.regNumber != t2.regNumber)
+            {
+                return true;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+        public override string ToString() => $"Name: = {GetName()}, regNum = {GetRegNumber()}";
     }
 }

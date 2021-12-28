@@ -24,7 +24,7 @@ namespace _22_11_классы_вариант_6
         public override double CaleculateVolume()
         {
             // V = 4/3*PI*R^3
-            return 4 / 3 * PI * Pow(this.LineA, 3);
+            return 4.0 / 3 * PI * Pow(this.LineA, 3);
         }
     }
 }

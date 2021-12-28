@@ -11,7 +11,6 @@ namespace Практика_2
         public string name_publ { get; set; }
         public Person author { get; set; }
         public DateTime date_public { get; set; }
-
         public Paper(string name_publ, Person author, DateTime date_public)
         {
             this.name_publ = name_publ;
@@ -24,6 +23,13 @@ namespace Практика_2
             name_publ = "none";
             author = new Person();
             date_public = new DateTime();
+        }
+        public virtual object DeepCopy
+        {
+            get
+            {
+                return this;
+            }
         }
 
         public override string ToString()

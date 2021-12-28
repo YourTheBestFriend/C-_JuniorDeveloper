@@ -44,7 +44,7 @@ namespace oop_12_11
         public Person(string name, int age)
         {
             this.name = name;
-            this.age = age;
+            this.Age = age;
         }
 
         // metod

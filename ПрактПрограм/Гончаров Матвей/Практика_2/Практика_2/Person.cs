@@ -13,9 +13,7 @@ namespace Практика_2
     {
         private string name;
         private string surname;
-        private DateTime dt;
-        
-
+        private DateTime dt;        
         public Person(string name, string surname, DateTime dt)
         {
             this.name = name;
@@ -51,7 +49,7 @@ namespace Практика_2
         {
             this.name = name;
         }
-        public void setSurName(string sername)
+        public void setSurName(string surname)
         {
             this.surname = surname;
         }
@@ -66,13 +64,39 @@ namespace Практика_2
         }
 
         // metods
-        public virtual string ToString()
+        public override string ToString()
         {
             return name + " " + surname + dt.ToString();        
         }
         public virtual string ToShortString()
         {
             return name + " " + surname;
+        }
+       
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+        public static bool operator ==(Person p1, Person p2)
+        {
+            if (p1.getName() == p2.getName() && p1.getSurName() == p2.getSurName() && p1.getYearDateTime() == p2.getYearDateTime())
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool operator !=(Person p1, Person p2)
+        {
+            if (p1.getName() != p2.getName() || p1.getSurName() != p2.getSurName() || p1.getYearDateTime() != p2.getYearDateTime())
+            {
+                return true;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
         public virtual object DeepCopy()
         {

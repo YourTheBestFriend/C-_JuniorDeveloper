@@ -18,7 +18,7 @@ namespace Практика_2
         {
             ResearchTeam obj1 = new ResearchTeam();
             Console.WriteLine(obj1.ToShortString());
-            Console.WriteLine(obj1.get_prodolzh_issled());
+            Console.WriteLine(obj1.Get_prodolzh_issled());
             // string tema_inssle, string name_organization, int registr_num, TimeFrame prodolzh_issled, Paper[] list_publicacii
             TimeFrame x = 0;
             Console.WriteLine();
@@ -34,9 +34,9 @@ namespace Практика_2
                 pap[i].author.setName("author" + Convert.ToString(i));
                 pap[i].author.setSurName("serauthor" + Convert.ToString(i));
             }
-            obj1 = new ResearchTeam("tema_animal", "doragh", 12, x, pap);
-            Console.WriteLine(obj1.ToString());
-            Console.WriteLine(obj1);
+            //obj1 = new ResearchTeam("tema_animal", "doragh", 12, x, pap);
+            //Console.WriteLine(obj1.ToString());
+            //Console.WriteLine(obj1);
             
             // for paper
             int time1 = Environment.TickCount;

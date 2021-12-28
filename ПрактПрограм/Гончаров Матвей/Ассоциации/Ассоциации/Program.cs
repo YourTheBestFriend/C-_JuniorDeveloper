@@ -7,12 +7,11 @@ namespace Ассоциации
         static void Main(string[] args)
         {
             // Общий товар
-            Item cherry = new Item("Article_10", "Cherry", 1501);
+            Item cherry = new Item("Article_10", "Cherry", 1501); // 1501 - для демонстрации с надбавкой
 
             // Кол-во
-            OrderLine ordl_cherry = new OrderLine(1, cherry); 
+            OrderLine ordl_cherry = new OrderLine(1, cherry); // 1 Вишня 
             //// 
-
 
             // я и в классе есть поле заказ
             Customer Matvey = new Customer(1, 299745334, "GoncharovMatveyNickolaevich", true); // ord1
@@ -32,7 +31,6 @@ namespace Ассоциации
             //// я и в классе есть поле заказ
             //Customer David = new Customer(2, 294563445, "DavidOrlisDenisovich", true); // ord2 banana cherry
            
-
             //// Мой товар
             //Item orange = new Item("Article_2", "orange", 19.8);
 
@@ -43,7 +41,8 @@ namespace Ассоциации
 
             //Console.WriteLine(ord2);
             // 
-            ord1.printQuantityItemAndItem();
+
+            ord1.PrintQuantityItemAndItem();
             //ord2.printQuantityItemAndItem();
         }
     }

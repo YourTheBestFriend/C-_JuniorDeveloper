@@ -9,8 +9,12 @@ namespace delegatesobitia
 {
     class Program
     {
-
+        // 1
         delegate void DelegateFirst(double start, double end, double step);
+
+        // 2
+        delegate void DelegateSecond(int p); // p - выбор по какому элементу сортировать
+
         static void Main(string[] args)
         {
             // 1
