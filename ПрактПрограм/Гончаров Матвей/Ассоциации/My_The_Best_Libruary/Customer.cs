@@ -13,17 +13,13 @@ namespace My_The_Best_Libruary
         public string FullName = "none";
         public bool Privileged = false;
 
-        // Типо у клиента заказ
-        //public Order ord = new Order();
-
         public Customer() {}
-        public Customer(int Code, int ContactPhone, string FullName, bool Privileged) // Order ord
+        public Customer(int Code, int ContactPhone, string FullName, bool Privileged)
         {
             this.Code = Code;
             this.ContactPhone = ContactPhone;
             this.FullName = FullName;
             this.Privileged = Privileged;
-            //this.ord = ord;
         }
     }
 }

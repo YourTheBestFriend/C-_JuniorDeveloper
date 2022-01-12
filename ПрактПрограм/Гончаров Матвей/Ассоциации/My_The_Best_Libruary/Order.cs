@@ -23,7 +23,6 @@ namespace My_The_Best_Libruary
         // Тут кол-во заказов
         public List<OrderLine> ordl = new List<OrderLine>();
 
-        //public Order(){ }
         public Order(int Number, DateTime CreationDate, string Address, bool ExpressDelivery, Customer customer, params OrderLine[] ordl_)
         {
             this.Number = Number;
@@ -45,34 +44,34 @@ namespace My_The_Best_Libruary
         public void PrintQuantityItemAndItem()
         {
             //cout << "" << endl;
+            Console.WriteLine("[Товары]");
             int i = 0;
             foreach (var item in ordl)
             {
-                Console.WriteLine($"index = {i++} === quantity = {item.getQuantity()}, cost = {item.getCost()}, for Item __ {item.printItem()}");
+                Console.WriteLine($"index = [{i++}] quantity = {item.GetQuantity()}, cost = {item.GetCost()}, {item.PrintItem()}");
             }
         }
-        //
 
         // Если срочная доставка
         public void IfQuickDelivery()
         {
-            double rezerve = 0; // 25% от общего
+            double rezerve; // 25% от общего
             // Если пользователь привелигированный то стоимость увеличится на 25% 
             if (this.ExpressDelivery == true)//&& this.TotalCost > 1500)
             {
-                Console.WriteLine("Доставка срочная");
+                //Console.WriteLine("Сработал метод Доставка срочная");
                 //   for (int i = 0; i < ordl_.Length; i++)
                 {
                     rezerve = this.TotalCost * 25 / 100;
                     this.present25 = rezerve;
                 }
             }
-            Console.WriteLine($"\nTotalCost = {this.TotalCost}, precent25 = {this.present25}, TotalCost + present25 = {this.TotalCost + this.present25}.\n");
+            Console.WriteLine($"\n[Тут вывод из фунуции IfQuickDelivery() для проверки]\nTotalCost = {this.TotalCost}, precent25 = {this.present25}, TotalCost + present25 = {this.TotalCost + this.present25}.\n");
         }
         // Если привелигированный
         public void IfPrivilegCustomer()
         {
-            double rezerve = 0;
+            double rezerve;
             if (customer.Privileged == true && this.TotalCost > 1500)
             {
                 Console.WriteLine("Сработал метод IfPrivilegCustomer");
@@ -116,9 +115,12 @@ namespace My_The_Best_Libruary
         {
             return TotalCost;
         }
-        public override string ToString() => $"__Total cost = {this.TotalCost}____Customer :: Code: {customer.Code}, " +
-            $"ContactPhone: {customer.ContactPhone}, FullName: {customer.FullName}, " +
-            $"Privileged: {customer.Privileged},\nOrder :: Adress: {this.Address}, " +
-            $"CreationDate: {this.CreationDate}, ExpressDelivery: {this.ExpressDelivery}, Number: {this.Number}";
+        public override string ToString() => $"Total cost = {this.TotalCost} || Customer :: FullName: [{customer.FullName}], " +
+            $"Privileged: {customer.Privileged}, || Order :: ExpressDelivery: {this.ExpressDelivery}";
+        // Минимально вывел, а то вы сказали прошлый раз было нагружено
+        //public override string ToString() => $"Total cost = {this.TotalCost} || Customer :: Code: {customer.Code}, " +
+        //    $"ContactPhone: {customer.ContactPhone}, FullName: {customer.FullName}, " +
+        //    $"Privileged: {customer.Privileged}, || Order :: Adress: {this.Address}, " +
+        //    $"CreationDate: {this.CreationDate}, ExpressDelivery: {this.ExpressDelivery}, Number: {this.Number}";
     }
 }

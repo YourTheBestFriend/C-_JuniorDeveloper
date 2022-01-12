@@ -8,22 +8,15 @@ namespace delegatesobitia
 {
     class Task3
     {
-        Task3() { }
+        public Task3() { }
 
-        // 1
-        //public void PrintMethod(params string[] x)
-        //{
-        //    string s = "";
-        //    foreach (var item in x)
-        //    {
-        //        s = s + item + " ";
-        //    }
-        //    Console.WriteLine(s);
-        //}
-        //// 2
-        //public void PrintMethod(params string[] x)
-        //{
-        //    Console.WriteLine();
-        //}
+        public string FullName(string[] name)
+        {
+            return $"{name[0]} {name[1][0]}.{name[2][0]}.";
+        }
+        public string Name(string[] name)
+        {
+            return $"{name[0]} {name[1]}";
+        }
     }
 }
