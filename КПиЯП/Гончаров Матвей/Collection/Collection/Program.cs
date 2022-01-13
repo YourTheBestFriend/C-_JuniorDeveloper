@@ -56,62 +56,45 @@ namespace Collection
         }
 
         // 333333333333333333333333333333333333
-        public struct BaggageList : IComparable<BaggageList>
+        public struct InventarVedomostSclada : IComparable<InventarVedomostSclada>
         {
-            string name;
-            int amount;
-            double weight;
-            public BaggageList(string name, int amount, double weight)
-            {
-                this.name = name;
-                this.amount = amount;
-                this.weight = weight;
-            }
-            public override string ToString()
-            {
-                return $"Name: {name}, amount of things: {amount}, general weight: {weight}";
-            }
+            private string VidProduct;
+            private double Salary;
+            private int Sort;
+            private int Count;
 
-            public int CompareTo(BaggageList other)
+            public InventarVedomostSclada(string VidProduct, double Salary, int Sort, int Count)
             {
-                if (amount > other.amount)
+                this.VidProduct = VidProduct;
+                this.Salary = Salary;
+                this.Sort = Sort;
+                this.Count = Count;
+            }
+           
+            public int CompareTo(InventarVedomostSclada x)
+            {
+                if (Count > x.Count)
+                {
                     return 1;
-                if (amount < other.amount)
+                }
+                if (Count < x.Count)
+                {
                     return -1;
-                else
-                    return 0;
+                }
+                return 0;
             }
 
-            public bool Check(double w)
+            public bool Check(int x)
             {
-                if (weight > w)
+                if (Count < x)
+                {
                     return true;
-                else
-                    return false;
+                }
+               return false;
             }
-        }
-        public struct Student : IComparable<Student>
-        {
-            string name;
-            DateTime dateOfBirth;
-            int group;
-            double averageGrade;
-            public Student(string name, DateTime dateOfBirth, int group, double averageGrade)
-            {
-                this.name = name;
-                this.dateOfBirth = dateOfBirth;
-                this.group = group;
-                this.averageGrade = averageGrade;
-            }
-
-            public int CompareTo(Student obj)
-            {
-                return string.Compare(name, obj.name, true);
-            }
-
             public override string ToString()
             {
-                return $"Имя: {name}; дата рождения: {dateOfBirth}; группа: {group}; средний балл: {averageGrade}\n";
+                return $"VidProduct: {VidProduct}, Salary: {Salary}, Sort {Sort}, Count {Count}";
             }
         }
 
@@ -360,7 +343,9 @@ namespace Collection
 
             ////////////////////////////////////////////// 33333333333333333333333333333333333333333333333
             Console.WriteLine("\nTask 3");
-            ArrayList list = new ArrayList();
+           
+            ArrayList list_InventarVedomostSclada = new ArrayList();
+            ArrayList new_list_InventarVedomostSclada = new ArrayList();
             try
             {
                 using (StreamReader sr = new StreamReader("C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей\\Collection\\Collection\\input.txt", System.Text.Encoding.Default))
@@ -368,23 +353,32 @@ namespace Collection
                     string line2;
                     while ((line2 = sr.ReadLine()) != null)
                     {
+                        // string VidProduct, double Salary, int Sort, int Count
                         string[] values = line2.Split(' ');
-                        string name = values[0];
-                        string[] date = values[1].Split('.');
-                        int year = Convert.ToInt32(date[0]);
-                        int month = Convert.ToInt32(date[1]);
-                        int day = Convert.ToInt32(date[2]);
-                        int group = Convert.ToInt32(values[2]);
-                        double average = Convert.ToDouble(values[3]);
-                        list.Add(new Student(name, new DateTime(year, month, day), group, average));
+                        string VidProduct = $"{values[0]}";
+                        double Salary = Convert.ToDouble(values[1]);
+                        int Sort = Convert.ToInt32(values[2]);
+                        int Count = Convert.ToInt32(values[3]);
+
+                        list_InventarVedomostSclada.Add(new InventarVedomostSclada(VidProduct, Salary, Sort, Count));
                     }
-                    sr.Close();
                 }
-                using (StreamWriter sw = new StreamWriter("C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей\\Collection\\Collection\\input.txt", false, System.Text.Encoding.Default))
+                Console.WriteLine("Введите кол-во продукции: ");
+                int colvo = Convert.ToInt32(Console.ReadLine());
+                list_InventarVedomostSclada.Sort(); // Сортанет по кол-ву продукции (Count)
+                foreach (InventarVedomostSclada x in list_InventarVedomostSclada)
                 {
-                    foreach (Student std in list)
+                    if (x.Check(colvo))
                     {
-                        sw.WriteLine(std);
+                        new_list_InventarVedomostSclada.Add(x);
+                    }
+                }
+               
+                using (StreamWriter sw = new StreamWriter("C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей\\Collection\\Collection\\output.txt", false, System.Text.Encoding.Default))
+                {
+                    foreach (InventarVedomostSclada x in new_list_InventarVedomostSclada)
+                    {
+                        sw.WriteLine(x);
                     }
                 }
             }
@@ -393,31 +387,41 @@ namespace Collection
                 Console.WriteLine(e.Message);
             }
 
-            List<Student> list2 = new List<Student>();
+
+            List<InventarVedomostSclada> list2 = new List<InventarVedomostSclada>();
             try
             {
-                using (StreamReader sr = new StreamReader("C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей\\Collection\\Collection\\input.txt", System.Text.Encoding.Default))
+                using (StreamReader sr = new StreamReader("C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей\\Collection\\Collection\\InventarVedomostSclada_input.txt", System.Text.Encoding.Default))
                 {
                     string line3;
                     while ((line3 = sr.ReadLine()) != null)
                     {
+                        // string VidProduct, double Salary, int Sort, int Count
                         string[] values = line3.Split(' ');
-                        string name = values[0];
-                        string[] date = values[1].Split('.');
-                        int year = Convert.ToInt32(date[0]);
-                        int month = Convert.ToInt32(date[1]);
-                        int day = Convert.ToInt32(date[2]);
-                        int group = Convert.ToInt32(values[2]);
-                        double average = Convert.ToDouble(values[3]);
-                        list2.Add(new Student(name, new DateTime(year, month, day), group, average));
+                        string VidProduct = $"{values[0]}";
+                        double Salary = Convert.ToDouble(values[1]);
+                        int Sort = Convert.ToInt32(values[2]);
+                        int Count = Convert.ToInt32(values[3]);
+                        list2.Add(new InventarVedomostSclada(VidProduct, Salary, Sort, Count));
+
                     }
                     sr.Close();
                 }
-                using (StreamWriter sw = new StreamWriter("C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей\\Collection\\Collection\\input.txt", false, System.Text.Encoding.Default))
+                Console.WriteLine("Введите кол-во продукции: ");
+                int colvo = Convert.ToInt32(Console.ReadLine());
+                list2.Sort(); // Сортанет по кол-ву продукции (Count)
+                foreach (InventarVedomostSclada x in list2)
                 {
-                    foreach (Student std in list2)
+                    if (!x.Check(colvo))
                     {
-                        sw.WriteLine(std);
+                        new_list_InventarVedomostSclada.Remove(x);
+                    }
+                }
+                using (StreamWriter sw = new StreamWriter("C:\\Users\\Xhref\\Desktop\\C#_task\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей\\Collection\\Collection\\InventarVedomostSclada_output.txt", false, System.Text.Encoding.Default))
+                {
+                    foreach (InventarVedomostSclada x in list2)
+                    {
+                        sw.WriteLine(x);
                     }
                 }
             }
@@ -425,47 +429,6 @@ namespace Collection
             {
                 Console.WriteLine(e.Message);
             }
-
-
-            string way = "C:\\Учеба\\C#\\baggage.txt";
-            string way2 = "C:\\Учеба\\C#\\baggage_final.txt";
-            //ArrayList list = new ArrayList();
-            ArrayList rightList = new ArrayList();
-            try
-            {
-                using (StreamReader sr = new StreamReader(way, System.Text.Encoding.Default))
-                {
-                    string line4;
-                    while ((line4 = sr.ReadLine()) != null)
-                    {
-                        string[] values = line4.Split(' ');
-                        string name = $"{values[0]} {values[1]} {values[2]}";
-                        int amount = Convert.ToInt32(values[3]);
-                        double weight = Convert.ToDouble(values[4]);
-                        list.Add(new BaggageList(name, amount, weight));
-                    }
-                }
-                Console.WriteLine("Введите вес: ");
-                double w = Convert.ToDouble(Console.ReadLine());
-                foreach (BaggageList b in list)
-                {
-                    if (b.Check(w))
-                        rightList.Add(b);
-                }
-                //rightList.Sort();
-                using (StreamWriter sw = new StreamWriter(way2, false, System.Text.Encoding.Default))
-                {
-                    foreach (BaggageList b in rightList)
-                    {
-                        sw.WriteLine(b);
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
 
             ////////////////////////////////////////////// 44444444444444444444444444444444444444444444444
             Console.WriteLine("\nTask 4");
