@@ -1,5 +1,8 @@
 ﻿using System;
 using My_The_Best_Libruary; // Подключил
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization; // for XML
 
 namespace Ассоциации
 {
@@ -40,10 +43,77 @@ namespace Ассоциации
            
             // Заказ
             DateTime create_date = new DateTime(2021, 01, 01); // Дата к нему
-            Order ord1 = new Order(1, create_date, "Prititskogo", true, Matvey, ordl_cherry, ordl_orange); //  - ordl -  (ordl_cherry, ordl_orange)
+            
+            Order ord1 = new Order(1, create_date, "Prititskogo 51", true, Matvey, ordl_cherry, ordl_orange); //  - ordl -  (ordl_cherry, ordl_orange)
 
             Console.WriteLine(ord1);
             ord1.PrintQuantityItemAndItem();
+
+            //  чисто для списка 
+
+            // Общий товар
+            Item cherry2 = new Item("Article_10_2", "Cherry", 100);
+            Item orange2 = new Item("Article_11_2", "orange", 25);
+
+            // Кол-во
+            OrderLine ordl_cherry2 = new OrderLine(5, cherry); // 10 Вишень 
+            OrderLine ordl_orange2 = new OrderLine(30, orange); // 7 Апельсинов
+
+            // я и в классе есть поле заказ
+            Customer Matvey2 = new Customer(1, 299745334, "GoncharovMatveyNickolaevich_2", true);
+
+            // Заказ
+            DateTime create_date2 = new DateTime(2021, 01, 01); // Дата к нему
+
+            Order ord2 = new Order(2, create_date, "Prititskogo 50", false, Matvey2, ordl_cherry2, ordl_orange2); //  - ordl -  (ordl_cherry, ordl_orange)
+
+            Order[] list_ord = new Order[] {ord1, ord2};
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Сереализация
+            Console.WriteLine("Сереализация Binary");
+            BinaryFormatter formatter = new BinaryFormatter();
+            using (FileStream fs = new FileStream("order.dat", FileMode.OpenOrCreate))
+            {
+                // сериализуем весь массив people
+                formatter.Serialize(fs, list_ord);
+                Console.WriteLine("Объект сериализован");
+            }
+
+            // десериализация
+            using (FileStream fs = new FileStream("order.dat", FileMode.OpenOrCreate))
+            {
+                Order[] deserilizeOrder = (Order[])formatter.Deserialize(fs);
+
+                foreach (Order x in deserilizeOrder)
+                {
+                    Console.WriteLine($"Total cost = {x.TotalCost} Order :: ExpressDelivery: {x.ExpressDelivery}");
+                }
+            }
+
+            Console.WriteLine("Сереализация XML");
+            // передаем в конструктор тип класса
+            XmlSerializer formatter2 = new XmlSerializer(typeof(Order));
+
+            // получаем поток, куда будем записывать сериализованный объект
+            using (FileStream fs = new FileStream("order.xml", FileMode.OpenOrCreate))
+            {
+                formatter2.Serialize(fs, list_ord);
+
+                Console.WriteLine("Объект сериализован");
+            }
+
+            // десериализация
+            using (FileStream fs = new FileStream("order.xml", FileMode.OpenOrCreate))
+            {
+                Order[] deserilizeOrder = (Order[])formatter2.Deserialize(fs);
+
+                Console.WriteLine("Объект десериализован");
+                foreach (Order x in deserilizeOrder)
+                {
+                    Console.WriteLine($"Total cost = {x.TotalCost} Order :: ExpressDelivery: {x.ExpressDelivery}");
+                }
+            }
+
         }
     }
 }

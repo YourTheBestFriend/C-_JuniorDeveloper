@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace My_The_Best_Libruary
 {
+    [Serializable]
     public class OrderLine
     {
         public int Quantity = 1;
         public double Cost = 14.5;
       
         public Item It { get; set; }
-
+        public OrderLine() { }
         public OrderLine(Item i)
         {
             It = new Item(i.Article, i.Name, i.UnitPrice);

@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace My_The_Best_Libruary
 {
+    [Serializable]
     public class Customer
     {
         public int Code = 0;

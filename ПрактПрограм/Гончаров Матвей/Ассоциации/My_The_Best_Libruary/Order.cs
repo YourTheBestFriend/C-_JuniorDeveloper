@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace My_The_Best_Libruary
 {
@@ -23,7 +20,7 @@ namespace My_The_Best_Libruary
 
         // Тут кол-во заказов
         public List<OrderLine> ordl = new List<OrderLine>();
-
+        public Order() { }
         public Order(int Number, DateTime CreationDate, string Address, bool ExpressDelivery, Customer customer, params OrderLine[] ordl_)
         {
             this.Number = Number;
