@@ -1,0 +1,4 @@
+VidProduct: banan, Salary: 12,3, Sort 4, Count 35
+VidProduct: orange, Salary: 10,3, Sort 3, Count 20
+VidProduct: tomato, Salary: 7,4, Sort 1, Count 30
+VidProduct: potato, Salary: 4,5, Sort 5, Count 10

@@ -364,16 +364,14 @@ namespace Collection
                     }
                 }
                 Console.WriteLine("Введите кол-во продукции: ");
-                int colvo = Convert.ToInt32(Console.ReadLine());
+                 int colvo = 50; // Для теста // Convert.ToInt32(Console.ReadLine());
                 //list_InventarVedomostSclada.Sort(); // Сортанет по кол-ву продукции (Count)
-                foreach (InventarVedomostSclada x in list_InventarVedomostSclada)
-                {
-                    Console.WriteLine(x);
-                }
+                
                 foreach (InventarVedomostSclada x in list_InventarVedomostSclada)
                 {
                     if (x.Check(colvo))
                     {
+                        //Console.WriteLine(x);
                         new_list_InventarVedomostSclada.Add(x);
                     }
                 }
@@ -382,6 +380,7 @@ namespace Collection
                 {
                     foreach (InventarVedomostSclada x in new_list_InventarVedomostSclada)
                     {
+                        Console.WriteLine(x);
                         sw.WriteLine(x);
                     }
                 }
@@ -412,7 +411,7 @@ namespace Collection
                     sr.Close();
                 }
                 Console.WriteLine("Введите кол-во продукции: ");
-                int colvo = Convert.ToInt32(Console.ReadLine());
+                int colvo = 50; // Для теста // Convert.ToInt32(Console.ReadLine());
                 list2.Sort(); // Сортанет по кол-ву продукции (Count)
                 foreach (InventarVedomostSclada x in list2)
                 {
