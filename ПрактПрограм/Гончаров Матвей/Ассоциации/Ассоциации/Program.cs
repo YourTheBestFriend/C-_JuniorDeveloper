@@ -92,7 +92,7 @@ namespace Ассоциации
 
             Console.WriteLine("Сереализация XML");
             // передаем в конструктор тип класса
-            XmlSerializer formatter2 = new XmlSerializer(typeof(Order));
+            XmlSerializer formatter2 = new XmlSerializer(typeof(Order[]));
 
             // получаем поток, куда будем записывать сериализованный объект
             using (FileStream fs = new FileStream("order.xml", FileMode.OpenOrCreate))
