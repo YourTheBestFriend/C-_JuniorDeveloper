@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\bin\Debug\net5.0\домашние_животные.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\bin\Debug\net5.0\домашние_животные.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\bin\Debug\net5.0\домашние_животные.runtimeconfig.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\bin\Debug\net5.0\домашние_животные.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\bin\Debug\net5.0\домашние_животные.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\bin\Debug\net5.0\ref\домашние_животные.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\bin\Debug\net5.0\домашние_животные.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\домашние_животные.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\домашние_животные.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\домашние_животные.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\домашние_животные.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\домашние_животные.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\домашние_животные.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\ref\домашние_животные.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\домашние_животные.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\домашние_животные\домашние_животные\obj\Debug\net5.0\домашние_животные.genruntimeconfig.cache

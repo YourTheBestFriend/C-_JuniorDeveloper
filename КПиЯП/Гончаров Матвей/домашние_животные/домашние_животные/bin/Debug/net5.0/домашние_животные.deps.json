@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "домашние_животные/1.0.0": {
+        "runtime": {
+          "домашние_животные.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "домашние_животные/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace My_The_Best_Libruary
 {
+    [Serializable] // Не наследуется
     public class Order
     {
         public int Number;
         public DateTime CreationDate;
-        public string Address;
+        public string Address; 
         public bool ExpressDelivery;
 
         // Если заказ строчный - высчитываю 25% отдельно, т.к стоимость заказа может варьироваться
