@@ -102,7 +102,17 @@ namespace delegatesobitia
             s.OnAlreadySigned += FalseMessage;
             s.OnSubscribe += RightMessage;
             s.OnInvalid += FalseMessage;
+
+            ServiceSubscriber s2 = new ServiceSubscriber(n);
+            n.OnAddNew += RightMessage;
+            s2.OnAlreadySigned += FalseMessage;
+            s2.OnSubscribe += RightMessage;
+            s2.OnInvalid += FalseMessage;
+
             s.Subscribe();
+            //Console.WriteLine("___");
+            s2.Subscribe();
+            
             n.AddWeather("0 градусов");
             n.AddSport("Хоккей в 7:00");
             n.AddIncident("Землетрясение");

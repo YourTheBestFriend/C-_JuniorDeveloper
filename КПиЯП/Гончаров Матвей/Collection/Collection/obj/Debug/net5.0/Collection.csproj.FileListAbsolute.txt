@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\bin\Debug\net5.0\Collection.exe
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\bin\Debug\net5.0\Collection.deps.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\bin\Debug\net5.0\Collection.runtimeconfig.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\bin\Debug\net5.0\Collection.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\bin\Debug\net5.0\Collection.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\bin\Debug\net5.0\ref\Collection.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\bin\Debug\net5.0\Collection.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\Collection.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\Collection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\Collection.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\Collection.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\Collection.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\Collection.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\ref\Collection.dll
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\Collection.pdb
+C:\Users\Xhref\Desktop\C#_task\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей\Collection\Collection\obj\Debug\net5.0\Collection.genruntimeconfig.cache
