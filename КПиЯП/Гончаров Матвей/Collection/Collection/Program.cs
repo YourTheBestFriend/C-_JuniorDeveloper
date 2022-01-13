@@ -73,11 +73,11 @@ namespace Collection
            
             public int CompareTo(InventarVedomostSclada x)
             {
-                if (Count > x.Count)
+                if (this.Count > x.Count)
                 {
                     return 1;
                 }
-                if (Count < x.Count)
+                if (this.Count < x.Count)
                 {
                     return -1;
                 }
@@ -365,7 +365,11 @@ namespace Collection
                 }
                 Console.WriteLine("Введите кол-во продукции: ");
                 int colvo = Convert.ToInt32(Console.ReadLine());
-                list_InventarVedomostSclada.Sort(); // Сортанет по кол-ву продукции (Count)
+                //list_InventarVedomostSclada.Sort(); // Сортанет по кол-ву продукции (Count)
+                foreach (InventarVedomostSclada x in list_InventarVedomostSclada)
+                {
+                    Console.WriteLine(x);
+                }
                 foreach (InventarVedomostSclada x in list_InventarVedomostSclada)
                 {
                     if (x.Check(colvo))
@@ -461,7 +465,6 @@ namespace Collection
 
             catalog.ShowDisk("disk Ляпис Трубецкой");
             catalog.Search("Eminem");
-
         }
     }
 }
