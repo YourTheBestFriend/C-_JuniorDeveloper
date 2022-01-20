@@ -17,7 +17,9 @@ namespace files
                 Array.ForEach(seq, x =>
                 {
                     if (x < 0)
+                    {
                         fwrite.Write(x);
+                    }  
                 });
             }
             using (BinaryReader reader = new BinaryReader(File.Open(@"test.dat", FileMode.Open)))

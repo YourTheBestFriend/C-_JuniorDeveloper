@@ -13,8 +13,8 @@ namespace LINQ
             Преобразовать массив таким образом, чтобы сначала располагались все элементы, равные нулю, а потом — все остальные.
              */
 
-            const int n = 7;
-            double[] array = new double[n] { -1.4, 2.3, -5.4, 1.6, 1.6, -1.4, -1.5};
+            const int n = 12;
+            double[] array = new double[n] { -1.4, -2.3, -5.4, -0, -1.6, -0, 2, -10, 3, -1.5, 0.5, -1.5 };
 
             double min = (from t in array select t).Min();
             Console.WriteLine($"min = {min}");
@@ -40,15 +40,17 @@ namespace LINQ
                 }
                 i++;
             }
-
-            double sum = (from t in array select t).Skip(index_first_p-1).Take(index_last_p-1).Sum();
-
+            Console.WriteLine(index_first_p);
+            Console.WriteLine(index_last_p);
+            double sum = (from t in array select t).Skip(index_first_p + 1).Take(index_last_p - index_first_p  - 1).Sum();
             Console.WriteLine($"sum = {sum}");
             
+            var zeroArrFirst = array.Where(item => Math.Abs(item) < float.Epsilon).Concat(array.Where(item => item != 0));
 
-
-            //var x_array = from t in array
-            //              Min d;
+            foreach (var item in zeroArrFirst)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

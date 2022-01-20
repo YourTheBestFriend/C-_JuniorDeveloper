@@ -1,0 +1,16 @@
+C:\Users\Xhref\Desktop\okr\okr\bin\Debug\net5.0\okr.exe
+C:\Users\Xhref\Desktop\okr\okr\bin\Debug\net5.0\okr.deps.json
+C:\Users\Xhref\Desktop\okr\okr\bin\Debug\net5.0\okr.runtimeconfig.json
+C:\Users\Xhref\Desktop\okr\okr\bin\Debug\net5.0\okr.runtimeconfig.dev.json
+C:\Users\Xhref\Desktop\okr\okr\bin\Debug\net5.0\okr.dll
+C:\Users\Xhref\Desktop\okr\okr\bin\Debug\net5.0\ref\okr.dll
+C:\Users\Xhref\Desktop\okr\okr\bin\Debug\net5.0\okr.pdb
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\okr.csproj.AssemblyReference.cache
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\okr.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\okr.AssemblyInfoInputs.cache
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\okr.AssemblyInfo.cs
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\okr.csproj.CoreCompileInputs.cache
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\okr.dll
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\ref\okr.dll
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\okr.pdb
+C:\Users\Xhref\Desktop\okr\okr\obj\Debug\net5.0\okr.genruntimeconfig.cache

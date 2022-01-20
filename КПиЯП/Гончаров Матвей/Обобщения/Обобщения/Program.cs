@@ -13,13 +13,6 @@ namespace Обобщения
             private List<T> list = new List<T>();
             private IEnumerable<T> enumerable1;
 
-            // индексатор
-            //public List<T> this[int index]
-            //{
-            //    get => list_[index];
-            //    set { list_[index] = value; }
-            //}
-
             public List<T> List_
             {
                 get => list;
@@ -102,6 +95,8 @@ namespace Обобщения
             
             Console.WriteLine($"list3 == list2: {list3 == list2}");
             Console.WriteLine($"list3 != list2: {list3 != list2}"); 
+
+            
         }
     }
 }

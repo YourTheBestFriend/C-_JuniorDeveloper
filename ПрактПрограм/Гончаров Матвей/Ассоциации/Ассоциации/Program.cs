@@ -113,7 +113,6 @@ namespace Ассоциации
                     Console.WriteLine($"Total cost = {x.TotalCost} Order :: ExpressDelivery: {x.ExpressDelivery}");
                 }
             }
-
         }
     }
 }
