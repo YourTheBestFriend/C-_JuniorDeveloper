@@ -11,23 +11,23 @@ namespace Наследование_07_02_2022
         string vid;
         string nameMonarch;
 
-        public Monarhia(int x, string name, string denezhnayaEden, string simvolika) : base(x, name, denezhnayaEden, simvolika)
+        public Monarhia(string name, string denezhnayaEden, string simvolika) : base(name, denezhnayaEden, simvolika)
         {
             this.vid = vid;
             this.nameMonarch = nameMonarch;
         }
 
-
-        public override void UmenshKred_10(out int x)
-        {
-            x += 10;
-            Console.WriteLine($"x: = {x}");
-        }
+        //public override void UmenshKred_10(out int x)
+        //{
+        //    x += 10;
+        //    Console.WriteLine($"x: = {x}");
+        //}
 
         public override void UvelichKred_10(ref int x)
         {
+            Console.WriteLine($"До - kredit: = {this.Kredit}");
             x += 10;
-            Console.WriteLine($"x: = {x}");
+            Console.WriteLine($"После - kredit: = {this.Kredit}");
         }
     }
 }
