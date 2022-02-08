@@ -9,7 +9,7 @@
     5. вывести первые пять имен работников из упорядоченного списка; +
     6. вывести последние три идентификатора работников из упорядоченного списка. +
  */
-
+using System.Collections.Generic;
 namespace task_2_zarplata
 {
     public class Program
@@ -37,10 +37,16 @@ namespace task_2_zarplata
             listWorker.Add(p5);
             listWorker.Add(p6);
 
+            Console.WriteLine("All info До сортировки:");
+            for (int i = 0; i < listWorker.Count; i++)
+            {
+                Console.WriteLine($"listWorker[{i}] = " + listWorker[i]);
+            }
+            Console.WriteLine();
             // Sort
-            // Sort(listWorker);
+            listWorker.Sort();
 
-            Console.WriteLine("All info:");
+            Console.WriteLine("All info После сортировки:");
             for (int i = 0; i < listWorker.Count; i++)
             {
                 Console.WriteLine($"listWorker[{i}] = " + listWorker[i]);
@@ -62,7 +68,7 @@ namespace task_2_zarplata
             // Последние 3 id после сорта
             try
             {
-                for (int i = listWorker.Count; i > listWorker.Count-2; i--)
+                for (int i = listWorker.Count; i > listWorker.Count-3; i--)
                 {
                     Console.WriteLine("Id = " + listWorker[i].Id);
                 }
