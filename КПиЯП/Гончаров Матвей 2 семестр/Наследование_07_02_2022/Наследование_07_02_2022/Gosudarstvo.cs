@@ -46,7 +46,7 @@ namespace Наследование_07_02_2022
         // Методы работы с кредитом для переопределеия их в производных классах
         public abstract void UvelichKred_10(ref int x);
 
-        // public abstract void UmenshKred_10(out int x);
+        public abstract void UmenshKred_10(out int x);
        
     }
 }

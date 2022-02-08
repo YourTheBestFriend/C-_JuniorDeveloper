@@ -14,17 +14,19 @@ namespace Наследование_07_02_2022
             this.korol = korol;
         }
 
-        //public override void UmenshKred_10(out int x)
-        //{
-        //    x += 10;
-        //    Console.WriteLine($"x: = {x}");
-        //}
+        public override void UmenshKred_10(out int y)
+        {
+            Console.WriteLine($"out x: = {this.Kredit}");
+            y = this.Kredit + 10;
+            Console.WriteLine($"out x: = {y}");
+        }
 
         public override void UvelichKred_10(ref int x)
         {
-            Console.WriteLine($"До - kredit: = {this.Kredit}");
+            Console.WriteLine($"До - kredit: = {x}");
             x += 10;
-            Console.WriteLine($"После - kredit: = {this.Kredit}");
+            Console.WriteLine($"После - kredit: = {x}");
+            this.Kredit = x;
         }
     }
 }
