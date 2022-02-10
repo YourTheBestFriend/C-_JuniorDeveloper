@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = test_answer_on_question
+build_property.ProjectDir = C:\Users\Matthew\Desktop\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей 2 семестр\test_answer_on_question\test_answer_on_question\

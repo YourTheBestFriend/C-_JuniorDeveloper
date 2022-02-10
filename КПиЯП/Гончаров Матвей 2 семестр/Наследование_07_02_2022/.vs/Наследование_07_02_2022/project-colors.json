@@ -10,7 +10,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Прочие файлы",
       "ColorIndex": -1
+    },
+    "c4f58407-3e49-4357-8c07-f326c3bcae3c": {
+      "ProjectGuid": "c4f58407-3e49-4357-8c07-f326c3bcae3c",
+      "DisplayName": "task_2_zarplata",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

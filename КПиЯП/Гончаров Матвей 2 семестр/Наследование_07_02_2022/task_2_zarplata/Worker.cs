@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace task_2_zarplata
 {
-    abstract internal class Worker : IComparable<Worker>,IComparer<Worker>
+    abstract internal class Worker : IComparer<Worker>, IComparable<Worker>
     {
         private string name;
         private int id;
@@ -33,16 +33,32 @@ namespace task_2_zarplata
         public int Compare(Worker x, Worker y)
         {
             if (x.returnSalary() > y.returnSalary())
+            {
                 return 1;
+            }
             else if (x.returnSalary() < y.returnSalary())
+            {
                 return -1;
+            }
             else
-                return 0;
+            {
+                //// string str = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+                //string str = @"abcdefghijklmnopqrstuvwxyz";
+                //// Для проверки
+                //if (str.IndexOf(x.Name.ToLower()[0]) < str.IndexOf(y.Name.ToLower()[0]))
+                //{
+                //    return 1;
+                //}
+                //else if (str.IndexOf(x.Name.ToLower()[0]) > str.IndexOf(y.Name.ToLower()[0]))
+                //{
+                //    return -1;
+                //}
+            }
+            return 0;
         }
-
         public int CompareTo(Worker other)
         {
-            return this.returnSalary().CompareTo(other.returnSalary());
+            return this.Name.CompareTo(other.Name);
         }
     }
 }
