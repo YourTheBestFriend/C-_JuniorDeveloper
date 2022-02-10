@@ -43,7 +43,6 @@ namespace task_2_zarplata
             listWorker.Add(p6);
             listWorker.Add(p33);
 
-
             Console.WriteLine("All info До сортировки:");
             for (int i = 0; i < listWorker.Count; i++)
             {
@@ -52,6 +51,7 @@ namespace task_2_zarplata
             Console.WriteLine("_____________");
             Console.WriteLine();
             listWorker.Sort(); // Сортанет
+            
             foreach (var item in listWorker)
             {
                 Console.WriteLine($"{item.Name,15} {item.returnSalary(),10:f2}");
@@ -90,7 +90,6 @@ namespace task_2_zarplata
             {
                 Console.WriteLine(ex.Message);
             }
-
         }
     }
 }

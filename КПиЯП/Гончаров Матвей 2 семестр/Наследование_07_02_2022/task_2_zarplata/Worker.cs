@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace task_2_zarplata
 {
-    abstract internal class Worker : IComparer<Worker>, IComparable<Worker>
+    abstract internal class Worker : IComparable<Worker>//,IComparer<Worker>
     {
         private string name;
         private int id;
@@ -30,35 +30,66 @@ namespace task_2_zarplata
         // abstract method 
         public abstract double returnSalary(); //  для расчета среднемесячной заработной платы
 
-        public int Compare(Worker x, Worker y)
+        //public int Compare(Worker x, Worker y)
+        //{
+        //    if (x is null || y is null)
+        //        throw new ArgumentException("Некорректное значение параметра");
+        //    else
+        //    {
+        //        if ((int)x.returnSalary() > (int)y.returnSalary())
+        //        {
+        //            return 1;
+        //        }
+        //        else if ((int)x.returnSalary() < (int)y.returnSalary())
+        //        {
+        //            return -1;
+        //        }
+        //        else
+        //        {
+        //            // string str = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+        //            string str = @"abcdefghijklmnopqrstuvwxyz";
+        //            // Для проверки
+        //            if (str.IndexOf(x.Name.ToLower()[0]) > str.IndexOf(y.Name.ToLower()[0]))
+        //            {
+        //                return 1;
+        //            }
+        //            else if (str.IndexOf(x.Name.ToLower()[0]) < str.IndexOf(y.Name.ToLower()[0]))
+        //            {
+        //                return -1;
+        //            }
+        //        }
+        //    }
+        //    return 0;
+        //}
+
+
+        // Поменял знаки для убыванию 1 на -1 и -1 на 1
+        public int CompareTo(Worker? y)
         {
-            if (x.returnSalary() > y.returnSalary())
-            {
-                return 1;
-            }
-            else if (x.returnSalary() < y.returnSalary())
+            if ((int)returnSalary() > (int)y.returnSalary())
             {
                 return -1;
             }
+            else if ((int)returnSalary() < (int)y.returnSalary())
+            {
+                return 1;
+            }
             else
             {
-                //// string str = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
-                //string str = @"abcdefghijklmnopqrstuvwxyz";
-                //// Для проверки
-                //if (str.IndexOf(x.Name.ToLower()[0]) < str.IndexOf(y.Name.ToLower()[0]))
-                //{
-                //    return 1;
-                //}
-                //else if (str.IndexOf(x.Name.ToLower()[0]) > str.IndexOf(y.Name.ToLower()[0]))
-                //{
-                //    return -1;
-                //}
+                // string str = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+                string str = @"abcdefghijklmnopqrstuvwxyz";
+                // Для проверки
+                if (str.IndexOf(Name.ToLower()[0]) > str.IndexOf(y.Name.ToLower()[0]))
+                {
+                    return -1;
+                }
+                else if (str.IndexOf(Name.ToLower()[0]) < str.IndexOf(y.Name.ToLower()[0]))
+                {
+                    return 1;
+                }
             }
-            return 0;
-        }
-        public int CompareTo(Worker other)
-        {
-            return this.Name.CompareTo(other.Name);
+            return 0;  
+            //return (int)returnSalary().CompareTo((int)other.returnSalary());
         }
     }
 }
