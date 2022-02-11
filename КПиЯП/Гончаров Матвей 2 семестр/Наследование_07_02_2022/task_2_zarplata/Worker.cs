@@ -56,7 +56,6 @@ namespace task_2_zarplata
                 }
             }
             return 0;  
-            //return (int)returnSalary().CompareTo((int)other.returnSalary());
         }
     }
 }
