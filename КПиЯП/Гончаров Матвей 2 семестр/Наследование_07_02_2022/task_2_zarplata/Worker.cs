@@ -55,7 +55,7 @@ namespace task_2_zarplata
                     return 1;
                 }
             }
-            return 0;  
+            return 0;
         }
     }
 }
