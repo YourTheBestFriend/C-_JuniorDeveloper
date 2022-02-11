@@ -21,13 +21,13 @@ namespace XML_08_02_2022
             Console.ReadLine();
 
             // Создаем структуру данных.
-            var catalog = new Catalog() // Корневой элемент
+            var catalog = new SheduleDisciplini() // Корневой элемент
             {
-                Phones = new List<Phone>() // Коллекция номеров телефонов.
+                Phones = new List<Disciplina>() // Коллекция номеров телефонов.
                 {
-                    new Phone() {Name = "Саша", Number = 890953317, Remark = "Не бери трубку!", Important = false}, // Запись номера телефона.
-                    new Phone() {Name = "Дима", Number = 890512309, Remark = "Босс", Important = false},
-                    new Phone() {Name = "Рита", Number = 890198735, Remark = "Невероятная девчонка", Important = true}
+                    new Disciplina() {Name = "Саша", Number = 890953317, Remark = "Не бери трубку!", Important = false}, // Запись номера телефона.
+                    new Disciplina() {Name = "Дима", Number = 890512309, Remark = "Босс", Important = false},
+                    new Disciplina() {Name = "Рита", Number = 890198735, Remark = "Невероятная девчонка", Important = true}
                 }
             };
 
@@ -44,7 +44,7 @@ namespace XML_08_02_2022
         /// </summary>
         /// <param name="filename"> Путь к сохраняемому файлу. </param>
         /// <param name="catalog"> Сохраняемые данные. </param>
-        private static void WriteXmlFile(string filename, Catalog catalog)
+        private static void WriteXmlFile(string filename, SheduleDisciplini catalog)
         {
             // Создаем новый Xml документ.
             var doc = new XmlDocument();

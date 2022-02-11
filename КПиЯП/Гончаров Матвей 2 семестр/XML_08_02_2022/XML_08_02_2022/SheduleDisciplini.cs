@@ -9,11 +9,11 @@ namespace XML_08_02_2022
     /// <summary>
     /// Каталог телефонных номеров.
     /// </summary>
-    public class Catalog
+    public class SheduleDisciplini
     {
         /// <summary>
         /// Список телефонных номеров.
         /// </summary>
-        public List<Phone> Phones { get; set; } = new List<Phone>();
+        public List<Disciplina> Phones { get; set; } = new List<Disciplina>();
     }
 }
