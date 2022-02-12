@@ -2,6 +2,39 @@
 using System;
 namespace test_answer_on_question
 {
+
+    interface IControl
+    {
+        void Paint();
+    }
+    interface IForm
+    {
+        void Paint();
+    }
+    class Page : IControl, IForm
+    {
+        public void Paint() => Console.WriteLine("In class page");
+        void IControl.Paint()
+        {
+            Console.WriteLine("Paint IControl");
+        }
+        void IForm.Paint()
+        {
+            Console.WriteLine("Paint IForm");
+        }
+    }
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Page x = new Page();
+            x.Paint();
+            (x as IControl).Paint();
+            (x as IForm).Paint();
+        }
+    }
+
+
     // 18
     //class Test
     //{
@@ -120,26 +153,31 @@ namespace test_answer_on_question
     // 22
     //public Class C1 : M1, M2 { }
     //public struct S1 : M3, M4 { };
-    // класс или структура или интерфейс
+    // от первого только 1 класс и интерфейс, от структуры только интерфейсы
 
     // 23
-    //    interface IList
-    //    {
-    //        int Count { get; set; }
-    //    }
+    //interface IList
+    //{
+    //    public int Count { get; set; }
+    //}
     //interface ICounter
+    //{
+    //    void Count(int i);
+    //}
+    //interface IListCounter : IList, ICounter
+    //{
+    //    // public int Count { get; set; }
+    //    // IListCounter(int i) => Count = i;
+    //}
+    //class C
+    //{
+    //    void Test(IListCounter x) // 1
     //    {
-    //        void Count(int i);
+    //        x.Count(1); // 2
+
+    //        (x as IList).Count = 1; // 3
     //    }
-    //    interface IListCounter : IList, ICounter { }
-    //    class C
-    //    {
-    //        void Test(IListCounter x) // 1
-    //        {
-    //            x.Count(1); // 2
-    //            x.Count = 1; // 3
-    //        }
-    //    }
+    //}
     // 3 строка ошибка
 
     // 24 
@@ -203,7 +241,7 @@ namespace test_answer_on_question
     //    public void Paint() { }
     //}
 
-    // Да скомилируется, ток чтобы юзать main нужен
+    // Да скомилируется
 
 
     // 27
