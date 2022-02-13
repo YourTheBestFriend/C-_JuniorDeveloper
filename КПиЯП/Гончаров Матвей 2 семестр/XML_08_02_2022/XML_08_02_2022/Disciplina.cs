@@ -9,7 +9,7 @@ namespace XML_08_02_2022
     /// <summary>
     /// Дисциплина
     /// </summary>
-    public class Disciplina
+    public class Disciplina : IComparable<Disciplina>
     {  
         private string nameDisciplina;
         private string familiaPrepodsavatela;
@@ -163,9 +163,23 @@ namespace XML_08_02_2022
             }
         }
 
-        // Функции (Запросы)
-
-
-        public override string ToString() =>  "NameDisciplina: " + NameDisciplina;
+        // Для сортировки
+        public int CompareTo(Disciplina? other)
+        {
+            // string str = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+            string str = @"abcdefghijklmnopqrstuvwxyz";
+            // Для проверки
+            if (str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) > str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) && NumStudents > other.NumStudents)
+            {
+                return 1;
+            }
+            else if (str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) < str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) && NumStudents < other.NumStudents)
+            {
+                return -1;
+            }
+            return 0;
+        }
+        // data
+        public override string ToString() => "NameDisciplina: " + NameDisciplina + " FamiliaPrepodsavatela: " + FamiliaPrepodsavatela + " NumStudents: " + NumStudents;
     }
 }

@@ -14,14 +14,14 @@ namespace XML_08_02_2022
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Основной switch
             while (true)
             {
-                Console.WriteLine("\t\t[Main]\n1 - Работа без xml\n2 - работа с xml");
+                Console.WriteLine("\t\t[Main]\n1 - Работа без xml\n2 - работа с xml\n3 - повторить действие или выйти? (основной switch)");
                 switch (Convert.ToInt32(Console.ReadLine()))
                 {
                     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// без xml
                     case 1:
-                        Console.WriteLine("\t\t[Работа без xml]\n1 - Вывод данных\n2 - Добавление объекта\n3 - Выбор запросов\n4 - повторить действие или выйти?");
                         while (true)
                         {
+                            Console.WriteLine("\t\t[Работа без xml]\n1 - Вывод данных\n2 - Добавление объекта\n3 - Выбор запросов\n4 - повторить действие или выйти?");
                             switch (Convert.ToInt32(Console.ReadLine()))
                             {
                                 case 1:
@@ -29,6 +29,35 @@ namespace XML_08_02_2022
                                 case 2:
                                     break;
                                 case 3:
+                                    ///////////////////////////////////////////////////////////////////////////////////////////////////////////// Список запросов без xml
+                                    while (true)
+                                    {
+                                        Console.WriteLine("\t\t[Список запросов без xml]\n1 - Одновременная сортировка по фамилии преподавателя и количеству студентов в группе" +
+                                        "\n2 - Вывести названия дисциплин, имеющих курсач\n3 - Вывести фамилию преподавателя с наибольшим количеством экзаменов" +
+                                        "\n4 - Вывести количество практических занятий по всем учебным дисциплинам\n5 - Выполнить группировку по каждому полю\n6 - повторить действие или выйти из списка запросов?");
+                                        switch (Convert.ToInt32(Console.ReadLine()))
+                                        {
+                                            case 1:
+                                                catalog.ListDisciplin.Sort();
+                                                Console.WriteLine("\nВыполнилась сортировка");
+                                                break;
+                                            case 2:
+                                                
+                                                break;
+                                            case 6:
+                                                Console.WriteLine("Хотите выйти ? - yes");
+                                                if (Convert.ToString(Console.ReadLine()) == "yes")
+                                                {
+                                                    FlagExit = true;
+                                                }
+                                                break;
+                                        }
+                                        if (FlagExit == true)
+                                        {
+                                            FlagExit = false; // чтобы не вышло из предыдущего
+                                            break;
+                                        }
+                                    }
                                     break;
                                 case 4:
                                     Console.WriteLine("Хотите выйти ? - yes");
@@ -40,6 +69,7 @@ namespace XML_08_02_2022
                             }
                             if (FlagExit == true)
                             {
+                                FlagExit = false; // чтобы не вышло из основного
                                 break;
                             }
                         }
@@ -55,10 +85,18 @@ namespace XML_08_02_2022
                     default:
                         Console.WriteLine("Вы попали в default");
                         break;
+                    case 3:
+                        Console.WriteLine("Хотите выйти ? - yes");
+                        if (Convert.ToString(Console.ReadLine()) == "yes")
+                        {
+                            FlagExit = true; // чтобы не вышло из основного
+                        }
+                        break;
                 }
                 // Выход их основного 
                 if (FlagExit == true)
                 {
+                    // FlagExit = false; // тут уже не надо
                     break;
                 }
             }
