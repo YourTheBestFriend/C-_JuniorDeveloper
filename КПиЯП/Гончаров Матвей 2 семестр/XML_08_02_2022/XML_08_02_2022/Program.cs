@@ -25,9 +25,17 @@ namespace XML_08_02_2022
             {
                 ListDisciplin = new List<Disciplina>() // Коллекция номеров телефонов.
                 {
-                    new Disciplina() {Name = "Саша", Number = 890953317, Remark = "Не бери трубку!", Important = false}, // Запись номера телефона.
-                    new Disciplina() {Name = "Дима", Number = 890512309, Remark = "Босс", Important = false},
-                    new Disciplina() {Name = "Рита", Number = 890198735, Remark = "Невероятная девчонка", Important = true}
+                    // string nameDisciplina, string familiaPrepodsavatela, int numStudents, int colvoHourLekcii, int colvoPractLekcii, string nalichKursacha, string vidItogovogoKursacha
+                    new Disciplina("KPiAP", "Baglasova", 23, 200, 200, "Да", "экзамен"),
+                    new Disciplina("English", "Smelova", 12, 100, 100, "Нет", "экзамен"),
+                    new Disciplina("OAiP", "Shalapin", 25, 1000, 900, "Да", "экзамен"),
+                    new Disciplina("TestPO", "Iakimovich", 23, 120, 120, "Нет", "экзамен"),
+                    new Disciplina("DataBase", "Kubtsova", 23, 110, 110, "Да", "экзамен"),
+                    new Disciplina("Practika", "Baglasova", 23, 150, 150, "Да", "Зачет"),
+                    new Disciplina("BuhUchet", "Baglasova", 23, 200, 200, "Да", "экзамен"),
+                    new Disciplina("KPiAP", "Baglasova", 23, 200, 200, "Да", "экзамен"),
+                    new Disciplina("KPiAP", "Baglasova", 23, 200, 200, "Да", "экзамен"),
+                    new Disciplina("KPiAP", "Baglasova", 23, 200, 200, "Да", "экзамен")
                 }
             };
 
