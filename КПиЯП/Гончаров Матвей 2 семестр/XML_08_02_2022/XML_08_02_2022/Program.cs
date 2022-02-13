@@ -48,13 +48,13 @@ namespace XML_08_02_2022
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
-                                                catalog.PrintNameDisciplinIfEstKursach();
+                                                catalog.PrintNameDisciplinIfEstKursach(catalog.ListDisciplin);
                                                 break;
                                             case 3:
-                                                catalog.PrintNamePrepodavatelaMAXCOlEXAMS();
+                                                catalog.PrintNamePrepodavatelaMAXCOlEXAMS(catalog.ListDisciplin);
                                                 break;
                                             case 4:
-                                                catalog.PrintColvoPractZanatii();
+                                                catalog.PrintColvoPractZanatii(catalog.ListDisciplin);
                                                 break;
                                             case 5:
                                                 // тут не понял что за группировка
@@ -91,15 +91,13 @@ namespace XML_08_02_2022
                         break;
                     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// с xml
                     case 2:
-                        // Читаем Xml файл.
-                        ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\example.xml");
                         while (true)
                         {
                             Console.WriteLine("\n\t\t[Работа c xml]\n1 - Вывод данных из XMl\n2 - Добавление объектов в xml\n3 - Выбор запросов\n4 - повторить действие или выйти?");
                             switch (Convert.ToInt32(Console.ReadLine()))
                             {
                                 case 1:
-                                    ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\example.xml");
+                                    ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\result.xml");
                                     break;
                                 case 2:
                                     // Пишем в файл.
@@ -121,13 +119,13 @@ namespace XML_08_02_2022
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
-                                                catalog.PrintNameDisciplinIfEstKursach();
+                                                catalog.PrintNameDisciplinIfEstKursach(catalog.ListDisciplin);
                                                 break;
                                             case 3:
-                                                catalog.PrintNameDisciplinIfEstKursach();
+                                                catalog.PrintNamePrepodavatelaMAXCOlEXAMS(catalog.ListDisciplin);
                                                 break;
                                             case 4:
-                                                catalog.PrintColvoPractZanatii();
+                                                catalog.PrintColvoPractZanatii(catalog.ListDisciplin);
                                                 break;
                                             case 5:
                                                 // тут не понял что за группировка

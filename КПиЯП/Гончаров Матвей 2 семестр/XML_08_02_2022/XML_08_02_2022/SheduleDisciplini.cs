@@ -11,10 +11,10 @@ namespace XML_08_02_2022
         public List<Disciplina> ListDisciplin { get; set; } = new List<Disciplina>();
 
         // Вывод названий дисциплин имеющух курсач
-        public void PrintNameDisciplinIfEstKursach()
+        public void PrintNameDisciplinIfEstKursach(List<Disciplina> ListDisciplin_)
         {
             Console.WriteLine("Названия дисциплин у которых есть курсач");
-            foreach (var x in ListDisciplin)
+            foreach (var x in ListDisciplin_)
             {
                 if (x.NalichKursacha == "Да")
                 {
@@ -24,32 +24,31 @@ namespace XML_08_02_2022
         }
 
         // Вывести фамилию преподавателя с наибольшим количеством экзаменов
-        public void PrintNamePrepodavatelaMAXCOlEXAMS()
+        public void PrintNamePrepodavatelaMAXCOlEXAMS(List<Disciplina> ListDisciplin_)
         {
             Console.WriteLine("Фамилия преподавателя с наибольшим количеством экзаменов");
-            int max = ListDisciplin[0].NumStudents, index = 0;
-            for (int i = 1; i < ListDisciplin.Count; i++)
+            int max = ListDisciplin_[0].NumStudents, index = 0;
+            for (int i = 1; i < ListDisciplin_.Count; i++)
             {
-                if (max < ListDisciplin[i].NumStudents)
+                if (max < ListDisciplin_[i].NumStudents)
                 {
-                    max = ListDisciplin[0].NumStudents;
+                    max = ListDisciplin_[i].NumStudents;
                     index = i;
                 }
             }
-            Console.WriteLine("FamiliaPrepodsavatela: " + ListDisciplin[index].FamiliaPrepodsavatela);
+            Console.WriteLine($"FamiliaPrepodsavatela: {ListDisciplin_[index].FamiliaPrepodsavatela}");
         }
 
         // Вывести количество практических занятий по всем учебным дисциплинам
-        public void PrintColvoPractZanatii()
+        public void PrintColvoPractZanatii(List<Disciplina> ListDisciplin_)
         {
             Console.WriteLine("количество практических занятий");
-            foreach (var x in ListDisciplin)
+            foreach (var x in ListDisciplin_)
             {
                 Console.WriteLine("NameDisciplina: " + x.NameDisciplina + " ColvoPractLekcii: " + x.ColvoPractLekcii);
             }
         }
          
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Вот тут вопрос List как копия будет ?    если нет то просто исправлю на void (я прост сижу тут вечером и чет забыл :( )
         // Добавление объекта
         public void AddDisciplina(List<Disciplina> listDis)
         {
