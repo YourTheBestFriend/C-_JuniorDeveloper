@@ -78,7 +78,7 @@ namespace XML_08_02_2022
                 // Название дисциплины, фамилия преподавателя – с большой буквы (должно быть)
                 if (CheckUperZaglav(value)) // А а     А А
                 {
-                    nameDisciplina = value;
+                    familiaPrepodsavatela = value;
                 }
                 else
                 {
@@ -180,6 +180,6 @@ namespace XML_08_02_2022
             return 0;
         }
         // data
-        public override string ToString() => "NameDisciplina: " + NameDisciplina + " FamiliaPrepodsavatela: " + FamiliaPrepodsavatela + " NumStudents: " + NumStudents;
+        public override string ToString() => $"NameDisciplina: {NameDisciplina, 10} \tFamiliaPrepodsavatela: {FamiliaPrepodsavatela, 10} \t NumStudents: {NumStudents}";
     }
 }
