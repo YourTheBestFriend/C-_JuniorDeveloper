@@ -32,7 +32,7 @@ namespace XML_08_02_2022
                                     }
                                     break;
                                 case 2:
-
+                                    catalog.AddDisciplina(catalog.ListDisciplin);
                                     break;
                                 case 3:
                                     ///////////////////////////////////////////////////////////////////////////////////////////////////////////// Список запросов без xml
