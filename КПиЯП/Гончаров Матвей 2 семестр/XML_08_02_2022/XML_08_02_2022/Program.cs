@@ -7,6 +7,63 @@ namespace XML_08_02_2022
 {
     class Program
     {
+        // Главная функция в которой switch
+        public static void MainFunction(SheduleDisciplini catalog)
+        {
+            bool FlagExit = false;
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Основной switch
+            while (true)
+            {
+                Console.WriteLine("\t\t[Main]\n1 - Работа без xml\n2 - работа с xml");
+                switch (Convert.ToInt32(Console.ReadLine()))
+                {
+                    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// без xml
+                    case 1:
+                        Console.WriteLine("\t\t[Работа без xml]\n1 - Вывод данных\n2 - Добавление объекта\n3 - Выбор запросов\n4 - повторить действие или выйти?");
+                        while (true)
+                        {
+                            switch (Convert.ToInt32(Console.ReadLine()))
+                            {
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                case 3:
+                                    break;
+                                case 4:
+                                    Console.WriteLine("Хотите выйти ? - yes");
+                                    if (Convert.ToString(Console.ReadLine()) == "yes")
+                                    {
+                                        FlagExit = true;
+                                    }
+                                    break;
+                            }
+                            if (FlagExit == true)
+                            {
+                                break;
+                            }
+                        }
+                        break;
+                    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// с xml
+                    case 2:
+
+                        // Пишем в файл.
+                        WriteXmlFile("result.xml", catalog);
+                        // Сообщаем пользователю о завершении.
+                        Console.WriteLine("ОК");
+                        break;
+                    default:
+                        Console.WriteLine("Вы попали в default");
+                        break;
+                }
+                // Выход их основного 
+                if (FlagExit == true)
+                {
+                    break;
+                }
+            }
+        }
+
         static void Main(string[] args)
         {
             // Устанавливаем кодировку консоли.
@@ -23,27 +80,27 @@ namespace XML_08_02_2022
             // Создаем структуру данных.
             var catalog = new SheduleDisciplini() // Корневой элемент
             {
-                ListDisciplin = new List<Disciplina>() // Коллекция номеров телефонов.
+                ListDisciplin = new List<Disciplina>()
                 {
                     // string nameDisciplina, string familiaPrepodsavatela, int numStudents, int colvoHourLekcii, int colvoPractLekcii, string nalichKursacha, string vidItogovogoKursacha
-                    new Disciplina("KPiAP", "Baglasova", 23, 200, 200, "Да", "экзамен"),
+                    new Disciplina("KPiAP(C#)", "Baglasova", 23, 200, 200, "Да", "экзамен"),
                     new Disciplina("English", "Smelova", 12, 100, 100, "Нет", "экзамен"),
-                    new Disciplina("OAiP", "Shalapin", 25, 1000, 900, "Да", "экзамен"),
+                    new Disciplina("OAiP(C++)", "Shalapin", 25, 1000, 900, "Да", "экзамен"),
                     new Disciplina("TestPO", "Iakimovich", 23, 120, 120, "Нет", "экзамен"),
                     new Disciplina("DataBase", "Kubtsova", 23, 110, 110, "Да", "экзамен"),
-                    new Disciplina("Practika", "Baglasova", 23, 150, 150, "Да", "Зачет"),
-                    new Disciplina("BuhUchet", "Baglasova", 23, 200, 200, "Да", "экзамен"),
-                    new Disciplina("KPiAP", "Baglasova", 23, 200, 200, "Да", "экзамен"),
-                    new Disciplina("KPiAP", "Baglasova", 23, 200, 200, "Да", "экзамен"),
-                    new Disciplina("KPiAP", "Baglasova", 23, 200, 200, "Да", "экзамен")
+                    new Disciplina("Practika", "Baglasova", 23, 150, 150, "Да", "зачет"),
+                    new Disciplina("BuhUchet", "Iaskevich", 23, 90, 90, "нет", "зачет"),
+                    new Disciplina("Basic(Java)", "Kibisova", 23, 170, 170, "Нет", "экзамен"),
+                    new Disciplina("PractWeb", "Kudravceva", 23, 200, 200, "нет", "зачет"),
+                    new Disciplina("Fizra", "Burmakova", 23, 100, 50, "нет", "зачет")
                 }
             };
 
-            // Пишем в файл.
-            WriteXmlFile("result.xml", catalog);
 
-            // Сообщаем пользователю о завершении.
-            Console.WriteLine("ОК");
+            // start
+            MainFunction(catalog);
+
+           
             Console.ReadLine();
         }
 

@@ -163,15 +163,9 @@ namespace XML_08_02_2022
             }
         }
 
+        // Функции (Запросы)
 
 
-
-
-        public bool Important { get; set; }
-
-        public override string ToString()
-        {
-            return "NameDisciplina: " + NameDisciplina;
-        }
+        public override string ToString() =>  "NameDisciplina: " + NameDisciplina;
     }
 }
