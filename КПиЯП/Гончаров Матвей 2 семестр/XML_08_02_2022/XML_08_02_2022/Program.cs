@@ -25,6 +25,11 @@ namespace XML_08_02_2022
                             switch (Convert.ToInt32(Console.ReadLine()))
                             {
                                 case 1:
+                                    Console.WriteLine("|||||||||||Data");
+                                    foreach (var x in catalog.ListDisciplin)
+                                    {
+                                        Console.WriteLine(x); // там переопределяется метод ToString()
+                                    }
                                     break;
                                 case 2:
                                     break;
@@ -42,7 +47,16 @@ namespace XML_08_02_2022
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
-                                                
+                                                catalog.PrintNameDisciplinIfEstKursach();
+                                                break;
+                                            case 3:
+                                                catalog.PrintNameDisciplinIfEstKursach();
+                                                break;
+                                            case 4:
+                                                catalog.PrintColvoPractZanatii();
+                                                break;
+                                            case 5:
+                                                // тут не понял что за группировка
                                                 break;
                                             case 6:
                                                 Console.WriteLine("Хотите выйти ? - yes");
@@ -126,7 +140,7 @@ namespace XML_08_02_2022
                     new Disciplina("OAiP(C++)", "Shalapin", 25, 1000, 900, "Да", "экзамен"),
                     new Disciplina("TestPO", "Iakimovich", 23, 120, 120, "Нет", "экзамен"),
                     new Disciplina("DataBase", "Kubtsova", 23, 110, 110, "Да", "экзамен"),
-                    new Disciplina("Practika", "Baglasova", 23, 150, 150, "Да", "зачет"),
+                    new Disciplina("AUDO", "Basaliga", 23, 150, 150, "Нет", "зачет"),
                     new Disciplina("BuhUchet", "Iaskevich", 23, 90, 90, "нет", "зачет"),
                     new Disciplina("Basic(Java)", "Kibisova", 23, 170, 170, "Нет", "экзамен"),
                     new Disciplina("PractWeb", "Kudravceva", 23, 200, 200, "нет", "зачет"),
