@@ -48,7 +48,22 @@ namespace XML_08_02_2022
                 Console.WriteLine("NameDisciplina: " + x.NameDisciplina + " ColvoPractLekcii: " + x.ColvoPractLekcii);
             }
         }
+         
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Вот тут вопрос List как копия будет ?    если нет то просто исправлю на void
+        // Добавление объекта
+        public void AddDisciplina(List<Disciplina> listDis)
+        {
+            Console.WriteLine("Добавление объекта: ");
+            Disciplina x = new Disciplina();
+            for (int i = 0; i < listDis.Count; i++)
+            {
+
+            }
+            listDis.Add(x);
+
+            
+        }
 
     }
 }
