@@ -55,15 +55,31 @@ namespace XML_08_02_2022
         public void AddDisciplina(List<Disciplina> listDis)
         {
             Console.WriteLine("Добавление объекта: ");
-            Disciplina x = new Disciplina();
-            for (int i = 0; i < listDis.Count; i++)
+            //string nameDisciplina, string familiaPrepodsavatela, int numStudents, int colvoHourLekcii, int colvoPractLekcii, string nalichKursacha, string vidItogovogoKursacha
+            Console.WriteLine("Введите кол-во объектов: ");
+            for (int i = 0; i < Convert.ToInt32(Console.ReadLine()); i++)
             {
-
+                Disciplina x = new Disciplina();
+                Console.Write("name: ");
+                // Просто в блок выделил
+                {
+                    x.NameDisciplina = Convert.ToString(Console.ReadLine());
+                    Console.Write("familiaPrepodsavatela: ");
+                    x.FamiliaPrepodsavatela = Convert.ToString(Console.ReadLine());
+                    Console.Write("numStudents: ");
+                    x.NumStudents = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("colvoHourLekcii: ");
+                    x.ColvoHourLekcii = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("colvoPractLekcii: ");
+                    x.ColvoPractLekcii = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("nalichKursacha: ");
+                    x.NalichKursacha = Convert.ToString(Console.ReadLine());
+                    Console.Write("vidItogovogoKursacha: ");
+                    x.VidItogovogoKursacha = Convert.ToString(Console.ReadLine());
+                }
+                listDis.Add(x);
+                Console.WriteLine();
             }
-            listDis.Add(x);
-
-            
         }
-
     }
 }
