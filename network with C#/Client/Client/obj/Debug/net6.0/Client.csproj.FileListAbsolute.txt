@@ -12,3 +12,4 @@ C:\Users\Matthew\Desktop\C-_JuniorDeveloper\network with C#\Client\Client\obj\De
 C:\Users\Matthew\Desktop\C-_JuniorDeveloper\network with C#\Client\Client\obj\Debug\net6.0\ref\Client.dll
 C:\Users\Matthew\Desktop\C-_JuniorDeveloper\network with C#\Client\Client\obj\Debug\net6.0\Client.pdb
 C:\Users\Matthew\Desktop\C-_JuniorDeveloper\network with C#\Client\Client\obj\Debug\net6.0\Client.genruntimeconfig.cache
+C:\Users\Matthew\Desktop\C-_JuniorDeveloper\network with C#\Client\Client\obj\Debug\net6.0\Client.csproj.AssemblyReference.cache

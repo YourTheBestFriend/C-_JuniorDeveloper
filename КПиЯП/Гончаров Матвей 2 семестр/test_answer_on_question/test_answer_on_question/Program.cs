@@ -2,7 +2,6 @@
 using System;
 namespace test_answer_on_question
 {
-
     interface IControl
     {
         void Paint();
