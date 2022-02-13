@@ -152,7 +152,7 @@ namespace XML_08_02_2022
             get { return vidItogovogoKursacha; }
             set
             {
-                if (CheckFirstOrSecondWord(value, "Зачет", "Экзамен"))
+                if (CheckFirstOrSecondWord(value, "зачет", "экзамен"))
                 {
                     vidItogovogoKursacha = value;
                 }
@@ -169,11 +169,11 @@ namespace XML_08_02_2022
             // string str = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
             string str = @"abcdefghijklmnopqrstuvwxyz";
             // Для проверки
-            if (str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) > str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) && NumStudents > other.NumStudents)
+            if (/*str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) > str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) && */NumStudents > other.NumStudents)
             {
                 return 1;
             }
-            else if (str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) < str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) && NumStudents < other.NumStudents)
+            else if (/*str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) < str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) &&*/ NumStudents < other.NumStudents)
             {
                 return -1;
             }

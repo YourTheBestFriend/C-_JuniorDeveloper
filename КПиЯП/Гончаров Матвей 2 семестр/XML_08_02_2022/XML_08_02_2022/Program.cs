@@ -21,24 +21,24 @@ namespace XML_08_02_2022
                     case 1:
                         while (true)
                         {
-                            Console.WriteLine("\t\t[Работа без xml]\n1 - Вывод данных\n2 - Добавление объекта\n3 - Выбор запросов\n4 - повторить действие или выйти?");
+                            Console.WriteLine("\n\t\t[Работа без xml]\n1 - Вывод данных\n2 - Добавление объекта\n3 - Выбор запросов\n4 - повторить действие или выйти?");
                             switch (Convert.ToInt32(Console.ReadLine()))
                             {
                                 case 1:
-                                    Console.WriteLine("|||||||||||Data");
+                                    Console.WriteLine("Data");
                                     foreach (var x in catalog.ListDisciplin)
                                     {
                                         Console.WriteLine(x); // там переопределяется метод ToString()
                                     }
                                     break;
                                 case 2:
-                                    catalog.AddDisciplina(catalog.ListDisciplin);
+                                    catalog.AddDisciplina(catalog.ListDisciplin); // так тут меня не ругать спать хочу но сижу и делаю
                                     break;
                                 case 3:
                                     ///////////////////////////////////////////////////////////////////////////////////////////////////////////// Список запросов без xml
                                     while (true)
                                     {
-                                        Console.WriteLine("\t\t[Список запросов без xml]\n1 - Одновременная сортировка по фамилии преподавателя и количеству студентов в группе" +
+                                        Console.WriteLine("\n\t\t[Список запросов без xml]\n1 - Одновременная сортировка по фамилии преподавателя и количеству студентов в группе" +
                                         "\n2 - Вывести названия дисциплин, имеющих курсач\n3 - Вывести фамилию преподавателя с наибольшим количеством экзаменов" +
                                         "\n4 - Вывести количество практических занятий по всем учебным дисциплинам\n5 - Выполнить группировку по каждому полю\n6 - повторить действие или выйти из списка запросов?");
                                         switch (Convert.ToInt32(Console.ReadLine()))
@@ -51,7 +51,7 @@ namespace XML_08_02_2022
                                                 catalog.PrintNameDisciplinIfEstKursach();
                                                 break;
                                             case 3:
-                                                catalog.PrintNameDisciplinIfEstKursach();
+                                                catalog.PrintNamePrepodavatelaMAXCOlEXAMS();
                                                 break;
                                             case 4:
                                                 catalog.PrintColvoPractZanatii();
@@ -95,7 +95,7 @@ namespace XML_08_02_2022
                         ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\example.xml");
                         while (true)
                         {
-                            Console.WriteLine("\t\t[Работа c xml]\n1 - Вывод данных из XMl\n2 - Добавление объектов в xml\n3 - Выбор запросов\n4 - повторить действие или выйти?");
+                            Console.WriteLine("\n\t\t[Работа c xml]\n1 - Вывод данных из XMl\n2 - Добавление объектов в xml\n3 - Выбор запросов\n4 - повторить действие или выйти?");
                             switch (Convert.ToInt32(Console.ReadLine()))
                             {
                                 case 1:
@@ -103,7 +103,7 @@ namespace XML_08_02_2022
                                     break;
                                 case 2:
                                     // Пишем в файл.
-                                    WriteXmlFile("result.xml", catalog);
+                                    WriteXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\result.xml", catalog);
                                     Console.WriteLine("Данные Записаны в файл result.xml");
                                     break;
                                 case 3:
@@ -111,7 +111,7 @@ namespace XML_08_02_2022
                                     while (true)
                                     {
                                         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// переработка
-                                        Console.WriteLine("\t\t[Список запросов без xml]\n1 - Одновременная сортировка по фамилии преподавателя и количеству студентов в группе" +
+                                        Console.WriteLine("\n\t\t[Список запросов без xml]\n1 - Одновременная сортировка по фамилии преподавателя и количеству студентов в группе" +
                                         "\n2 - Вывести названия дисциплин, имеющих курсач\n3 - Вывести фамилию преподавателя с наибольшим количеством экзаменов" +
                                         "\n4 - Вывести количество практических занятий по всем учебным дисциплинам\n5 - Выполнить группировку по каждому полю\n6 - повторить действие или выйти из списка запросов?");
                                         switch (Convert.ToInt32(Console.ReadLine()))
@@ -202,18 +202,16 @@ namespace XML_08_02_2022
                     new Disciplina("TestPO", "Iakimovich", 23, 120, 120, "Нет", "экзамен"),
                     new Disciplina("DataBase", "Kubtsova", 23, 110, 110, "Да", "экзамен"),
                     new Disciplina("AUDO", "Basaliga", 23, 150, 150, "Нет", "зачет"),
-                    new Disciplina("BuhUchet", "Iaskevich", 23, 90, 90, "нет", "зачет"),
+                    new Disciplina("BuhUchet", "Iaskevich", 23, 90, 90, "Нет", "зачет"),
                     new Disciplina("Basic(Java)", "Kibisova", 23, 170, 170, "Нет", "экзамен"),
-                    new Disciplina("PractWeb", "Kudravceva", 23, 200, 200, "нет", "зачет"),
-                    new Disciplina("Fizra", "Burmakova", 23, 100, 50, "нет", "зачет")
+                    new Disciplina("PractWeb", "Kudravceva", 23, 200, 200, "Нет", "зачет"),
+                    new Disciplina("Fizra", "Burmakova", 23, 100, 50, "Нет", "зачет")
                 }
             };
 
 
             // start
             MainFunction(catalog);
-
-           
             Console.ReadLine();
         }
 
@@ -236,34 +234,21 @@ namespace XML_08_02_2022
             // Создаем Корневой элемент
             var root = doc.CreateElement("catalog");
 
-            // Получаем все записи телефонной книги.
-            foreach (var Disciplin in catalog.ListDisciplin)
+            // Получаем все дисц.
+            foreach (var Disciplina in catalog.ListDisciplin)
             {
-                // Создаем элемент записи телефонной книги.
-                var phoneNode = doc.CreateElement("phone");
+                var Disciplina_Node = doc.CreateElement("Disciplina");
+                // string nameDisciplina, string familiaPrepodsavatela, int numStudents, int colvoHourLekcii, int colvoPractLekcii, string nalichKursacha, string vidItogovogoKursacha
+                AddChildNode("NameDisciplina", Disciplina.NameDisciplina, Disciplina_Node, doc);
+                AddChildNode("FamiliaPrepodsavatela", Disciplina.FamiliaPrepodsavatela, Disciplina_Node, doc);
+                AddChildNode("NumStudents", Disciplina.NumStudents.ToString(), Disciplina_Node, doc);
+                AddChildNode("ColvoHourLekcii", Disciplina.ColvoHourLekcii.ToString(), Disciplina_Node, doc);
+                AddChildNode("ColvoPractLekcii", Disciplina.ColvoPractLekcii.ToString(), Disciplina_Node, doc);
+                AddChildNode("NalichKursacha", Disciplina.NalichKursacha, Disciplina_Node, doc);
+                AddChildNode("VidItogovogoKursacha", Disciplina.VidItogovogoKursacha, Disciplina_Node, doc);
 
-                if (Disciplin.Important)
-                {
-                    // Если установлен атрибут Важный в true,
-                    // то создаем и добавляем атрибут к элементу записи телефонной книги.
-
-                    // Создаем атрибут и нужным именем.
-                    var attribute = doc.CreateAttribute("group");
-
-                    // Устанавливаем содержимое атрибута.
-                    attribute.InnerText = "important";
-
-                    // Добавляем атрибут к элементу.
-                    phoneNode.Attributes.Append(attribute);
-                }
-
-                // Создаем зависимые элементы.
-                AddChildNode("name", Disciplin.Name, phoneNode, doc);
-                AddChildNode("number", Disciplin.Number.ToString(), phoneNode, doc);
-                AddChildNode("remark", Disciplin.Remark, phoneNode, doc);
-
-                // Добавляем запись телефонной книги в каталог.
-                root.AppendChild(phoneNode);
+                // Добавляем запись в каталог.
+                root.AppendChild(Disciplina_Node);
             }
 
             // Добавляем новый корневой элемент в документ.
