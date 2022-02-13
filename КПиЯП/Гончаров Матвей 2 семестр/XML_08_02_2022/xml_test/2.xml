@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!--version="1.0"-->
+<cd number="432">
+    <title>Africa</title> <!--Должно совпадать-->
+    <artist>BeZbileta</artist> <!--Закрыть-->
+    <tracks total="20"> <!--кавычку забыли перед 20-->
+    <cd number="97"> <!--кавычки-->
+    </tracks>  <!--забыли - /-->
+</cd> <!--Должно совпадать-->

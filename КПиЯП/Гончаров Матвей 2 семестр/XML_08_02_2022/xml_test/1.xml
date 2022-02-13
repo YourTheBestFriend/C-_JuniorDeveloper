@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <Person>
+        <name>Mattew</name>
+        <info>
+            <addres>Prititskogo</addres>
+            <mail>matveygoncharov77@gmail.com</mail>
+            <DenRozhdenia day="22" month="August" year="2004"></DenRozhdenia>
+        </info>
+    </Person>
+</root>
