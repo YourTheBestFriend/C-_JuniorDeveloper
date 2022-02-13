@@ -15,49 +15,75 @@ namespace XML_08_02_2022
         private string familiaPrepodsavatela;
         private int numStudents;
         private int colvoHourLekcii;
+        private int colvoPractLekcii;
         private string nalichKursacha;
+        private string vidItogovogoKursacha;
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////// Секция с функциями для свойств
-        public bool chekUperzaglav(string s)
+        // Для Проверки на заглавную букву
+        public bool CheckUperZaglav(string s)
         {
             if (s.ToUpper()[0] == s[0]) return true;
             else return false;
         }
-        
+        // Для отрицательного
+        public bool CheckBiggerThenZero(int s)
+        {
+            if (s > 0) return true;
+            else return false;
+        }
 
+        // Для сравнения одного из параметров
+        public bool CheckFirstOrSecondWord(string ishodnoe, string s1, string s2)
+        {
+            if (ishodnoe == s1 || ishodnoe == s2) return true;
+            else return false;
+        }
+
+        // Constructors
+        public Disciplina() { }
+        public Disciplina(string nameDisciplina, string familiaPrepodsavatela, int numStudents, int colvoHourLekcii, int colvoPractLekcii, string nalichKursacha, string vidItogovogoKursacha) 
+        {
+            NameDisciplina = nameDisciplina;
+            FamiliaPrepodsavatela = familiaPrepodsavatela;
+            NumStudents = numStudents;
+            ColvoHourLekcii = colvoHourLekcii;
+            ColvoPractLekcii = colvoPractLekcii;
+            NalichKursacha = nalichKursacha;
+            VidItogovogoKursacha = vidItogovogoKursacha;
+        }
+       
+        // Свойства
         public string NameDisciplina
         {
             get { return nameDisciplina; }
             set
             {
                 // Название дисциплины, фамилия преподавателя – с большой буквы (должно быть)
-                if (chekUperzaglav(value)) // А а     А А
+                if (CheckUperZaglav(value)) // А а     А А
                 {
                     nameDisciplina = value;
                 }
                 else
                 {
-                    throw new Exception("Название с маленькой буквы");
+                    throw new MyClassException("Название с маленькой буквы");
                 }
-                
             }
         }
-
         public string FamiliaPrepodsavatela
         {
             get { return familiaPrepodsavatela; }
             set
             {
                 // Название дисциплины, фамилия преподавателя – с большой буквы (должно быть)
-                if (chekUperzaglav(value)) // А а     А А
+                if (CheckUperZaglav(value)) // А а     А А
                 {
                     nameDisciplina = value;
                 }
                 else
                 {
-                    throw new Exception("Фамилия преподавателя с маленькой буквы");
+                    throw new MyClassException("Фамилия преподавателя с маленькой буквы");
                 }
-
             }
         }
         public int NumStudents
@@ -65,13 +91,13 @@ namespace XML_08_02_2022
             get { return numStudents; }
             set
             {
-                if (value > 0)
+                if (CheckBiggerThenZero(value))
                 {
                     numStudents = value;
                 }
                 else
                 {
-                    throw new Exception("Кол-во студентов не может быть отрицательным");
+                    throw new MyClassException("Кол-во студентов не может быть отрицательным");
                 }
             }
         }
@@ -80,13 +106,28 @@ namespace XML_08_02_2022
             get { return colvoHourLekcii; }
             set
             {
-                if (value > 0)
+                if (CheckBiggerThenZero(value))
                 {
                     colvoHourLekcii = value;
                 }
                 else
                 {
-                    throw new Exception("Кол-во часов практики с не может быть отрицательным");
+                    throw new MyClassException("Кол-во часов лекции с не может быть отрицательным");
+                }
+            }
+        }
+        public int ColvoPractLekcii
+        {
+            get { return colvoPractLekcii; }
+            set
+            {
+                if (CheckBiggerThenZero(value))
+                {
+                    colvoPractLekcii = value;
+                }
+                else
+                {
+                    throw new MyClassException("Кол-во часов практики с не может быть отрицательным");
                 }
             }
         }
@@ -95,19 +136,36 @@ namespace XML_08_02_2022
             get { return nalichKursacha; }
             set
             {
-                if (value.ToUpper()[0] == value[0])
+                if (CheckFirstOrSecondWord(value, "Да", "Нет"))
                 {
-                    nameDisciplina = value;
+                    nalichKursacha = value;
                 }
                 else
                 {
-                    throw new Exception("Фамилия преподавателя с маленькой буквы");
+                    throw new MyClassException("Вы ввели что-то кроме - Да/Нет");
                 }
-
             }
         }
 
-      
+        public string VidItogovogoKursacha
+        {
+            get { return vidItogovogoKursacha; }
+            set
+            {
+                if (CheckFirstOrSecondWord(value, "Зачет", "Экзамен"))
+                {
+                    vidItogovogoKursacha = value;
+                }
+                else
+                {
+                    throw new MyClassException("Вы ввели что-то кроме - зачет/экзамен");
+                }
+            }
+        }
+
+
+
+
 
         public bool Important { get; set; }
 

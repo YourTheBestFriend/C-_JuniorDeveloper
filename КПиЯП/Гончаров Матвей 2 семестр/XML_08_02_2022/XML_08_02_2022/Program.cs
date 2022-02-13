@@ -23,7 +23,7 @@ namespace XML_08_02_2022
             // Создаем структуру данных.
             var catalog = new SheduleDisciplini() // Корневой элемент
             {
-                Phones = new List<Disciplina>() // Коллекция номеров телефонов.
+                ListDisciplin = new List<Disciplina>() // Коллекция номеров телефонов.
                 {
                     new Disciplina() {Name = "Саша", Number = 890953317, Remark = "Не бери трубку!", Important = false}, // Запись номера телефона.
                     new Disciplina() {Name = "Дима", Number = 890512309, Remark = "Босс", Important = false},
@@ -59,7 +59,7 @@ namespace XML_08_02_2022
             var root = doc.CreateElement("catalog");
 
             // Получаем все записи телефонной книги.
-            foreach (var phone in catalog.Phones)
+            foreach (var phone in catalog.ListDisciplin)
             {
                 // Создаем элемент записи телефонной книги.
                 var phoneNode = doc.CreateElement("phone");

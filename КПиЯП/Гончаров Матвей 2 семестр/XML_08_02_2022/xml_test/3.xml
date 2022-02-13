@@ -4,7 +4,7 @@
     <artist>BeZbileta</artist> <!--Закрыть-->
     <tracks total="20"> <!--кавычку забыли перед 20-->
         <cd number="97"> <!--кавычки-->
-            <title>HeartBreaker
+            <title atr="HeartBreaker">
                 <Subtitle>Sixteen Classic Perfomances</Subtitle> <!-- Исходя из названия типа дочерний и перенес его в title-->
             </title>
             <artistPat Benatar=""> </artistPat> <!-- атрибуту кавычки если пустой хотябы и это artistPat-->

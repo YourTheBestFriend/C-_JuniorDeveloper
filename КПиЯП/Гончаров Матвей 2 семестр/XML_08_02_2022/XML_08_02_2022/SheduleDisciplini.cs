@@ -14,6 +14,6 @@ namespace XML_08_02_2022
         /// <summary>
         /// Список телефонных номеров.
         /// </summary>
-        public List<Disciplina> Phones { get; set; } = new List<Disciplina>();
+        public List<Disciplina> ListDisciplin { get; set; } = new List<Disciplina>();
     }
 }
