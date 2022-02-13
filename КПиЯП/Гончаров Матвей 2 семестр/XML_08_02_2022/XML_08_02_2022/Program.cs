@@ -91,11 +91,77 @@ namespace XML_08_02_2022
                         break;
                     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// с xml
                     case 2:
-
-                        // Пишем в файл.
-                        WriteXmlFile("result.xml", catalog);
-                        // Сообщаем пользователю о завершении.
-                        Console.WriteLine("ОК");
+                        // Читаем Xml файл.
+                        ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\example.xml");
+                        while (true)
+                        {
+                            Console.WriteLine("\t\t[Работа c xml]\n1 - Вывод данных из XMl\n2 - Добавление объектов в xml\n3 - Выбор запросов\n4 - повторить действие или выйти?");
+                            switch (Convert.ToInt32(Console.ReadLine()))
+                            {
+                                case 1:
+                                    ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\example.xml");
+                                    break;
+                                case 2:
+                                    // Пишем в файл.
+                                    WriteXmlFile("result.xml", catalog);
+                                    Console.WriteLine("Данные Записаны в файл result.xml");
+                                    break;
+                                case 3:
+                                    ///////////////////////////////////////////////////////////////////////////////////////////////////////////// Список запросов с xml
+                                    while (true)
+                                    {
+                                        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// переработка
+                                        Console.WriteLine("\t\t[Список запросов без xml]\n1 - Одновременная сортировка по фамилии преподавателя и количеству студентов в группе" +
+                                        "\n2 - Вывести названия дисциплин, имеющих курсач\n3 - Вывести фамилию преподавателя с наибольшим количеством экзаменов" +
+                                        "\n4 - Вывести количество практических занятий по всем учебным дисциплинам\n5 - Выполнить группировку по каждому полю\n6 - повторить действие или выйти из списка запросов?");
+                                        switch (Convert.ToInt32(Console.ReadLine()))
+                                        {
+                                            case 1:
+                                                catalog.ListDisciplin.Sort();
+                                                Console.WriteLine("\nВыполнилась сортировка");
+                                                break;
+                                            case 2:
+                                                catalog.PrintNameDisciplinIfEstKursach();
+                                                break;
+                                            case 3:
+                                                catalog.PrintNameDisciplinIfEstKursach();
+                                                break;
+                                            case 4:
+                                                catalog.PrintColvoPractZanatii();
+                                                break;
+                                            case 5:
+                                                // тут не понял что за группировка
+                                                break;
+                                            case 6:
+                                                Console.WriteLine("Хотите выйти ? - yes");
+                                                if (Convert.ToString(Console.ReadLine()) == "yes")
+                                                {
+                                                    FlagExit = true;
+                                                }
+                                                break;
+                                        }
+                                        if (FlagExit == true)
+                                        {
+                                            FlagExit = false; // чтобы не вышло из предыдущего
+                                            break;
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    Console.WriteLine("Хотите выйти ? - yes");
+                                    if (Convert.ToString(Console.ReadLine()) == "yes")
+                                    {
+                                        FlagExit = true;
+                                    }
+                                    break;
+                            }
+                            if (FlagExit == true)
+                            {
+                                FlagExit = false; // чтобы не вышло из основного
+                                break;
+                            }
+                        }
+                        
                         break;
                     default:
                         Console.WriteLine("Вы попали в default");
@@ -123,12 +189,6 @@ namespace XML_08_02_2022
             // Нужно только если при использовании англоязычной Windows
             // на консоль вместо кириллицы выводятся знаки вопроса (??? ????? ??????)
             Console.OutputEncoding = Encoding.Unicode;
-
-            // Читаем Xml файл.
-            ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\example.xml");
-
-            // Ждем ввода пользователя.
-            Console.ReadLine();
 
             // Создаем структуру данных.
             var catalog = new SheduleDisciplini() // Корневой элемент
@@ -177,12 +237,12 @@ namespace XML_08_02_2022
             var root = doc.CreateElement("catalog");
 
             // Получаем все записи телефонной книги.
-            foreach (var phone in catalog.ListDisciplin)
+            foreach (var Disciplin in catalog.ListDisciplin)
             {
                 // Создаем элемент записи телефонной книги.
                 var phoneNode = doc.CreateElement("phone");
 
-                if (phone.Important)
+                if (Disciplin.Important)
                 {
                     // Если установлен атрибут Важный в true,
                     // то создаем и добавляем атрибут к элементу записи телефонной книги.
@@ -198,9 +258,9 @@ namespace XML_08_02_2022
                 }
 
                 // Создаем зависимые элементы.
-                AddChildNode("name", phone.Name, phoneNode, doc);
-                AddChildNode("number", phone.Number.ToString(), phoneNode, doc);
-                AddChildNode("remark", phone.Remark, phoneNode, doc);
+                AddChildNode("name", Disciplin.Name, phoneNode, doc);
+                AddChildNode("number", Disciplin.Number.ToString(), phoneNode, doc);
+                AddChildNode("remark", Disciplin.Remark, phoneNode, doc);
 
                 // Добавляем запись телефонной книги в каталог.
                 root.AppendChild(phoneNode);
