@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <catalog>
   <Disciplina>
-    <NameDisciplina>Baglasova</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>KPiAP(C#)</NameDisciplina>
+    <FamiliaPrepodsavatela>Baglasova</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
     <ColvoHourLekcii>200</ColvoHourLekcii>
     <ColvoPractLekcii>200</ColvoPractLekcii>
@@ -11,9 +10,8 @@
     <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Smelova</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>English</NameDisciplina>
+    <FamiliaPrepodsavatela>Smelova</FamiliaPrepodsavatela>
     <NumStudents>12</NumStudents>
     <ColvoHourLekcii>100</ColvoHourLekcii>
     <ColvoPractLekcii>100</ColvoPractLekcii>
@@ -21,9 +19,8 @@
     <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Shalapin</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>OAiP(C++)</NameDisciplina>
+    <FamiliaPrepodsavatela>Shalapin</FamiliaPrepodsavatela>
     <NumStudents>25</NumStudents>
     <ColvoHourLekcii>1000</ColvoHourLekcii>
     <ColvoPractLekcii>900</ColvoPractLekcii>
@@ -31,9 +28,8 @@
     <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Iakimovich</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>TestPO</NameDisciplina>
+    <FamiliaPrepodsavatela>Iakimovich</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
     <ColvoHourLekcii>120</ColvoHourLekcii>
     <ColvoPractLekcii>120</ColvoPractLekcii>
@@ -41,9 +37,8 @@
     <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Kubtsova</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>DataBase</NameDisciplina>
+    <FamiliaPrepodsavatela>Kubtsova</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
     <ColvoHourLekcii>110</ColvoHourLekcii>
     <ColvoPractLekcii>110</ColvoPractLekcii>
@@ -51,9 +46,8 @@
     <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Basaliga</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>AUDO</NameDisciplina>
+    <FamiliaPrepodsavatela>Basaliga</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
     <ColvoHourLekcii>150</ColvoHourLekcii>
     <ColvoPractLekcii>150</ColvoPractLekcii>
@@ -61,9 +55,8 @@
     <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Iaskevich</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>BuhUchet</NameDisciplina>
+    <FamiliaPrepodsavatela>Iaskevich</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
     <ColvoHourLekcii>90</ColvoHourLekcii>
     <ColvoPractLekcii>90</ColvoPractLekcii>
@@ -71,9 +64,8 @@
     <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Kibisova</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>Basic(Java)</NameDisciplina>
+    <FamiliaPrepodsavatela>Kibisova</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
     <ColvoHourLekcii>170</ColvoHourLekcii>
     <ColvoPractLekcii>170</ColvoPractLekcii>
@@ -81,9 +73,8 @@
     <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Kudravceva</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>PractWeb</NameDisciplina>
+    <FamiliaPrepodsavatela>Kudravceva</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
     <ColvoHourLekcii>200</ColvoHourLekcii>
     <ColvoPractLekcii>200</ColvoPractLekcii>
@@ -91,13 +82,21 @@
     <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Burmakova</NameDisciplina>
-    <FamiliaPrepodsavatela>
-    </FamiliaPrepodsavatela>
+    <NameDisciplina>Fizra</NameDisciplina>
+    <FamiliaPrepodsavatela>Burmakova</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
     <ColvoHourLekcii>100</ColvoHourLekcii>
     <ColvoPractLekcii>50</ColvoPractLekcii>
     <NalichKursacha>Нет</NalichKursacha>
+    <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
+  </Disciplina>
+  <Disciplina>
+    <NameDisciplina>OO</NameDisciplina>
+    <FamiliaPrepodsavatela>OO</FamiliaPrepodsavatela>
+    <NumStudents>1000</NumStudents>
+    <ColvoHourLekcii>100</ColvoHourLekcii>
+    <ColvoPractLekcii>100</ColvoPractLekcii>
+    <NalichKursacha>Да</NalichKursacha>
     <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
   </Disciplina>
 </catalog>

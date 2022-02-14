@@ -101,7 +101,7 @@ namespace XML_08_02_2022
                                     break;
                                 case 2:
                                     // Пишем в файл.
-                                    WriteXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\result.xml", catalog);
+                                    WriteXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\zapis.xml", catalog);
                                     Console.WriteLine("Данные Записаны в файл result.xml");
                                     break;
                                 case 3:
@@ -112,6 +112,7 @@ namespace XML_08_02_2022
                                         Console.WriteLine("\n\t\t[Список запросов без xml]\n1 - Одновременная сортировка по фамилии преподавателя и количеству студентов в группе" +
                                         "\n2 - Вывести названия дисциплин, имеющих курсач\n3 - Вывести фамилию преподавателя с наибольшим количеством экзаменов" +
                                         "\n4 - Вывести количество практических занятий по всем учебным дисциплинам\n5 - Выполнить группировку по каждому полю\n6 - повторить действие или выйти из списка запросов?");
+                                        // Тут в любом случае из xml надо считать в каталог ............................................................................... Доделать
                                         switch (Convert.ToInt32(Console.ReadLine()))
                                         {
                                             case 1:
@@ -260,7 +261,7 @@ namespace XML_08_02_2022
         /// Прочитать Xml файл.
         /// </summary>
         /// <param name="filename"> Путь к Xml файлу. </param>
-        private static void ReadXmlFile(string filename)
+        private static void ReadXmlFile(string filename) ////////////////////////////////////////////// Добавить запись элементов в catalog из xml
         {
             // Создаем экземпляр Xml документа.
             var doc = new XmlDocument();
