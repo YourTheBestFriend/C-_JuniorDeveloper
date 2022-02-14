@@ -117,6 +117,7 @@ namespace XML_08_02_2022
                                         {
                                             case 1:
                                                 catalog.ListDisciplin.Sort();
+                                                PrintStringXml();
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
@@ -207,7 +208,6 @@ namespace XML_08_02_2022
                     new Disciplina("Fizra", "Burmakova", 23, 100, 50, "Нет", "зачет")
                 }
             };
-
 
             // start
             MainFunction(catalog);
@@ -336,5 +336,53 @@ namespace XML_08_02_2022
             child.InnerText = childText;
             parentNode.AppendChild(child);
         }
+
+        // Функция - согласно индивидуальному заданию, причем для четных запросов выводить полную XML-строку, а для нечетных – только данные внутри узла.
+        private static void PrintStringXml(/*int index*/) // index - передаю чтобы понять четный или нет
+        {
+            // Создаем экземпляр Xml документа.
+            var doc = new XmlDocument();
+
+            // Загружаем данные из файла.
+            doc.Load("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\result.xml");
+
+            // Получаем корневой элемент документа.
+            var root = doc.DocumentElement; // <catalog> </catalog>
+
+            int i = 0;
+            if (true)//index % 2 == 0)
+            {
+                XmlNodeList nodes = doc.DocumentElement.SelectNodes("/catalog/desciplina");
+                foreach (XmlNode node in nodes)
+                {
+                    Console.WriteLine(node.InnerText + "\r\n");
+                }
+                //foreach (var child in root.ChildNodes)
+                //{
+                //    if (child is XmlElement node)
+                //    {
+                //        // Если зависимый элемент тоже элемент,
+                //        // то переходим на новую строку 
+                //        // и рекурсивно вызываем метод.
+                //        // Следующий элемент будет смещен на один отступ вправо.
+                //        Console.WriteLine();
+                //        PrintItem(node, i++);
+                //    }
+
+                //    if (child is XmlText text)
+                //    {
+                //        // Если зависимый элемент текст,
+                //        // то выводим его через тире.
+                //        Console.Write($"- {text.InnerText}");
+                //    }
+                //}
+            }
+            else
+            {
+                
+            }
+           
+        }
+           
     }
 }
