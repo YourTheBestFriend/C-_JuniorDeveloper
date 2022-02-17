@@ -57,7 +57,7 @@ namespace XML_08_02_2022
                                                 catalog.PrintColvoPractZanatii(catalog.ListDisciplin);
                                                 break;
                                             case 5:
-                                                // тут не понял что за группировка
+                                                catalog.PrintGroup(catalog.ListDisciplin);
                                                 break;
                                             case 6:
                                                 Console.WriteLine("Хотите выйти ? - yes");

@@ -81,15 +81,19 @@ namespace XML_08_02_2022
             }
         }
 
-        // Группировка по полю
-        public void PrintGroup(List<Disciplina> listlDesc, string x)
+        // Группировка
+        public void PrintGroup(List<Disciplina> listlDesc)
         {
-            for (int i = 0; i < listlDesc.Count; i++)
+            var Des = listlDesc.GroupBy(x => x.NameDisciplina);
+            foreach (var f in Des)
             {
-                if (x == listlDesc)
-                {
+                Console.WriteLine(f.Key);
 
+                foreach (var dis in f)
+                {
+                    Console.WriteLine(dis.NameDisciplina);
                 }
+                Console.WriteLine(); // для разделения между группами
             }
         }
     }
