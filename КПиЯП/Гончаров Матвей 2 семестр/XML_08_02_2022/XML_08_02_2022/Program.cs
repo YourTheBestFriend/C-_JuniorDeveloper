@@ -135,6 +135,7 @@ namespace XML_08_02_2022
                                             {         
                                                 foreach (XmlNode childnode in xnode.ChildNodes)
                                                 {
+                                                    catalog.ListDisciplin.Add(new Disciplina());
                                                     // Выводил для проверки
                                                     if (childnode.Name == "NameDisciplina")
                                                     {
@@ -173,7 +174,7 @@ namespace XML_08_02_2022
                                                     }
                                                     i++;
                                                 }
-                                                Console.WriteLine();
+                                                // Console.WriteLine();
                                             }
                                         }
 
@@ -417,38 +418,86 @@ namespace XML_08_02_2022
             // Получаем корневой элемент документа.
             var root = doc.DocumentElement; // <catalog> </catalog>
 
-            if (index % 2 != 0) // Значит не четный
-            {
-                XmlNodeList nodes = doc.DocumentElement.SelectNodes("/catalog/desciplina");
-                foreach (XmlNode node in nodes)
-                {
-                    Console.WriteLine(node.InnerText + "\r\n");
-                }
-                //foreach (var child in root.ChildNodes)
-                //{
-                //    if (child is XmlElement node)
-                //    {
-                //        // Если зависимый элемент тоже элемент,
-                //        // то переходим на новую строку 
-                //        // и рекурсивно вызываем метод.
-                //        // Следующий элемент будет смещен на один отступ вправо.
-                //        Console.WriteLine();
-                //        PrintItem(node, i++);
-                //    }
+            Console.WriteLine("\n[Вводит при четности и не четности запросов с xml]");
 
-                //    if (child is XmlText text)
-                //    {
-                //        // Если зависимый элемент текст,
-                //        // то выводим его через тире.
-                //        Console.Write($"- {text.InnerText}");
-                //    }
-                //}
+            if (root != null)
+            {
+                if (index % 2 == 0) // Значит не четный
+                {
+                    // обход всех узлов в корневом элементе
+                    foreach (XmlElement xnode in root)
+                    {
+                        foreach (XmlNode childnode in xnode.ChildNodes)
+                        {
+                            // Выводил для проверки
+                            if (childnode.Name == "NameDisciplina")
+                            {
+                                Console.WriteLine($"NameDisciplina: {childnode.InnerText}");
+                            }
+                            if (childnode.Name == "FamiliaPrepodsavatela")
+                            {
+                                Console.WriteLine($"FamiliaPrepodsavatela: {childnode.InnerText}");
+                            }
+                            if (childnode.Name == "NumStudents")
+                            {
+                                Console.WriteLine($"NumStudents: {childnode.InnerText}");
+                            }
+                            if (childnode.Name == "ColvoHourLekcii")
+                            {
+                                Console.WriteLine($"ColvoHourLekcii: {childnode.InnerText}");
+                            }
+                            if (childnode.Name == "ColvoPractLekcii")
+                            {
+                                Console.WriteLine($"ColvoPractLekcii: {childnode.InnerText}");
+                            }
+                            if (childnode.Name == "NalichKursacha")
+                            {
+                                Console.WriteLine($"NalichKursacha: {childnode.InnerText}");
+                            }
+                            if (childnode.Name == "VidItogovogoKursacha")
+                            {
+                                Console.WriteLine($"VidItogovogoKursacha: {childnode.InnerText}");
+                            }
+                        }
+                        Console.WriteLine();
+                    }
+                }
             }
             else
             {
-                
+                foreach (XmlElement xnode in root)
+                {
+                    foreach (XmlNode childnode in xnode.ChildNodes)
+                    {
+                        if (childnode.Name == "FamiliaPrepodsavatela")
+                        {
+                            Console.WriteLine($"FamiliaPrepodsavatela: {childnode.InnerText}");
+                        }
+                        if (childnode.Name == "NumStudents")
+                        {
+                            Console.WriteLine($"NumStudents: {childnode.InnerText}");
+                        }
+                        if (childnode.Name == "ColvoHourLekcii")
+                        {
+                            Console.WriteLine($"ColvoHourLekcii: {childnode.InnerText}");
+                        }
+                        if (childnode.Name == "ColvoPractLekcii")
+                        {
+                            Console.WriteLine($"ColvoPractLekcii: {childnode.InnerText}");
+                        }
+                        if (childnode.Name == "NalichKursacha")
+                        {
+                            Console.WriteLine($"NalichKursacha: {childnode.InnerText}");
+                        }
+                        if (childnode.Name == "VidItogovogoKursacha")
+                        {
+                            Console.WriteLine($"VidItogovogoKursacha: {childnode.InnerText}");
+                        }
+                    }
+                    Console.WriteLine();
+                }
+
             }
-           
         }
            
     }

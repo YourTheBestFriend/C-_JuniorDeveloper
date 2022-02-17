@@ -91,21 +91,12 @@
     <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>Dis</NameDisciplina>
-    <FamiliaPrepodsavatela>FAM</FamiliaPrepodsavatela>
-    <NumStudents>10</NumStudents>
+    <NameDisciplina>Abama</NameDisciplina>
+    <FamiliaPrepodsavatela>ABAMA</FamiliaPrepodsavatela>
+    <NumStudents>1000000000</NumStudents>
     <ColvoHourLekcii>1000</ColvoHourLekcii>
     <ColvoPractLekcii>100</ColvoPractLekcii>
-    <NalichKursacha>Да</NalichKursacha>
-    <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
-  </Disciplina>
-  <Disciplina>
-    <NameDisciplina>ФВа</NameDisciplina>
-    <FamiliaPrepodsavatela>ЫВП</FamiliaPrepodsavatela>
-    <NumStudents>100</NumStudents>
-    <ColvoHourLekcii>10000</ColvoHourLekcii>
-    <ColvoPractLekcii>1000</ColvoPractLekcii>
-    <NalichKursacha>Да</NalichKursacha>
+    <NalichKursacha>Нет</NalichKursacha>
     <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
   </Disciplina>
 </catalog>
