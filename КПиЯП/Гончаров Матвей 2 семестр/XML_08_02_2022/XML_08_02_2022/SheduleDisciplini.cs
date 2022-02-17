@@ -80,5 +80,17 @@ namespace XML_08_02_2022
                 Console.WriteLine(" Сработала функция - AddDisciplina");
             }
         }
+
+        // Группировка по полю
+        public void PrintGroup(List<Disciplina> listlDesc, string x)
+        {
+            for (int i = 0; i < listlDesc.Count; i++)
+            {
+                if (x == listlDesc)
+                {
+
+                }
+            }
+        }
     }
 }
