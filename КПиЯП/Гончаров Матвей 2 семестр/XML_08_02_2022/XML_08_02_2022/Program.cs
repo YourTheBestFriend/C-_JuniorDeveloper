@@ -119,7 +119,6 @@ namespace XML_08_02_2022
                                         
                                         // для того чтобы делитнуть прошлые данные 
                                         catalog.ListDisciplin.Clear();
-
                                         // Получаю данные в свой catalog
                                         XmlDocument xDoc = new XmlDocument();
                                         
@@ -127,7 +126,7 @@ namespace XML_08_02_2022
                                         xDoc.Load("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
                                         
                                         XmlElement? xRoot = xDoc.DocumentElement; // получил корневой элемент
-                                        if(xRoot != null)
+                                        if(false) // xRoot != null
                                         {
                                             int i = 0;
                                             // обход всех узлов в корневом элементе
@@ -140,41 +139,41 @@ namespace XML_08_02_2022
                                                     if (childnode.Name == "NameDisciplina")
                                                     {
                                                         catalog.ListDisciplin[i].NameDisciplina = childnode.InnerText;
-                                                        //Console.WriteLine($"NameDisciplina: {childnode.InnerText}");
+                                                       // Console.WriteLine($"NameDisciplina: {childnode.InnerText}");
                                                     }
                                                     if (childnode.Name == "FamiliaPrepodsavatela")
                                                     {
-                                                        //Console.WriteLine($"FamiliaPrepodsavatela: {childnode.InnerText}");
+                                                       // Console.WriteLine($"FamiliaPrepodsavatela: {childnode.InnerText}");
                                                         catalog.ListDisciplin[i].FamiliaPrepodsavatela = childnode.InnerText;
                                                     }
                                                     if (childnode.Name == "NumStudents")
                                                     {
-                                                        // Console.WriteLine($"NumStudents: {childnode.InnerText}");
+                                                     //   Console.WriteLine($"NumStudents: {childnode.InnerText}");
                                                         catalog.ListDisciplin[i].NumStudents = Convert.ToInt32(childnode.InnerText);
                                                     }
                                                     if (childnode.Name == "ColvoHourLekcii")
                                                     {
-                                                        //Console.WriteLine($"ColvoHourLekcii: {childnode.InnerText}");
+                                                      //  Console.WriteLine($"ColvoHourLekcii: {childnode.InnerText}");
                                                         catalog.ListDisciplin[i].ColvoHourLekcii = Convert.ToInt32(childnode.InnerText);
                                                     }
                                                     if (childnode.Name == "ColvoPractLekcii")
                                                     {
-                                                        //Console.WriteLine($"ColvoPractLekcii: {childnode.InnerText}");
+                                                       // Console.WriteLine($"ColvoPractLekcii: {childnode.InnerText}");
                                                         catalog.ListDisciplin[i].ColvoPractLekcii = Convert.ToInt32(childnode.InnerText);
                                                     }
                                                     if (childnode.Name == "NalichKursacha")
                                                     {
-                                                        //Console.WriteLine($"NalichKursacha: {childnode.InnerText}");
+                                                       // Console.WriteLine($"NalichKursacha: {childnode.InnerText}");
                                                         catalog.ListDisciplin[i].NalichKursacha = childnode.InnerText;
                                                     }
                                                     if (childnode.Name == "VidItogovogoKursacha")
                                                     {
-                                                        //Console.WriteLine($"VidItogovogoKursacha: {childnode.InnerText}");
+                                                       // Console.WriteLine($"VidItogovogoKursacha: {childnode.InnerText}");
                                                         catalog.ListDisciplin[i].VidItogovogoKursacha = childnode.InnerText;
                                                     }
                                                     i++;
                                                 }
-                                                // Console.WriteLine();
+                                                Console.WriteLine();
                                             }
                                         }
 
@@ -182,24 +181,28 @@ namespace XML_08_02_2022
                                         {
                                             case 1:
                                                 catalog.ListDisciplin.Sort();
-                                                PrintStringXml(1);
+                                                //PrintStringXml(1);
+                                                // для записи отсортированного каталога в файл
+                                                WriteXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml", catalog);
+                                                Console.WriteLine("Данные Записаны в файл rezult.xml");
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
                                                 catalog.PrintNameDisciplinIfEstKursach(catalog.ListDisciplin);
-                                                PrintStringXml(2);
+                                                //PrintStringXml(2);
                                                 break;
                                             case 3:
+
                                                 catalog.PrintNamePrepodavatelaMAXCOlEXAMS(catalog.ListDisciplin);
-                                                PrintStringXml(3);
+                                               // PrintStringXml(3);
                                                 break;
                                             case 4:
                                                 catalog.PrintColvoPractZanatii(catalog.ListDisciplin);
-                                                PrintStringXml(4);
+                                                //PrintStringXml(4);
                                                 break;
                                             case 5:
                                                 catalog.PrintGroup(catalog.ListDisciplin);
-                                                PrintStringXml(5);
+                                               // PrintStringXml(5);
                                                 break;
                                             case 6:
                                                 Console.WriteLine("Хотите выйти ? - yes");
@@ -407,6 +410,8 @@ namespace XML_08_02_2022
         }
 
         // Функция - согласно индивидуальному заданию, причем для четных запросов выводить полную XML-строку, а для нечетных – только данные внутри узла.
+        
+        // Я ее закоментил а то мешает
         private static void PrintStringXml(int index) // index - передаю чтобы понять четный или нет
         {
             // Создаем экземпляр Xml документа.
@@ -422,7 +427,7 @@ namespace XML_08_02_2022
 
             if (root != null)
             {
-                if (index % 2 == 0) // Значит не четный
+                if (index % 2 != 0)
                 {
                     // обход всех узлов в корневом элементе
                     foreach (XmlElement xnode in root)
@@ -496,7 +501,6 @@ namespace XML_08_02_2022
                     }
                     Console.WriteLine();
                 }
-
             }
         }
            
