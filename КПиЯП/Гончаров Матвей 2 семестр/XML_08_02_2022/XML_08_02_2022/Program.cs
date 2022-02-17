@@ -32,7 +32,7 @@ namespace XML_08_02_2022
                                     }
                                     break;
                                 case 2:
-                                    catalog.AddDisciplina(catalog.ListDisciplin); // так тут меня не ругать спать хочу но сижу и делаю
+                                    catalog.AddDisciplina(catalog.ListDisciplin);
                                     break;
                                 case 3:
                                     ///////////////////////////////////////////////////////////////////////////////////////////////////////////// Список запросов без xml
@@ -97,12 +97,13 @@ namespace XML_08_02_2022
                             switch (Convert.ToInt32(Console.ReadLine()))
                             {
                                 case 1:
-                                    ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\result.xml");
+                                    ReadXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
                                     break;
                                 case 2:
                                     // Пишем в файл.
-                                    WriteXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\zapis.xml", catalog);
-                                    Console.WriteLine("Данные Записаны в файл result.xml");
+                                    catalog.AddDisciplina(catalog.ListDisciplin);
+                                    WriteXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml", catalog);
+                                    Console.WriteLine("Данные Записаны в файл rezult.xml");
                                     break;
                                 case 3:
                                     ///////////////////////////////////////////////////////////////////////////////////////////////////////////// Список запросов с xml
@@ -130,7 +131,7 @@ namespace XML_08_02_2022
                                                 catalog.PrintColvoPractZanatii(catalog.ListDisciplin);
                                                 break;
                                             case 5:
-                                                // тут не понял что за группировка
+                                                catalog.PrintGroup(catalog.ListDisciplin);
                                                 break;
                                             case 6:
                                                 Console.WriteLine("Хотите выйти ? - yes");
