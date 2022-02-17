@@ -113,25 +113,85 @@ namespace XML_08_02_2022
                                         Console.WriteLine("\n\t\t[Список запросов без xml]\n1 - Одновременная сортировка по фамилии преподавателя и количеству студентов в группе" +
                                         "\n2 - Вывести названия дисциплин, имеющих курсач\n3 - Вывести фамилию преподавателя с наибольшим количеством экзаменов" +
                                         "\n4 - Вывести количество практических занятий по всем учебным дисциплинам\n5 - Выполнить группировку по каждому полю\n6 - повторить действие или выйти из списка запросов?");
-                                        // Тут в любом случае из xml надо считать в каталог ............................................................................... Доделать
+
+                                        //_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+                                        // Тут в любом случае из xml надо считать в каталог
+                                        
+                                        // для того чтобы делитнуть прошлые данные 
+                                        catalog.ListDisciplin.Clear();
+
+
+                                        // Получаю данные в свой catalog
+                                        XmlDocument xDoc = new XmlDocument();
+                                        
+                                        // Загрузил док
+                                        xDoc.Load("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
+                                        
+                                        XmlElement? xRoot = xDoc.DocumentElement; // получил корневой элемент
+                                        if(xRoot != null)
+                                        {
+                                            // обход всех узлов в корневом элементе
+                                            foreach (XmlElement xnode in xRoot)
+                                            {                                    
+                                                foreach (XmlNode childnode in xnode.ChildNodes)
+                                                {
+                                                    // Выводил для проверки
+                                                    if (childnode.Name == "NameDisciplina")
+                                                    {
+                                                        reserveCatalog
+                                                        //Console.WriteLine($"NameDisciplina: {childnode.InnerText}");
+                                                    }
+                                                    if (childnode.Name == "FamiliaPrepodsavatela")
+                                                    {
+                                                        //Console.WriteLine($"FamiliaPrepodsavatela: {childnode.InnerText}");
+                                                    }
+                                                    if (childnode.Name == "NumStudents")
+                                                    {
+                                                       // Console.WriteLine($"NumStudents: {childnode.InnerText}");
+                                                    }
+                                                    if (childnode.Name == "ColvoHourLekcii")
+                                                    {
+                                                        //Console.WriteLine($"ColvoHourLekcii: {childnode.InnerText}");
+                                                    }
+                                                    if (childnode.Name == "ColvoPractLekcii")
+                                                    {
+                                                        //Console.WriteLine($"ColvoPractLekcii: {childnode.InnerText}");
+                                                    }
+                                                    if (childnode.Name == "NalichKursacha")
+                                                    {
+                                                       //Console.WriteLine($"NalichKursacha: {childnode.InnerText}");
+                                                    }
+                                                    if (childnode.Name == "VidItogovogoKursacha")
+                                                    {
+                                                       //Console.WriteLine($"VidItogovogoKursacha: {childnode.InnerText}");
+                                                    }
+                                                }
+                                                Console.WriteLine();
+                                            }
+                                        }
+
                                         switch (Convert.ToInt32(Console.ReadLine()))
                                         {
                                             case 1:
                                                 catalog.ListDisciplin.Sort();
-                                                PrintStringXml();
+                                                PrintStringXml(1);
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
                                                 catalog.PrintNameDisciplinIfEstKursach(catalog.ListDisciplin);
+                                                PrintStringXml(2);
                                                 break;
                                             case 3:
                                                 catalog.PrintNamePrepodavatelaMAXCOlEXAMS(catalog.ListDisciplin);
+                                                PrintStringXml(3);
                                                 break;
                                             case 4:
                                                 catalog.PrintColvoPractZanatii(catalog.ListDisciplin);
+                                                PrintStringXml(4);
                                                 break;
                                             case 5:
                                                 catalog.PrintGroup(catalog.ListDisciplin);
+                                                PrintStringXml(5);
                                                 break;
                                             case 6:
                                                 Console.WriteLine("Хотите выйти ? - yes");
@@ -339,19 +399,18 @@ namespace XML_08_02_2022
         }
 
         // Функция - согласно индивидуальному заданию, причем для четных запросов выводить полную XML-строку, а для нечетных – только данные внутри узла.
-        private static void PrintStringXml(/*int index*/) // index - передаю чтобы понять четный или нет
+        private static void PrintStringXml(int index) // index - передаю чтобы понять четный или нет
         {
             // Создаем экземпляр Xml документа.
             var doc = new XmlDocument();
 
             // Загружаем данные из файла.
-            doc.Load("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\result.xml");
+            doc.Load("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
 
             // Получаем корневой элемент документа.
             var root = doc.DocumentElement; // <catalog> </catalog>
 
-            int i = 0;
-            if (true)//index % 2 == 0)
+            if (index % 2 != 0) // Значит не четный
             {
                 XmlNodeList nodes = doc.DocumentElement.SelectNodes("/catalog/desciplina");
                 foreach (XmlNode node in nodes)
