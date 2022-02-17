@@ -120,7 +120,6 @@ namespace XML_08_02_2022
                                         // для того чтобы делитнуть прошлые данные 
                                         catalog.ListDisciplin.Clear();
 
-
                                         // Получаю данные в свой catalog
                                         XmlDocument xDoc = new XmlDocument();
                                         
@@ -130,41 +129,49 @@ namespace XML_08_02_2022
                                         XmlElement? xRoot = xDoc.DocumentElement; // получил корневой элемент
                                         if(xRoot != null)
                                         {
+                                            int i = 0;
                                             // обход всех узлов в корневом элементе
                                             foreach (XmlElement xnode in xRoot)
-                                            {                                    
+                                            {         
                                                 foreach (XmlNode childnode in xnode.ChildNodes)
                                                 {
                                                     // Выводил для проверки
                                                     if (childnode.Name == "NameDisciplina")
                                                     {
-                                                        reserveCatalog
+                                                        catalog.ListDisciplin[i].NameDisciplina = childnode.InnerText;
                                                         //Console.WriteLine($"NameDisciplina: {childnode.InnerText}");
                                                     }
                                                     if (childnode.Name == "FamiliaPrepodsavatela")
                                                     {
                                                         //Console.WriteLine($"FamiliaPrepodsavatela: {childnode.InnerText}");
+                                                        catalog.ListDisciplin[i].FamiliaPrepodsavatela = childnode.InnerText;
                                                     }
                                                     if (childnode.Name == "NumStudents")
                                                     {
-                                                       // Console.WriteLine($"NumStudents: {childnode.InnerText}");
+                                                        // Console.WriteLine($"NumStudents: {childnode.InnerText}");
+                                                        catalog.ListDisciplin[i].NumStudents = Convert.ToInt32(childnode.InnerText);
                                                     }
                                                     if (childnode.Name == "ColvoHourLekcii")
                                                     {
                                                         //Console.WriteLine($"ColvoHourLekcii: {childnode.InnerText}");
+                                                        catalog.ListDisciplin[i].ColvoHourLekcii = Convert.ToInt32(childnode.InnerText);
                                                     }
                                                     if (childnode.Name == "ColvoPractLekcii")
                                                     {
                                                         //Console.WriteLine($"ColvoPractLekcii: {childnode.InnerText}");
+                                                        catalog.ListDisciplin[i].ColvoPractLekcii = Convert.ToInt32(childnode.InnerText);
                                                     }
                                                     if (childnode.Name == "NalichKursacha")
                                                     {
-                                                       //Console.WriteLine($"NalichKursacha: {childnode.InnerText}");
+                                                        //Console.WriteLine($"NalichKursacha: {childnode.InnerText}");
+                                                        catalog.ListDisciplin[i].NalichKursacha = childnode.InnerText;
                                                     }
                                                     if (childnode.Name == "VidItogovogoKursacha")
                                                     {
-                                                       //Console.WriteLine($"VidItogovogoKursacha: {childnode.InnerText}");
+                                                        //Console.WriteLine($"VidItogovogoKursacha: {childnode.InnerText}");
+                                                        catalog.ListDisciplin[i].VidItogovogoKursacha = childnode.InnerText;
                                                     }
+                                                    i++;
                                                 }
                                                 Console.WriteLine();
                                             }
