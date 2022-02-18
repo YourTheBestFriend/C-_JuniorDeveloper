@@ -117,8 +117,7 @@ namespace XML_08_02_2022
                                         //_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
                                         // Тут в любом случае из xml надо считать в каталог
                                         
-                                        // для того чтобы делитнуть прошлые данные 
-                                        catalog.ListDisciplin.Clear();
+                                       
                                         // Получаю данные в свой catalog
                                         XmlDocument xDoc = new XmlDocument();
                                         
@@ -128,7 +127,11 @@ namespace XML_08_02_2022
                                         XmlElement? xRoot = xDoc.DocumentElement; // получил корневой элемент
                                         if(false) // xRoot != null
                                         {
-                                            int i = 0;
+                                            // для того чтобы делитнуть прошлые данные 
+                                            //catalog.ListDisciplin.Clear();
+                                            
+                                            int i = 0; // Для четности не четности строки
+
                                             // обход всех узлов в корневом элементе
                                             foreach (XmlElement xnode in xRoot)
                                             {         
@@ -176,7 +179,7 @@ namespace XML_08_02_2022
                                                 Console.WriteLine();
                                             }
                                         }
-
+                                        xDoc.Save("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
                                         switch (Convert.ToInt32(Console.ReadLine()))
                                         {
                                             case 1:
@@ -185,6 +188,7 @@ namespace XML_08_02_2022
                                                 // для записи отсортированного каталога в файл
                                                 WriteXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml", catalog);
                                                 Console.WriteLine("Данные Записаны в файл rezult.xml");
+
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
@@ -502,7 +506,6 @@ namespace XML_08_02_2022
                     Console.WriteLine();
                 }
             }
-        }
-           
+        } 
     }
 }

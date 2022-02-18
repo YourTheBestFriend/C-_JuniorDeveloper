@@ -169,15 +169,21 @@ namespace XML_08_02_2022
             // string str = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
             string str = @"abcdefghijklmnopqrstuvwxyz";
             // Для проверки
-            if (/*str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) > str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) && */NumStudents > other.NumStudents)
+            //if (/*str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) > str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) && */NumStudents > other.NumStudents)
+            //{
+            //    return 1;
+            //}
+            //else if (/*str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) < str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) &&*/ NumStudents < other.NumStudents)
+            //{
+            //    return -1;
+            //}
+            //return 0;
+            int f = NumStudents.CompareTo(other.NumStudents);
+            if (f == 0)
             {
-                return 1;
+                f = str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]).CompareTo(str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]));
             }
-            else if (/*str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]) < str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]) &&*/ NumStudents < other.NumStudents)
-            {
-                return -1;
-            }
-            return 0;
+            return f;
         }
         // data
         public override string ToString() => $"NameDisciplina: {NameDisciplina, 10} \tFamiliaPrepodsavatela: {FamiliaPrepodsavatela, 10} \t NumStudents: {NumStudents}";
