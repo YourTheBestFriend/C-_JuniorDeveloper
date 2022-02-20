@@ -11,10 +11,10 @@ namespace XML_08_02_2022
         public List<Disciplina> ListDisciplin { get; set; } = new List<Disciplina>();
 
         // Вывод названий дисциплин имеющух курсач
-        public void PrintNameDisciplinIfEstKursach(List<Disciplina> ListDisciplin_)
+        public void PrintNameDisciplinIfEstKursach()
         {
             Console.WriteLine("Названия дисциплин у которых есть курсач");
-            foreach (var x in ListDisciplin_)
+            foreach (var x in ListDisciplin)
             {
                 if (x.NalichKursacha == "Да")
                 {
@@ -24,33 +24,33 @@ namespace XML_08_02_2022
         }
 
         // Вывести фамилию преподавателя с наибольшим количеством экзаменов
-        public void PrintNamePrepodavatelaMAXCOlEXAMS(List<Disciplina> ListDisciplin_)
+        public void PrintNamePrepodavatelaMAXCOlEXAMS()
         {
             Console.WriteLine("Фамилия преподавателя с наибольшим количеством экзаменов");
-            int max = ListDisciplin_[0].NumStudents, index = 0;
-            for (int i = 1; i < ListDisciplin_.Count; i++)
+            int max = ListDisciplin[0].NumStudents, index = 0;
+            for (int i = 1; i < ListDisciplin.Count; i++)
             {
-                if (max < ListDisciplin_[i].NumStudents)
+                if (max < ListDisciplin[i].NumStudents)
                 {
-                    max = ListDisciplin_[i].NumStudents;
+                    max = ListDisciplin[i].NumStudents;
                     index = i;
                 }
             }
-            Console.WriteLine($"FamiliaPrepodsavatela: {ListDisciplin_[index].FamiliaPrepodsavatela}");
+            Console.WriteLine($"FamiliaPrepodsavatela: {ListDisciplin[index].FamiliaPrepodsavatela}");
         }
 
         // Вывести количество практических занятий по всем учебным дисциплинам
-        public void PrintColvoPractZanatii(List<Disciplina> ListDisciplin_)
+        public void PrintColvoPractZanatii()
         {
             Console.WriteLine("количество практических занятий");
-            foreach (var x in ListDisciplin_)
+            foreach (var x in ListDisciplin)
             {
                 Console.WriteLine("NameDisciplina: " + x.NameDisciplina + " ColvoPractLekcii: " + x.ColvoPractLekcii);
             }
         }
          
         // Добавление объекта
-        public void AddDisciplina(List<Disciplina> listDis)
+        public void AddDisciplina()
         {
             Console.WriteLine("Добавление объекта: ");
             //string nameDisciplina, string familiaPrepodsavatela, int numStudents, int colvoHourLekcii, int colvoPractLekcii, string nalichKursacha, string vidItogovogoKursacha
@@ -59,39 +59,51 @@ namespace XML_08_02_2022
             for (int i = 0; i < j; i++)
             {
                 Disciplina x = new Disciplina();
-                Console.Write("name: ");
-                // Просто в блок выделил
+                while(true)
                 {
-                    x.NameDisciplina = Convert.ToString(Console.ReadLine());
-                    Console.Write("familiaPrepodsavatela: ");
-                    x.FamiliaPrepodsavatela = Convert.ToString(Console.ReadLine());
-                    Console.Write("numStudents: ");
-                    x.NumStudents = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("colvoHourLekcii: ");
-                    x.ColvoHourLekcii = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("colvoPractLekcii: ");
-                    x.ColvoPractLekcii = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("nalichKursacha: ");
-                    x.NalichKursacha = Convert.ToString(Console.ReadLine());
-                    Console.Write("vidItogovogoKursacha: ");
-                    x.VidItogovogoKursacha = Convert.ToString(Console.ReadLine());
+                    try
+                    {
+                        // Просто в блок выделил
+                        {
+                            Console.Write("name: ");
+                            x.NameDisciplina = Convert.ToString(Console.ReadLine());
+                            Console.Write("familiaPrepodsavatela: ");
+                            x.FamiliaPrepodsavatela = Convert.ToString(Console.ReadLine());
+                            Console.Write("numStudents: ");
+                            x.NumStudents = Convert.ToInt32(Console.ReadLine());
+                            Console.Write("colvoHourLekcii: ");
+                            x.ColvoHourLekcii = Convert.ToInt32(Console.ReadLine());
+                            Console.Write("colvoPractLekcii: ");
+                            x.ColvoPractLekcii = Convert.ToInt32(Console.ReadLine());
+                            Console.Write("nalichKursacha: ");
+                            x.NalichKursacha = Console.ReadLine();
+                            Console.Write("vidItogovogoKursacha: ");
+                            x.VidItogovogoKursacha = Console.ReadLine();
+                        }
+                        ListDisciplin.Add(x);
+                        Console.WriteLine(" Сработала функция - AddDisciplina");
+                        break;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error = " + ex.Message);
+                    }
+                   
                 }
-                listDis.Add(x);
-                Console.WriteLine(" Сработала функция - AddDisciplina");
             }
         }
 
-        // Группировка
-        public void PrintGroup(List<Disciplina> listlDesc)
+        // Группировка, поход не так
+        public void PrintGroup()
         {
-            var Des = listlDesc.GroupBy(x => x.NameDisciplina);
+            var Des = ListDisciplin.GroupBy(x => x.NameDisciplina);
             foreach (var f in Des)
             {
                 Console.WriteLine(f.Key);
 
                 foreach (var dis in f)
                 {
-                    Console.WriteLine(dis.NameDisciplina);
+                    Console.WriteLine(dis.NameDisciplina + " Familia: " + dis.FamiliaPrepodsavatela);
                 }
                 Console.WriteLine(); // для разделения между группами
             }

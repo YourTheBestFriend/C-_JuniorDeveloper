@@ -32,7 +32,7 @@ namespace XML_08_02_2022
                                     }
                                     break;
                                 case 2:
-                                    catalog.AddDisciplina(catalog.ListDisciplin);
+                                    catalog.AddDisciplina();
                                     break;
                                 case 3:
                                     ///////////////////////////////////////////////////////////////////////////////////////////////////////////// Список запросов без xml
@@ -48,16 +48,16 @@ namespace XML_08_02_2022
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
-                                                catalog.PrintNameDisciplinIfEstKursach(catalog.ListDisciplin);
+                                                catalog.PrintNameDisciplinIfEstKursach();
                                                 break;
                                             case 3:
-                                                catalog.PrintNamePrepodavatelaMAXCOlEXAMS(catalog.ListDisciplin);
+                                                catalog.PrintNamePrepodavatelaMAXCOlEXAMS();
                                                 break;
                                             case 4:
-                                                catalog.PrintColvoPractZanatii(catalog.ListDisciplin);
+                                                catalog.PrintColvoPractZanatii();
                                                 break;
                                             case 5:
-                                                catalog.PrintGroup(catalog.ListDisciplin);
+                                                catalog.PrintGroup();
                                                 break;
                                             case 6:
                                                 Console.WriteLine("Хотите выйти ? - yes");
@@ -101,7 +101,7 @@ namespace XML_08_02_2022
                                     break;
                                 case 2:
                                     // Пишем в файл.
-                                    catalog.AddDisciplina(catalog.ListDisciplin);
+                                    catalog.AddDisciplina();
                                     WriteXmlFile("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml", catalog);
                                     Console.WriteLine("Данные Записаны в файл rezult.xml");
                                     break;
@@ -125,6 +125,7 @@ namespace XML_08_02_2022
                                         xDoc.Load("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
                                         
                                         XmlElement? xRoot = xDoc.DocumentElement; // получил корневой элемент
+                                        /*
                                         if(false) // xRoot != null
                                         {
                                             // для того чтобы делитнуть прошлые данные 
@@ -180,6 +181,7 @@ namespace XML_08_02_2022
                                             }
                                         }
                                         xDoc.Save("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
+                                        */                                       
                                         switch (Convert.ToInt32(Console.ReadLine()))
                                         {
                                             case 1:
@@ -192,20 +194,20 @@ namespace XML_08_02_2022
                                                 Console.WriteLine("\nВыполнилась сортировка");
                                                 break;
                                             case 2:
-                                                catalog.PrintNameDisciplinIfEstKursach(catalog.ListDisciplin);
+                                                catalog.PrintNameDisciplinIfEstKursach();
                                                 //PrintStringXml(2);
                                                 break;
                                             case 3:
 
-                                                catalog.PrintNamePrepodavatelaMAXCOlEXAMS(catalog.ListDisciplin);
+                                                catalog.PrintNamePrepodavatelaMAXCOlEXAMS();
                                                // PrintStringXml(3);
                                                 break;
                                             case 4:
-                                                catalog.PrintColvoPractZanatii(catalog.ListDisciplin);
+                                                catalog.PrintColvoPractZanatii();
                                                 //PrintStringXml(4);
                                                 break;
                                             case 5:
-                                                catalog.PrintGroup(catalog.ListDisciplin);
+                                                catalog.PrintGroup();
                                                // PrintStringXml(5);
                                                 break;
                                             case 6:
@@ -275,13 +277,14 @@ namespace XML_08_02_2022
                     new Disciplina("KPiAP(C#)", "Baglasova", 23, 200, 200, "Да", "экзамен"),
                     new Disciplina("English", "Smelova", 12, 100, 100, "Нет", "экзамен"),
                     new Disciplina("OAiP(C++)", "Shalapin", 25, 1000, 900, "Да", "экзамен"),
-                    new Disciplina("TestPO", "Iakimovich", 23, 120, 120, "Нет", "экзамен"),
-                    new Disciplina("DataBase", "Kubtsova", 23, 110, 110, "Да", "экзамен"),
+                    new Disciplina("TestPO", "Iakimovich", 17, 120, 120, "Нет", "экзамен"),
+                    new Disciplina("DataBase", "Kubtsova", 10, 110, 110, "Да", "экзамен"),
                     new Disciplina("AUDO", "Basaliga", 23, 150, 150, "Нет", "зачет"),
-                    new Disciplina("BuhUchet", "Iaskevich", 23, 90, 90, "Нет", "зачет"),
+                    new Disciplina("BuhUchet", "Iaskevich", 12, 90, 90, "Нет", "зачет"),
                     new Disciplina("Basic(Java)", "Kibisova", 23, 170, 170, "Нет", "экзамен"),
-                    new Disciplina("PractWeb", "Kudravceva", 23, 200, 200, "Нет", "зачет"),
-                    new Disciplina("Fizra", "Burmakova", 23, 100, 50, "Нет", "зачет")
+                    new Disciplina("PractWeb", "Kudravceva", 30, 200, 200, "Нет", "зачет"),
+                    new Disciplina("Fizra", "Burmakova", 23, 100, 50, "Нет", "зачет"),
+                    new Disciplina("KPiAP(C#)", "Mihalevich", 50, 220, 200, "Да", "экзамен")
                 }
             };
 

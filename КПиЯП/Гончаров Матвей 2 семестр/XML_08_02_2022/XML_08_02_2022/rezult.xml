@@ -1,24 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <catalog>
   <Disciplina>
-    <NameDisciplina>English</NameDisciplina>
-    <FamiliaPrepodsavatela>Smelova</FamiliaPrepodsavatela>
-    <NumStudents>12</NumStudents>
-    <ColvoHourLekcii>100</ColvoHourLekcii>
-    <ColvoPractLekcii>100</ColvoPractLekcii>
-    <NalichKursacha>Нет</NalichKursacha>
-    <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
-  </Disciplina>
-  <Disciplina>
-    <NameDisciplina>QW</NameDisciplina>
-    <FamiliaPrepodsavatela>QW</FamiliaPrepodsavatela>
-    <NumStudents>20</NumStudents>
-    <ColvoHourLekcii>1000</ColvoHourLekcii>
-    <ColvoPractLekcii>1000</ColvoPractLekcii>
-    <NalichKursacha>Да</NalichKursacha>
-    <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
-  </Disciplina>
-  <Disciplina>
     <NameDisciplina>KPiAP(C#)</NameDisciplina>
     <FamiliaPrepodsavatela>Baglasova</FamiliaPrepodsavatela>
     <NumStudents>23</NumStudents>
@@ -28,9 +10,27 @@
     <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
+    <NameDisciplina>English</NameDisciplina>
+    <FamiliaPrepodsavatela>Smelova</FamiliaPrepodsavatela>
+    <NumStudents>12</NumStudents>
+    <ColvoHourLekcii>100</ColvoHourLekcii>
+    <ColvoPractLekcii>100</ColvoPractLekcii>
+    <NalichKursacha>Нет</NalichKursacha>
+    <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
+  </Disciplina>
+  <Disciplina>
+    <NameDisciplina>OAiP(C++)</NameDisciplina>
+    <FamiliaPrepodsavatela>Shalapin</FamiliaPrepodsavatela>
+    <NumStudents>25</NumStudents>
+    <ColvoHourLekcii>1000</ColvoHourLekcii>
+    <ColvoPractLekcii>900</ColvoPractLekcii>
+    <NalichKursacha>Да</NalichKursacha>
+    <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
+  </Disciplina>
+  <Disciplina>
     <NameDisciplina>TestPO</NameDisciplina>
     <FamiliaPrepodsavatela>Iakimovich</FamiliaPrepodsavatela>
-    <NumStudents>23</NumStudents>
+    <NumStudents>17</NumStudents>
     <ColvoHourLekcii>120</ColvoHourLekcii>
     <ColvoPractLekcii>120</ColvoPractLekcii>
     <NalichKursacha>Нет</NalichKursacha>
@@ -39,7 +39,7 @@
   <Disciplina>
     <NameDisciplina>DataBase</NameDisciplina>
     <FamiliaPrepodsavatela>Kubtsova</FamiliaPrepodsavatela>
-    <NumStudents>23</NumStudents>
+    <NumStudents>10</NumStudents>
     <ColvoHourLekcii>110</ColvoHourLekcii>
     <ColvoPractLekcii>110</ColvoPractLekcii>
     <NalichKursacha>Да</NalichKursacha>
@@ -57,7 +57,7 @@
   <Disciplina>
     <NameDisciplina>BuhUchet</NameDisciplina>
     <FamiliaPrepodsavatela>Iaskevich</FamiliaPrepodsavatela>
-    <NumStudents>23</NumStudents>
+    <NumStudents>12</NumStudents>
     <ColvoHourLekcii>90</ColvoHourLekcii>
     <ColvoPractLekcii>90</ColvoPractLekcii>
     <NalichKursacha>Нет</NalichKursacha>
@@ -75,7 +75,7 @@
   <Disciplina>
     <NameDisciplina>PractWeb</NameDisciplina>
     <FamiliaPrepodsavatela>Kudravceva</FamiliaPrepodsavatela>
-    <NumStudents>23</NumStudents>
+    <NumStudents>30</NumStudents>
     <ColvoHourLekcii>200</ColvoHourLekcii>
     <ColvoPractLekcii>200</ColvoPractLekcii>
     <NalichKursacha>Нет</NalichKursacha>
@@ -91,12 +91,30 @@
     <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
   </Disciplina>
   <Disciplina>
-    <NameDisciplina>OAiP(C++)</NameDisciplina>
-    <FamiliaPrepodsavatela>Shalapin</FamiliaPrepodsavatela>
-    <NumStudents>25</NumStudents>
+    <NameDisciplina>KPiAP</NameDisciplina>
+    <FamiliaPrepodsavatela>Mihalevich</FamiliaPrepodsavatela>
+    <NumStudents>100</NumStudents>
     <ColvoHourLekcii>1000</ColvoHourLekcii>
-    <ColvoPractLekcii>900</ColvoPractLekcii>
+    <ColvoPractLekcii>1000</ColvoPractLekcii>
     <NalichKursacha>Да</NalichKursacha>
-    <VidItogovogoKursacha>экзамен</VidItogovogoKursacha>
+    <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
+  </Disciplina>
+  <Disciplina>
+    <NameDisciplina>Eleseev</NameDisciplina>
+    <FamiliaPrepodsavatela>Eleseev</FamiliaPrepodsavatela>
+    <NumStudents>70</NumStudents>
+    <ColvoHourLekcii>1000</ColvoHourLekcii>
+    <ColvoPractLekcii>1000</ColvoPractLekcii>
+    <NalichKursacha>Да</NalichKursacha>
+    <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
+  </Disciplina>
+  <Disciplina>
+    <NameDisciplina>Kpiap</NameDisciplina>
+    <FamiliaPrepodsavatela>Eleseev</FamiliaPrepodsavatela>
+    <NumStudents>34</NumStudents>
+    <ColvoHourLekcii>100</ColvoHourLekcii>
+    <ColvoPractLekcii>234</ColvoPractLekcii>
+    <NalichKursacha>Нет</NalichKursacha>
+    <VidItogovogoKursacha>зачет</VidItogovogoKursacha>
   </Disciplina>
 </catalog>

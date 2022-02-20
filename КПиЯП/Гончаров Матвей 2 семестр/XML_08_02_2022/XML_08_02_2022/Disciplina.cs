@@ -23,6 +23,7 @@ namespace XML_08_02_2022
         // Для Проверки на заглавную букву
         public bool CheckUperZaglav(string s)
         {
+          //  if (char.IsUpper(s[0]))
             if (s.ToUpper()[0] == s[0]) return true;
             else return false;
         }
@@ -178,10 +179,13 @@ namespace XML_08_02_2022
             //    return -1;
             //}
             //return 0;
-            int f = NumStudents.CompareTo(other.NumStudents);
+            // int f = NumStudents.CompareTo(other.NumStudents);
+           // string.Compare(FamiliaPrepodsavatela,other.familiaPrepodsavatela)
+            int f = str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]).CompareTo(str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]));
             if (f == 0)
             {
-                f = str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]).CompareTo(str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]));
+                //f = str.IndexOf(FamiliaPrepodsavatela.ToLower()[0]).CompareTo(str.IndexOf(other.FamiliaPrepodsavatela.ToLower()[0]));
+                f = NumStudents.CompareTo(other.NumStudents);
             }
             return f;
         }
