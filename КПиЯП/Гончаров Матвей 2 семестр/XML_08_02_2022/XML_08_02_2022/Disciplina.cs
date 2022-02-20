@@ -37,7 +37,7 @@ namespace XML_08_02_2022
         // Для сравнения одного из параметров
         public bool CheckFirstOrSecondWord(string ishodnoe, string s1, string s2)
         {
-            if (ishodnoe.ToLower() == s1.ToLower() || ishodnoe == s2.ToLower()) return true;
+            if (ishodnoe.ToLower() == s1.ToLower() || ishodnoe.ToLower() == s2.ToLower()) return true;
             else return false;
         }
 

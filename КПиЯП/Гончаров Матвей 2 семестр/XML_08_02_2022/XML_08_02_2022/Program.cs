@@ -116,8 +116,10 @@ namespace XML_08_02_2022
 
                                         //_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
                                         // Тут в любом случае из xml надо считать в каталог
+
+                                        /*
+                                        // Это для перезаписи было
                                         
-                                       
                                         // Получаю данные в свой catalog
                                         XmlDocument xDoc = new XmlDocument();
                                         
@@ -125,8 +127,7 @@ namespace XML_08_02_2022
                                         xDoc.Load("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
                                         
                                         XmlElement? xRoot = xDoc.DocumentElement; // получил корневой элемент
-                                        /*
-                                        if(false) // xRoot != null
+                                        if(xRoot != null)
                                         {
                                             // для того чтобы делитнуть прошлые данные 
                                             //catalog.ListDisciplin.Clear();
@@ -181,7 +182,7 @@ namespace XML_08_02_2022
                                             }
                                         }
                                         xDoc.Save("C:\\Users\\Matthew\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\XML_08_02_2022\\XML_08_02_2022\\rezult.xml");
-                                        */                                       
+                                        */
                                         switch (Convert.ToInt32(Console.ReadLine()))
                                         {
                                             case 1:
