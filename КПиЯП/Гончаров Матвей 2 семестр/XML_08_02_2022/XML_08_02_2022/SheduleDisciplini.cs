@@ -93,19 +93,107 @@ namespace XML_08_02_2022
             }
         }
 
-        // Группировка, поход не так
+        // Группировка
         public void PrintGroup()
         {
-            var Des = ListDisciplin.GroupBy(x => x.NameDisciplina);
-            foreach (var f in Des)
+            while (true)
             {
-                Console.WriteLine(f.Key);
-
-                foreach (var dis in f)
+                //string nameDisciplina, string familiaPrepodsavatela, int numStudents, int colvoHourLekcii, int colvoPractLekcii, string nalichKursacha, string vidItogovogoKursacha
+                Console.WriteLine("По чем хотите сгруппировать?:\n1 - nameDisciplina\n2 - familiaPrepodsavatela\n3 - numStudents\n 4 - colvoHourLekcii\n5 - colvoPractLekcii\n6 - nalichKursacha\n7 - vidItogovogoKursacha");
+                switch (Console.ReadLine())
                 {
-                    Console.WriteLine(dis.NameDisciplina + " Familia: " + dis.FamiliaPrepodsavatela);
+                    case "1":
+                        var Des = ListDisciplin.GroupBy(x => x.NameDisciplina);
+                        foreach (var f in Des)
+                        {
+                            Console.WriteLine(f.Key);
+
+                            foreach (var dis in f)
+                            {
+                                Console.WriteLine(dis.NameDisciplina + " Familia: " + dis.FamiliaPrepodsavatela);
+                            }
+                            Console.WriteLine(); // для разделения между группами
+                        }
+                        break;
+                    case "2":
+                        var Des2 = ListDisciplin.GroupBy(x => x.FamiliaPrepodsavatela);
+                        foreach (var f in Des2)
+                        {
+                            Console.WriteLine(f.Key);
+
+                            foreach (var dis in f)
+                            {
+                                Console.WriteLine(dis.FamiliaPrepodsavatela + " Familia: " + dis.FamiliaPrepodsavatela);
+                            }
+                            Console.WriteLine(); // для разделения между группами
+                        }
+                        break;
+                    case "3":
+                        var Des3 = ListDisciplin.GroupBy(x => x.NumStudents);
+                        foreach (var f in Des3)
+                        {
+                            Console.WriteLine(f.Key);
+
+                            foreach (var dis in f)
+                            {
+                                Console.WriteLine(dis.NumStudents + " Familia: " + dis.FamiliaPrepodsavatela);
+                            }
+                            Console.WriteLine(); // для разделения между группами
+                        }
+                        break;
+                    case "4":
+                        var Des4 = ListDisciplin.GroupBy(x => x.ColvoHourLekcii);
+                        foreach (var f in Des4)
+                        {
+                            Console.WriteLine(f.Key);
+
+                            foreach (var dis in f)
+                            {
+                                Console.WriteLine(dis.ColvoHourLekcii + " Familia: " + dis.FamiliaPrepodsavatela);
+                            }
+                            Console.WriteLine(); // для разделения между группами
+                        }
+                        break;
+                    case "5":
+                        var Des5 = ListDisciplin.GroupBy(x => x.NalichKursacha);
+                        foreach (var f in Des5)
+                        {
+                            Console.WriteLine(f.Key);
+
+                            foreach (var dis in f)
+                            {
+                                Console.WriteLine(dis.NalichKursacha + " Familia: " + dis.FamiliaPrepodsavatela);
+                            }
+                            Console.WriteLine(); // для разделения между группами
+                        }
+                        break;
+                    case "6":
+                        var Des6 = ListDisciplin.GroupBy(x => x.NalichKursacha);
+                        foreach (var f in Des6)
+                        {
+                            Console.WriteLine(f.Key);
+
+                            foreach (var dis in f)
+                            {
+                                Console.WriteLine(dis.NalichKursacha + " Familia: " + dis.FamiliaPrepodsavatela);
+                            }
+                            Console.WriteLine(); // для разделения между группами
+                        }
+                        break;
+                    case "7":
+                        var Dec7 = ListDisciplin.GroupBy(x => x.VidItogovogoKursacha);
+                        foreach (var f in Dec7)
+                        {
+                            Console.WriteLine(f.Key);
+
+                            foreach (var dis in f)
+                            {
+                                Console.WriteLine(dis.VidItogovogoKursacha + " Familia: " + dis.FamiliaPrepodsavatela);
+                            }
+                            Console.WriteLine(); // для разделения между группами
+                        }
+                        break;
                 }
-                Console.WriteLine(); // для разделения между группами
             }
         }
     }
