@@ -15,7 +15,6 @@ namespace Lab_5_Threads
         static Mutex mutexA = new Mutex(false); // 4.2
         static Mutex mutexB = new Mutex(false); // 4.2 
 
-
         // 1.2
         // в таймере эти методы запускаются каждые 200 миллисекунд
         // эти два метода передаются и являются - TimerCallback callback - delegate
@@ -161,6 +160,45 @@ namespace Lab_5_Threads
             Thread.Sleep(1000);
             ColoredConsole.WriteLine(ConsoleColor.Red, "Task {0} finished", Task.CurrentId);
         }
+
+        ///////////////////////////////////// 5.1
+        public static string Translate(string source)
+        {
+            ColoredConsole.WriteLine(ConsoleColor.Green, "Translate started ");
+            String template = " " + source + " ";
+            String res = "";
+            using (FileStream fs = File.OpenRead(@"C:\Users\shindows10\Desktop\C-_JuniorDeveloper\КПиЯП\Гончаров Матвей 2 семестр\Lab_5_Threads\Lab_5_Threads\mueller1995.txt"))
+            using (StreamReader sr = new StreamReader(fs, Encoding.GetEncoding(1251)))
+            {
+                Boolean found = false;
+                Boolean finished = false;
+
+                String line;
+                while ((!found || !finished) && ((line = sr.ReadLine()) != null))
+                {
+                    if (found)
+                    {
+                        if (line != "" && line[0] != ' ') // продолжение словарной статьи
+                            res += line;
+                        else // начало новой словарной статьи
+                            finished = true;
+                    }
+                    else
+                    if (line != "" && line[0] == ' ')
+                    {
+                        int n = line.IndexOf(template);
+                        if (n > 0 && n < 20) // ищем слово только в определении
+                        {
+                            res += line;
+                            found = true;
+                        }
+                    }
+                }
+            }
+            ColoredConsole.WriteLine(ConsoleColor.Green, "Translate finished");
+            return res;
+        }
+        delegate String StringToString(String s);
 
         public static void Main()
         {
@@ -327,8 +365,8 @@ namespace Lab_5_Threads
                        }
            */
 
-            // 4.1 
-            /*            Task t1 = new Task(SillyWork);
+            // 4.1 // выведет состояние потоков по 3
+            /*          Task t1 = new Task(SillyWork);
                         Task t2 = new Task(SillyWork);
                         Task t3 = new Task(SillyWork);
                         t1.Start();
@@ -340,7 +378,7 @@ namespace Lab_5_Threads
                             ColoredConsole.Write(ConsoleColor.Gray, ".");
                         }
             */
-            // 4.2
+            // 4.2 // заморозка двух потоков
             /*           Task t1 = new Task(SillyWork_);
                        Task t2 = new Task(SillyWork2_);
                        t1.Start();
@@ -353,19 +391,32 @@ namespace Lab_5_Threads
             */
 
             // 4.3 
-/*            Task t1 = new Task(SillyWork);
-            Task t2 = t1.ContinueWith(NextSillyWork);
-            Task t3 = t2.ContinueWith(NextSillyWork);
-            t1.Start();
-            while (!Console.KeyAvailable)
-            {
-                Thread.Sleep(50);
-                ColoredConsole.Write(ConsoleColor.Gray, ".");
-            }
-*/              
+            /*            Task t1 = new Task(SillyWork);
+                        Task t2 = t1.ContinueWith(NextSillyWork);
+                        Task t3 = t2.ContinueWith(NextSillyWork);
+                        t1.Start();
+                        while (!Console.KeyAvailable)
+                        {
+                            Thread.Sleep(50);
+                            ColoredConsole.Write(ConsoleColor.Gray, ".");
+                        }
+            */
 
+            ////////////////////// 5 Асинхронное выполнение методов
 
+            // 5.1
+            (new Task(() => {
+                while (!Console.KeyAvailable)
+                {
+                    Thread.Sleep(50);
 
+                    ColoredConsole.Write(ConsoleColor.Gray, ".");
+
+                }
+            })).Start();
+            StringToString d = new StringToString(Translate);
+            String Z = d.Invoke("zoological");
+            ColoredConsole.WriteLine(ConsoleColor.Red, Z);
 
         }
     } 
