@@ -51,6 +51,11 @@ namespace Lab_19_Thread_Varian_6
                 }
             }
             Console.WriteLine();
+
+            // Создать n потоков и в них вычислять по строки
+            // если NxN тогда возможно передть матрицу, я же решил передать индекс (номер потока) и это является числом которое - (поток отвечает за свою строку)
+
+
             // Массив потоков; На каждую строку свой поток
             Thread[] threads = new Thread[N];
 
@@ -61,22 +66,6 @@ namespace Lab_19_Thread_Varian_6
                 threads[i] = new Thread(new ParameterizedThreadStart(Return_C));
                 threads[i].Start(i); // сам параметн
             }
-
-            /* Для себя
-            // Create Thread вручную
-            //Thread th1 = new Thread(return_C);
-            //Thread th2 = new Thread(return_C);
-            //Thread th3 = new Thread(return_C);
-
-            //th1.Start();
-            //th2.Start();
-            //th3.Start();
-
-
-            // Создать n потоков и в них вычислять по строки
-
-            // если NxN тогда возможно передть матрицу
-            */
         }
 
         static void Return_C(object string_index_J) // Принимаю элементы матрицы A и B
@@ -85,7 +74,7 @@ namespace Lab_19_Thread_Varian_6
             // accumulate & print
             for (int i = 0; i < Carray.GetLength(0); i++)
             {
-                Thread.Sleep(3000);
+                Thread.Sleep(3000); // Все равно будет печатать сразу по три - т.к они вместе запускаются сразу, но след. поток может быстрее посчитать, можно какнить побаловаться и разное время ожидания дать потокам
                 // Определеный поток считает совю строку
                 Carray[i, (int)string_index_J] = Aarray[i, (int)string_index_J] + Barray[i, (int)string_index_J]; // Считаю элемент
                 Console.WriteLine($"C[{i + 1}][{(int)string_index_J + 1}] = {Carray[i, (int)string_index_J]}");
