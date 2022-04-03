@@ -14,7 +14,7 @@ namespace Patterns_1_Drinks_And_Builder_14_03_2022
             Console.WriteLine("TASK 1");
             Napitok napitok = new Napitok(new LemonadeWithCognac());
             napitok.AlDrinks = new Koniac("Коньяк", 1, 15, "КоньякТвояСвежесть");
-            napitok.Drinks = new Lemonade("Лемонад", "ЛемонадВетер", 1);
+            napitok.Drinks = new Lemonade("Лимонад", "ЛимонадВетер", 1);
             Console.WriteLine("Смешиваем:");
             napitok.Structure();
 

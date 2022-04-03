@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022.csproj": {}
+    "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022.csproj": {
+    "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022.csproj",
+        "projectUniqueName": "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022.csproj",
         "projectName": "Patterns_1_Drinks_And_Builder_14_03_2022",
-        "projectPath": "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022.csproj",
+        "projectPath": "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022.csproj",
         "packagesPath": "C:\\Users\\shindows10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder_14_03_2022\\Patterns_1_Drinks_And_Builder_14_03_2022\\obj\\",
+        "outputPath": "C:\\Users\\shindows10\\Desktop\\C-_JuniorDeveloper\\КПиЯП\\Гончаров Матвей 2 семестр\\Patterns_1_Drinks_And_Builder\\Patterns_1_Drinks_And_Builder_14_03_2022\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

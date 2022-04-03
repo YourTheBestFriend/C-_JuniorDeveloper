@@ -16,6 +16,6 @@ namespace Patterns_1_Drinks_And_Builder_14_03_2022
         {
             this.tasteLemonade = tasteLemonade;
         }
-        public override void TypeDrink() => Console.WriteLine($"Лемонад {Name}, вкус: {tasteLemonade}, обьём: {Volume}");
+        public override void TypeDrink() => Console.WriteLine($"Лимонад {Name}, вкус: {tasteLemonade}, обьём: {Volume}");
     }
 }

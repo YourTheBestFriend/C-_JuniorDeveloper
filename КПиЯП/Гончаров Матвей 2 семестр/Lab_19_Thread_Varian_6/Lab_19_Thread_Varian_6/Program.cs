@@ -15,7 +15,7 @@ namespace Lab_19_Thread_Varian_6
         static int[,] Barray;
 
         // end array 
-        // static int[,] Carray = new int[N, N];
+        static int[,] Carray = new int[N, N];
 
         public static void Main()
         {
@@ -76,17 +76,17 @@ namespace Lab_19_Thread_Varian_6
 
         static void Return_C(object o) // Принимаю элементы матрицы A и B
         {
+           
             // accumulate & print
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < Carray.GetLength(0); i++)
             {
-                for (int j = 0; j < N; j++)
+                for (int j = 0; j < Carray.GetLength(1); j++)
                 {
-                    // Carray[i, j] = Aarray[i, j] + Barray[i, j];
-                    Console.Write(Aarray[i, j] + Barray[i, j] + " ");
+                    Carray[i, j] = Aarray[i, j] + Barray[i, j];
+                    // Console.Write(Carray[i, j] + " ");
+                    Console.WriteLine($"Work comlete for string number {j}");
                 }
-                Console.WriteLine();
             }
-            Console.WriteLine("Work comlete!!!");
         }
     }
 }
