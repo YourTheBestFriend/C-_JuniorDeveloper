@@ -1,7 +1,0 @@
-C:\Users\Xhref\Desktop\C#\DZ\Вариант11\Вариант11\bin\Debug\Вариант11.exe.config
-C:\Users\Xhref\Desktop\C#\DZ\Вариант11\Вариант11\bin\Debug\Вариант11.exe
-C:\Users\Xhref\Desktop\C#\DZ\Вариант11\Вариант11\bin\Debug\Вариант11.pdb
-C:\Users\Xhref\Desktop\C#\DZ\Вариант11\Вариант11\obj\Debug\Вариант11.csproj.AssemblyReference.cache
-C:\Users\Xhref\Desktop\C#\DZ\Вариант11\Вариант11\obj\Debug\Вариант11.csproj.CoreCompileInputs.cache
-C:\Users\Xhref\Desktop\C#\DZ\Вариант11\Вариант11\obj\Debug\Вариант11.exe
-C:\Users\Xhref\Desktop\C#\DZ\Вариант11\Вариант11\obj\Debug\Вариант11.pdb

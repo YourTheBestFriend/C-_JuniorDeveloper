@@ -1,7 +1,0 @@
-C:\Users\Xhref\Desktop\C#\УП\structure\structure\bin\Debug\structure.exe.config
-C:\Users\Xhref\Desktop\C#\УП\structure\structure\bin\Debug\structure.exe
-C:\Users\Xhref\Desktop\C#\УП\structure\structure\bin\Debug\structure.pdb
-C:\Users\Xhref\Desktop\C#\УП\structure\structure\obj\Debug\structure.csproj.AssemblyReference.cache
-C:\Users\Xhref\Desktop\C#\УП\structure\structure\obj\Debug\structure.csproj.CoreCompileInputs.cache
-C:\Users\Xhref\Desktop\C#\УП\structure\structure\obj\Debug\structure.exe
-C:\Users\Xhref\Desktop\C#\УП\structure\structure\obj\Debug\structure.pdb

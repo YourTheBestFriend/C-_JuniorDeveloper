@@ -1,7 +1,0 @@
-C:\Users\Xhref\Desktop\C#\пр\циклы\циклы\bin\Debug\циклы.exe.config
-C:\Users\Xhref\Desktop\C#\пр\циклы\циклы\bin\Debug\циклы.exe
-C:\Users\Xhref\Desktop\C#\пр\циклы\циклы\bin\Debug\циклы.pdb
-C:\Users\Xhref\Desktop\C#\пр\циклы\циклы\obj\Debug\циклы.csproj.AssemblyReference.cache
-C:\Users\Xhref\Desktop\C#\пр\циклы\циклы\obj\Debug\циклы.csproj.CoreCompileInputs.cache
-C:\Users\Xhref\Desktop\C#\пр\циклы\циклы\obj\Debug\циклы.exe
-C:\Users\Xhref\Desktop\C#\пр\циклы\циклы\obj\Debug\циклы.pdb

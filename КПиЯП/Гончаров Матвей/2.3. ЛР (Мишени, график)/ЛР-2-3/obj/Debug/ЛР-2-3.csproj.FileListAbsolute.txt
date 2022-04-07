@@ -1,7 +1,0 @@
-C:\Users\Xhref\Desktop\C#\ЛР2-3\ЛР-2-3\ЛР-2-3\bin\Debug\ЛР-2-3.exe.config
-C:\Users\Xhref\Desktop\C#\ЛР2-3\ЛР-2-3\ЛР-2-3\bin\Debug\ЛР-2-3.exe
-C:\Users\Xhref\Desktop\C#\ЛР2-3\ЛР-2-3\ЛР-2-3\bin\Debug\ЛР-2-3.pdb
-C:\Users\Xhref\Desktop\C#\ЛР2-3\ЛР-2-3\ЛР-2-3\obj\Debug\ЛР-2-3.csproj.AssemblyReference.cache
-C:\Users\Xhref\Desktop\C#\ЛР2-3\ЛР-2-3\ЛР-2-3\obj\Debug\ЛР-2-3.csproj.CoreCompileInputs.cache
-C:\Users\Xhref\Desktop\C#\ЛР2-3\ЛР-2-3\ЛР-2-3\obj\Debug\ЛР-2-3.exe
-C:\Users\Xhref\Desktop\C#\ЛР2-3\ЛР-2-3\ЛР-2-3\obj\Debug\ЛР-2-3.pdb
