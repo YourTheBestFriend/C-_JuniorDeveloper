@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -199,6 +200,18 @@ namespace Lab_5_Threads
             return res;
         }
         delegate String StringToString(String s);
+
+
+        /// 5.4 
+        //public static async Task<String> TranslateUpperAsync(String s)
+        //{
+        //    ColoredConsole.WriteLine(ConsoleColor.Magenta, "TranslateUpperAsync started "
+        //    + "in Task {0}", Task.CurrentId);
+        //    Thread.Sleep(1000);
+        //    String Z = await TranslateAsync(s);
+        //    ColoredConsole.WriteLine(ConsoleColor.Magenta, "{0} (Task {1})", Z, Task.CurrentId);
+        //    return Z.ToUpper();
+        //}
 
         public static void Main()
         {
@@ -402,22 +415,124 @@ namespace Lab_5_Threads
                         }
             */
 
-            ////////////////////// 5 Асинхронное выполнение методов
-
+            ////////////////////// 5 Асинхронное выполнение методов /////  ТУТ траблы
+            //  я там наверное в файле не правильно пишу
             // 5.1
-            (new Task(() => {
-                while (!Console.KeyAvailable)
+            /*
+                        (new Task(() => {
+                            while (!Console.KeyAvailable)
+                            {
+                                Thread.Sleep(50);
+
+                                ColoredConsole.Write(ConsoleColor.Gray, ".");
+
+                            }
+                        })).Start();
+                        StringToString d = new StringToString(Translate);
+                        String Z = d.Invoke("zoological");
+                        ColoredConsole.WriteLine(ConsoleColor.Red, Z);
+            */
+            // 5.2
+            /*
+                        StringToString d = new StringToString(Translate);
+                        IAsyncResult ar = d.BeginInvoke("zoological", null, null);
+                        while (!ar.IsCompleted)
+                        {
+                            ColoredConsole.Write(ConsoleColor.Red, "-");
+                            Thread.Sleep(50);
+                        }
+                        ColoredConsole.WriteLine(ConsoleColor.Red, "{0}", d.EndInvoke(ar));
+            */
+
+            /*
+                        // 5.3
+                        Task<String> t = TranslateAsync("zebra");
+                        while (!t.IsCompleted)
+                        {
+                            ColoredConsole.Write(ConsoleColor.Red, "-");
+                            Thread.Sleep(50);
+                        }
+                        ColoredConsole.WriteLine(ConsoleColor.Red, "{0}", t.Result);
+            */
+
+            // 5.4
+            /*
+                        (new Task(() => {
+                            while (!Console.KeyAvailable)
+                            {
+                                Thread.Sleep(50);
+                                ColoredConsole.Write(ConsoleColor.Gray, ".");
+                            }
+                        })).Start();
+                        ColoredConsole.WriteLine(ConsoleColor.Red, "{0} (Task {1})",
+                        TranslateUpperAsync("yelp").GetAwaiter().GetResult(), Task.CurrentId);
+            */
+
+            /////////////////////////////////////////////////////////////////////////// Упражнение 6
+            // 6.1
+/*
+            Assembly assembly = Assembly.LoadFrom(@"D:\cs\BlackBox.dll");
+            Console.WriteLine("***Список типов***");
+            Type[] types = assembly.GetTypes();
+            foreach (Type t in types)
+            Console.WriteLine(t.FullName);
+*/
+            // 6.2
+/*
+            Console.WriteLine("***Список конструкторов***");
+            ConstructorInfo[] ctors = type.GetConstructors();
+            foreach (ConstructorInfo c in ctors)
+            {
+                Console.WriteLine(c);
+                Console.WriteLine("Имя: " + c.Name);
+                ParameterInfo[] param = c.GetParameters();
+                foreach (ParameterInfo pi in param)
+                    Console.WriteLine(" {0}", pi);
+            }
+*/
+            // 6.3
+/*
+            Console.WriteLine("***Список методов***");
+            MethodInfo[] methods = type.GetMethods();
+            foreach (MethodInfo mi in methods)
+            {
+                Console.WriteLine(mi);
+                ParameterInfo[] param = mi.GetParameters();
+                foreach (ParameterInfo pi in param)
+                    Console.WriteLine(" {0}", pi);
+            }
+*/
+            // 6.4
+/*
+            ConstructorInfo ctor = ctors[0];
+            MethodInfo method = methods[0];
+            Console.WriteLine(method);
+            Console.WriteLine("***Создание объекта***");
+            object o = ctor.Invoke(new object[] { 3.0, 4.0 });
+            Console.WriteLine("***Вызов метода***");
+            Double result = (Double)method.Invoke(o, new object[0]);
+            Console.WriteLine("Результат выполнения метода: " + result.ToString("F2"));
+*/
+            // 6.5
+/*
+            Console.WriteLine("***Список полей класса Decorated***");
+            Type typeD = assembly.GetType("BlackBox.Decorated");
+            Console.WriteLine(typeD.FullName);
+            FieldInfo[] fields = typeD.GetFields();
+            foreach (FieldInfo field in fields)
+            {
+                var attributes = field.GetCustomAttributes();
+                foreach (Attribute a in attributes)
                 {
-                    Thread.Sleep(50);
-
-                    ColoredConsole.Write(ConsoleColor.Gray, ".");
-
+                    String s = a.ToString();
+                    int n = s.IndexOf("Attribute");
+                    if (n > 0)
+                        s = s.Substring(0, n);
+                    Console.Write(s + " ");
                 }
-            })).Start();
-            StringToString d = new StringToString(Translate);
-            String Z = d.Invoke("zoological");
-            ColoredConsole.WriteLine(ConsoleColor.Red, Z);
-
+                Console.WriteLine(field.Name);
+            }
+*/
         }
     } 
 }
