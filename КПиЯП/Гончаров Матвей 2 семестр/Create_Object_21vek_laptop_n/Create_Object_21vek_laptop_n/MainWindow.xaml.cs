@@ -39,5 +39,10 @@ namespace Create_Object_21vek_laptop_n
         {
 
         }
+
+        private void GridSplitter_DragDelta(object sender, System.Windows.Controls.Primitives.DragDeltaEventArgs e)
+        {
+
+        }
     }
 }
