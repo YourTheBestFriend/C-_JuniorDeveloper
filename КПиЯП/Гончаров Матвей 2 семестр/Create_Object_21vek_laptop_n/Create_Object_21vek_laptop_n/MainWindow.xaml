@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Create_Object_21vek_laptop_n"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="497" Width="798" MinWidth="798" MaxWidth="798" MinHeight="497" MaxHeight="497">
     <Grid>
         <Grid Margin="539,10,10,10" >
             <Border BorderBrush="#FFF0F0F0" BorderThickness="2">
@@ -14,43 +14,41 @@
             <GridSplitter HorizontalAlignment="Center" Height="2" Margin="0,110,0,0" VerticalAlignment="Top" Width="251"/>
             <GridSplitter HorizontalAlignment="Center" Height="2" Margin="0,245,0,0" VerticalAlignment="Top" Width="251"/>
         </Grid>
-        <Label Content="От" HorizontalAlignment="Left" Margin="551,45,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="580,49,0,0" TextWrapping="Wrap" Text="num" VerticalAlignment="Top" Width="70" Height="25"/>
-        <Label Content="До" HorizontalAlignment="Left" Margin="668,45,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="698,49,0,0" TextWrapping="Wrap" Text="num" VerticalAlignment="Top" Width="70" Height="25"/>
-        <Slider HorizontalAlignment="Left" Margin="563,91,0,0" VerticalAlignment="Top" Width="205" ValueChanged="Slider_ValueChanged"/>
-        <Label Content="Производители" HorizontalAlignment="Left" Margin="539,129,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Lenovo" HorizontalAlignment="Left" Margin="551,155,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
-        <CheckBox Content="HP" HorizontalAlignment="Left" Margin="551,175,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Apple" HorizontalAlignment="Left" Margin="551,195,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Dell" HorizontalAlignment="Left" Margin="551,217,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Asus" HorizontalAlignment="Left" Margin="681,155,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Aser" HorizontalAlignment="Left" Margin="681,178,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Honor" HorizontalAlignment="Left" Margin="681,198,0,0" VerticalAlignment="Top"/>
-        <CheckBox Content="Prestigio" HorizontalAlignment="Left" Margin="681,217,0,0" VerticalAlignment="Top"/>
+        <Label Content="Цена&#xD;&#xA;" HorizontalAlignment="Left" Margin="551,45,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="textboxcash" HorizontalAlignment="Left" Margin="615,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Height="25" TextChanged="textboxcash_TextChanged" Text="null"/>
+        <Slider Name="cashslider" HorizontalAlignment="Left" Margin="563,91,0,0" VerticalAlignment="Top" Width="205" ValueChanged="Slider_ValueChanged" Maximum="10000" LargeChange="0" Minimum="200"/>
+        <Label ToolTip="Внимание!!!!!!!! Это Секция Производители, Надо выбрать хотябы 1 вид" Name="proizv_label" Content="Производители" HorizontalAlignment="Left" Margin="539,129,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="proizv_1" Content="Lenovo" HorizontalAlignment="Left" Margin="551,155,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <CheckBox Name="proizv_2" Content="HP" HorizontalAlignment="Left" Margin="551,175,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="proizv_3" Content="Apple" HorizontalAlignment="Left" Margin="551,195,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="proizv_4" Content="Dell" HorizontalAlignment="Left" Margin="551,217,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="proizv_5" Content="Asus" HorizontalAlignment="Left" Margin="681,155,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="proizv_6" Content="Aser" HorizontalAlignment="Left" Margin="681,178,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="proizv_7" Content="Honor" HorizontalAlignment="Left" Margin="681,198,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="proizv_8" Content="Prestigio" HorizontalAlignment="Left" Margin="681,217,0,0" VerticalAlignment="Top"/>
         <Expander HorizontalAlignment="Left" Height="149" Header="Разрешение Экрана" Margin="546,264,0,0" VerticalAlignment="Top" Width="138" IsExpanded="True">
-            <Grid Width="126">
-                <CheckBox Content="1920x1080" HorizontalAlignment="Left" Margin="0,21,0,0" VerticalAlignment="Top" Width="126" Checked="CheckBox_Checked_1"/>
-                <CheckBox Content="1440x1600" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.495,1.74" Margin="0,51,0,0"/>
-                <CheckBox Content="1600x900" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.495,1.74" Margin="0,81,0,0"/>
+            <Grid Name="grid_size_screen" Width="126" ToolTip="Внимание!!!!!!!! Это Секция Разрешение экрана, Надо выбрать хотябы 1 вид">
+                <CheckBox Name="size_1" Content="1920x1080" HorizontalAlignment="Left" Margin="0,21,0,0" VerticalAlignment="Top" Width="126" Checked="CheckBox_Checked_1"/>
+                <CheckBox Name="size_2" Content="1440x1600" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.495,1.74" Margin="0,51,0,0"/>
+                <CheckBox Name="size_3" Content="1600x900" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.495,1.74" Margin="0,81,0,0"/>
             </Grid>
         </Expander>
         <Expander HorizontalAlignment="Left" Height="149" Header="Процессор" Margin="681,264,0,0" VerticalAlignment="Top" Width="98" IsExpanded="True">
-            <Grid Width="126">
-                <CheckBox Content="Amd Ryzen" HorizontalAlignment="Left" Margin="0,21,0,0" VerticalAlignment="Top" Width="126"/>
-                <CheckBox Content="Intel" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.495,1.74" Margin="0,51,0,0"/>
-                <CheckBox Content="Pentium" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.495,1.74" Margin="0,81,0,0"/>
+            <Grid Name="grid_processor" Width="126" ToolTip="Внимание!!!!!!!! Это Секция Процессор, Надо выбрать хотябы 1 вид">
+                <CheckBox Name="proc_1" Content="Amd Ryzen" HorizontalAlignment="Left" Margin="0,21,0,0" VerticalAlignment="Top" Width="126"/>
+                <CheckBox Name="proc_2" Content="Intel" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.495,1.74" Margin="0,51,0,0"/>
+                <CheckBox Name="proc_3" Content="Pentium" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.495,1.74" Margin="0,81,0,0"/>
             </Grid>
         </Expander>
         <Grid Margin="0,0,261,0">
-            <GridSplitter Height="45" Margin="-5,30,0,0" VerticalAlignment="Top" Width="544" Opacity="0.8" HorizontalAlignment="Left" DragDelta="GridSplitter_DragDelta">
+            <GridSplitter Height="45" Margin="-5,30,-2,0" VerticalAlignment="Top" Opacity="0.8" DragDelta="GridSplitter_DragDelta" HorizontalAlignment="Stretch">
                 <GridSplitter.OpacityMask>
-                    
-                        <LinearGradientBrush>
+
+                    <LinearGradientBrush>
                         <LinearGradientBrush.GradientStops>
                             <GradientStop Color="Black" Offset="0"/>
-                        <GradientStop Color="#FFAF0CFF" Offset="1"/>
-                            </LinearGradientBrush.GradientStops>
+                            <GradientStop Color="#FFAF0CFF" Offset="1"/>
+                        </LinearGradientBrush.GradientStops>
                     </LinearGradientBrush>
                 </GridSplitter.OpacityMask>
                 <GridSplitter.BorderBrush>
@@ -62,7 +60,7 @@
                 <GridSplitter.Background>
                     <LinearGradientBrush >
                         <GradientStop Color="#FF891D85"/>
-                        <GradientStop Color="#FFF10D71" Offset="0.444"/>
+                        <GradientStop Color="#FFF10D71" Offset="1"/>
                     </LinearGradientBrush>
                 </GridSplitter.Background>
                 <GridSplitter.Foreground>
@@ -72,6 +70,15 @@
                     </LinearGradientBrush>
                 </GridSplitter.Foreground>
             </GridSplitter>
+            <Image Margin="25,90,0,176" Source="/logo_21vek.by.png"/>
+            <RichTextBox Name="my_the_best_rich_box" Margin="10,315,10,10">
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="RichTextBox"/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
         </Grid>
+        <Button Content="Создать Объект" Margin="563,401,32,36" Click="Button_Click"/>
     </Grid>
 </Window>
