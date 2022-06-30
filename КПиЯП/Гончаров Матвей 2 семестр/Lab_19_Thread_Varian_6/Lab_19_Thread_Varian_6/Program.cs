@@ -28,8 +28,8 @@ namespace Lab_19_Thread_Varian_6
             Carray = new int[N, N];
 
             // initialization arrays
-            Aarray = new int[,] { {3, -1, 2}, {2, 3, 0}, {2, 4, 6} };
-            Barray = new int[,] { {5, 3, 2}, {-5, 6, 0}, {2, 5, 9} };
+            Aarray = new int[,] { { 3, -1, 2 }, { 2, 3, 0 }, { 2, 4, 6 } };
+            Barray = new int[,] { { 5, 3, 2 }, { -5, 6, 0 }, { 2, 5, 9 } };
 
 
             // print array 
@@ -38,7 +38,7 @@ namespace Lab_19_Thread_Varian_6
             {
                 for (int j = 0; j < N; j++)
                 {
-                    Console.WriteLine($"Aarray[{i}][{j}]: {Aarray[i,j]}");
+                    Console.WriteLine($"Aarray[{i}][{j}]: {Aarray[i, j]}");
                 }
             }
 
@@ -67,7 +67,6 @@ namespace Lab_19_Thread_Varian_6
                 threads[i].Start(i); // сам параметн
             }
         }
-
         static void Return_C(object string_index_J) // Принимаю элементы матрицы A и B
         {
             // lock (MyLock) { } // Если залочить то тогда поток посчитает всю строку и потом другой другую, в общем последовательно

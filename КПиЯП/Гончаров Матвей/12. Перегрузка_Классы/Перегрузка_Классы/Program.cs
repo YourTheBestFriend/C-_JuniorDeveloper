@@ -13,7 +13,6 @@ namespace Перегрузка_Классы
             Book book1 = new Book("Albert", 7);
             Book book2 = new Book("Vasy", 8);
             Book book3 = new Book("Petr", 9);
-
             Book book4 = new Book("Matvey", 1);
             Book book_ = new Book("Matvey", 1);
 
@@ -30,11 +29,6 @@ namespace Перегрузка_Классы
             bool b2 = book4 == book_;
             lib.addBook(book_);
             Console.WriteLine($"(kategory != False == True) book4 == book_ = {b2}");
-
-            Book book5 = new Book("Mariya", 10);
-            lib.show();
-
-
         }
     }
 }

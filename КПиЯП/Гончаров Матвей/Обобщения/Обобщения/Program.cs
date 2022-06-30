@@ -94,9 +94,8 @@ namespace Обобщения
             Console.Write("\nList 3: "); list3.Print();
             
             Console.WriteLine($"list3 == list2: {list3 == list2}");
-            Console.WriteLine($"list3 != list2: {list3 != list2}"); 
-
-            
+            Console.WriteLine($"list3 != list2: {list3 != list2}");
+            Console.ReadLine();
         }
     }
 }

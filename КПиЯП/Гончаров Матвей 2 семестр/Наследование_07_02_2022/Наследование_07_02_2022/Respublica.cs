@@ -26,7 +26,7 @@ namespace Наследование_07_02_2022
         public override void UmenshKred_10(out int y)
         {
             Console.WriteLine($"out x: = {this.Kredit}");
-            y = this.Kredit + 10;
+            y = this.Kredit - 10;
             Console.WriteLine($"out x: = {y}");
         }
 

@@ -19,6 +19,7 @@ namespace наследование_2
             Long_number obj1 = new Long_number(1,3);
             Long_number obj2 = new Long_number(5,2);
             var obj3 =(Long_number) obj1.plus_(obj2);
+            
             // output
             Console.WriteLine((obj3 as Long_number).youngPartNumber);
             Console.WriteLine($"obj3 oldPartNumber = {obj3.first}, youngPartNumber = {obj3.second}");

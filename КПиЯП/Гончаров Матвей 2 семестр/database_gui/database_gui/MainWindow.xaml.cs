@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,23 @@ namespace database_gui
 
     public partial class MainWindow : Window
     {
+
+        // Connect String 
+        public string Retrun_Connect_String()
+        {
+            string connStr = "server=194.87.210.23;" +
+                                    "user=Sasha2;database=autoPodbor;password=Qazx1234;";
+            SqlConnection conn = new SqlConnection(connStr);
+            conn.Open();
+
+            string sql = $"INSERT INTO ProcatUsers VALUES('0','{login.Text}', '{pass.Text}')";
+            SqlCommand command = new SqlCommand(sql, conn);
+            SqlDataReader reader = command.ExecuteReader();
+            Debug.WriteLine(new string('-', 30));
+            conn.Close();
+            return connStr;
+        }
+
         // RETURN connect string
         public async Task ConnectViaStringDTBAsync(string nameDatabase)
         {

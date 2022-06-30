@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace Лр6_regex
 {
-
     public static class StringExt
     {
         // Расширяюший метод
@@ -40,10 +39,8 @@ wars and tensions with surrounding people.  Why? A look at Israel’s history in
 reveals that 4000 years ago a man, who is now very well known, went on a camping trip in that part of the world.  
 The Bible says that his story affects our future. This ancient man is Abraham (also known as Abram).  We can take 
 his story seriously because the places and cities he visited are mentioned in other old writings.";
-
             int num = 10;
             Console.WriteLine(text.Give_Slova_po_num(num));
-        
         }
     }
 }

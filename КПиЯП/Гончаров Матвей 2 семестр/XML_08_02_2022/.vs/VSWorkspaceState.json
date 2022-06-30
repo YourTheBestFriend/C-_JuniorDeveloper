@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\XML_08_02_2022"
+    "\\XML_08_02_2022",
+    "\\XML_08_02_2022\\bin",
+    "\\XML_08_02_2022\\bin\\Debug",
+    "\\XML_08_02_2022\\bin\\Release",
+    "\\XML_08_02_2022\\obj"
   ],
+  "SelectedNode": "\\XML_08_02_2022.sln",
   "PreviewInSolutionExplorer": false
 }

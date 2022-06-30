@@ -42,11 +42,21 @@ namespace Наследование_07_02_2022
                 int x = gos1.Kredit;
                 gos1.UvelichKred_10(ref x);
 
-                // test method - UvelichKred_10
+                // test method - UmenshKred_10
                 Console.WriteLine("\n[test method - UmenshKred_10]");
-                int y = gos3.Kredit;
-                gos1.UmenshKred_10(out y);
+                gos2.Kredit = 20;
+                x = gos2.Kredit;
+                gos2.UmenshKred_10(out x);
 
+                // test method - UvelichKred_10
+                Console.WriteLine("\n[test method - UvelichKred_10]");
+                int y = gos3.Kredit;
+                gos3.UvelichKred_10(ref y);
+
+                // test method - UvelichKred_10
+                //Console.WriteLine("\n[test method - UmenshKred_10]");
+                //int y = gos3.Kredit;
+                //gos1.UmenshKred_10(out y);
 
                 // test static method
                 Respublica.PrintColObject(); // Выведет т.к gos1 это 1 и + gos3 (Производный sealed класс от Respublica)

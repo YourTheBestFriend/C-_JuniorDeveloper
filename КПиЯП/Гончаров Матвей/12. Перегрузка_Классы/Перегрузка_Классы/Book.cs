@@ -22,7 +22,7 @@ namespace Перегрузка_Классы
         }
         public static bool operator ==(Book a, Book b)
         {
-            return a.name_outhor==b.name_outhor;
+            return a.name_outhor == b.name_outhor;
         }
     }
 }

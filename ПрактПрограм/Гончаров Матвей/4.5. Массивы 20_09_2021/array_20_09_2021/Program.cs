@@ -589,6 +589,7 @@ namespace array_20_09_2021
                 }
                 Console.WriteLine($"Среднне значение по строке i = {i}: sredn = {sredn / (cols_garuch - 1)}");
             }
+            Console.ReadLine();
         }
     }
 }
